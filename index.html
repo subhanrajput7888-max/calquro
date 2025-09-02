@@ -1,0 +1,1962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Muhammad Subhan - Professional Tools & Blog Hub</title>
+    <meta name="description" content="Professional calculators, tools, and insightful blogs on Finance, Health, and Social Media by Muhammad Subhan, a 14-year-old developer and content creator.">
+    <meta name="keywords" content="age calculator, BMI calculator, loan calculator, social media tools, finance blog, health tips, Muhammad Subhan">
+    <meta name="author" content="Muhammad Subhan">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Muhammad Subhan - Professional Tools & Blog Hub">
+    <meta property="og:description" content="Professional calculators, tools, and insightful blogs on Finance, Health, and Social Media by Muhammad Subhan.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://muhammadsubhan.com">
+    <meta property="og:image" content="https://iili.io/KqY3EcG.png">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Muhammad Subhan - Professional Tools & Blog Hub">
+    <meta name="twitter:description" content="Professional calculators, tools, and insightful blogs by a 14-year-old developer.">
+    <meta name="twitter:image" content="https://iili.io/KqY3EcG.png">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Muhammad Subhan",
+        "age": 14,
+        "jobTitle": "Developer & Content Creator",
+        "image": "https://iili.io/KqYHfqb.jpg",
+        "url": "https://muhammadsubhan.com",
+        "sameAs": [],
+        "knowsAbout": ["Web Development", "Finance", "Health", "Social Media"]
+    }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            overflow-x: hidden;
+        }
+        
+        /* Gradient Background */
+        .gradient-bg {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+        }
+        
+        /* Glass Effect */
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        
+        /* Hover Effects */
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        .animate-slide-up {
+            animation: slideUp 0.3s ease-out;
+        }
+        
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .logo img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .logo span {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #3b82f6;
+        }
+        
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            transition: color 0.3s ease;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-family: inherit;
+            font-size: inherit;
+        }
+        
+        .nav-link:hover {
+            color: #fde047;
+        }
+        
+        .chat-btn {
+            background: #3b82f6;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        
+        .chat-btn:hover {
+            opacity: 0.9;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 1rem;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .mobile-menu.active {
+            display: flex;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 6rem 2rem 4rem;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .hero-content h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero-content .highlight {
+            color: #fde047;
+        }
+        
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary {
+            background: white;
+            color: #3b82f6;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-outline:hover {
+            background: white;
+            color: #3b82f6;
+        }
+        
+        .hero-image img {
+            width: 16rem;
+            height: 16rem;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .hero-info h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 1rem;
+        }
+        
+        .hero-info p {
+            opacity: 0.8;
+            font-size: 1rem;
+        }
+        
+        /* Sections */
+        .section {
+            padding: 4rem 2rem;
+        }
+        
+        .section-alt {
+            background: #f9fafb;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+        
+        .section-header p {
+            font-size: 1.125rem;
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Tools Grid */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .tool-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .tool-card .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .tool-card .icon.primary { color: #3b82f6; }
+        .tool-card .icon.secondary { color: #8b5cf6; }
+        .tool-card .icon.success { color: #10b981; }
+        .tool-card .icon.warning { color: #f59e0b; }
+        .tool-card .icon.danger { color: #ef4444; }
+        .tool-card .icon.info { color: #06b6d4; }
+        
+        .tool-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+        
+        .tool-card p {
+            color: #6b7280;
+            margin-bottom: 1.5rem;
+        }
+        
+        .tool-card .btn {
+            width: auto;
+            display: inline-block;
+        }
+        
+        /* Blog Grid */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .blog-card {
+            background: white;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-2px);
+        }
+        
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .blog-card-content {
+            padding: 1.5rem;
+        }
+        
+        .blog-category {
+            background: #3b82f6;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        
+        .blog-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: #1f2937;
+        }
+        
+        .blog-card p {
+            color: #6b7280;
+            margin-bottom: 1rem;
+        }
+        
+        .blog-author {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+        
+        .blog-author img {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        /* About Section */
+        .about-content {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 3rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about-image img {
+            width: 12rem;
+            height: 12rem;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .about-text h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+        
+        .about-text p {
+            color: #6b7280;
+            margin-bottom: 1rem;
+        }
+        
+        .tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .tag {
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .tag.primary { background: #3b82f6; color: white; }
+        .tag.secondary { background: #8b5cf6; color: white; }
+        .tag.success { background: #10b981; color: white; }
+        
+        /* Contact Form */
+        .contact-form {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 3rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+        
+        .form-submit {
+            text-align: center;
+        }
+        
+        .form-submit p {
+            font-size: 0.875rem;
+            color: #6b7280;
+            margin-top: 0.5rem;
+        }
+        
+        .form-submit a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        
+        .form-submit a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Support Section */
+        .support-section {
+            background: #f9fafb;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .support-section h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+        
+        .support-section p {
+            color: #6b7280;
+            margin-bottom: 1rem;
+        }
+        
+        .support-section a {
+            color: #3b82f6;
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        .support-section a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #1f2937;
+            color: white;
+            padding: 3rem 2rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-section h4 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section p {
+            color: #d1d5db;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section ul li button {
+            background: none;
+            border: none;
+            color: #d1d5db;
+            cursor: pointer;
+            font-family: inherit;
+            padding: 0;
+            text-align: left;
+        }
+        
+        .footer-section ul li button:hover {
+            color: white;
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-logo img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .footer-avatar {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            text-align: center;
+            color: #d1d5db;
+        }
+        
+        /* Modals */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        
+        .modal.active {
+            display: flex;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            max-width: 600px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .modal-header h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1f2937;
+        }
+        
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #6b7280;
+            cursor: pointer;
+            padding: 0;
+        }
+        
+        .modal-close:hover {
+            color: #1f2937;
+        }
+        
+        .result-box {
+            background: #f9fafb;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .result-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+        }
+        
+        .result-item.border-top {
+            border-top: 1px solid #d1d5db;
+            padding-top: 1rem;
+        }
+        
+        /* Chatbot */
+        .chatbot {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            width: 20rem;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            z-index: 2000;
+            display: none;
+        }
+        
+        .chatbot.active {
+            display: block;
+        }
+        
+        .chatbot-header {
+            background: #3b82f6;
+            color: white;
+            padding: 1rem;
+            border-radius: 1rem 1rem 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .chatbot-info {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .chatbot-avatar {
+            width: 2rem;
+            height: 2rem;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #3b82f6;
+        }
+        
+        .chatbot-details h4 {
+            font-weight: 600;
+        }
+        
+        .chatbot-details p {
+            font-size: 0.75rem;
+            opacity: 0.9;
+        }
+        
+        .chatbot-close {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 0;
+        }
+        
+        .chatbot-messages {
+            height: 16rem;
+            overflow-y: auto;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        
+        .message {
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            max-width: 80%;
+        }
+        
+        .message.user {
+            background: #3b82f6;
+            color: white;
+            align-self: flex-end;
+        }
+        
+        .message.bot {
+            background: #f3f4f6;
+            color: #1f2937;
+            align-self: flex-start;
+        }
+        
+        .message p {
+            margin: 0;
+            font-size: 0.875rem;
+            white-space: pre-line;
+        }
+        
+        .chatbot-input {
+            padding: 1rem;
+            border-top: 1px solid #e5e7eb;
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        .chatbot-input input {
+            flex: 1;
+            padding: 0.5rem 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+        }
+        
+        .chatbot-input button {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .hero-buttons .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .chatbot {
+                width: calc(100vw - 2rem);
+                left: 1rem;
+                right: 1rem;
+            }
+            
+            .modal-content {
+                margin: 1rem;
+                width: calc(100% - 2rem);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero {
+                padding: 4rem 1rem 2rem;
+            }
+            
+            .section {
+                padding: 3rem 1rem;
+            }
+            
+            .section-header h2 {
+                font-size: 2rem;
+            }
+            
+            .hero-image img {
+                width: 12rem;
+                height: 12rem;
+            }
+            
+            .tools-grid,
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://iili.io/KqY3EcG.png" alt="Muhammad Subhan Logo">
+                <span>Muhammad Subhan</span>
+            </div>
+            <div class="nav-menu">
+                <button class="nav-link" onclick="scrollToSection('home')">Home</button>
+                <button class="nav-link" onclick="scrollToSection('tools')">Tools</button>
+                <button class="nav-link" onclick="scrollToSection('blog')">Blog</button>
+                <button class="nav-link" onclick="scrollToSection('about')">About</button>
+                <button class="nav-link" onclick="scrollToSection('contact')">Contact</button>
+                <button class="chat-btn" onclick="openChatbot()">
+                    <i class="fas fa-robot"></i> AI Chat
+                </button>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="mobile-menu" id="mobileMenu">
+                <button class="nav-link" onclick="scrollToSection('home')">Home</button>
+                <button class="nav-link" onclick="scrollToSection('tools')">Tools</button>
+                <button class="nav-link" onclick="scrollToSection('blog')">Blog</button>
+                <button class="nav-link" onclick="scrollToSection('about')">About</button>
+                <button class="nav-link" onclick="scrollToSection('contact')">Contact</button>
+                <button class="nav-link" onclick="openChatbot()">
+                    <i class="fas fa-robot"></i> AI Chat
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero gradient-bg">
+        <div class="hero-container animate-fade-in">
+            <div class="hero-content">
+                <h1>Professional Tools & <span class="highlight">Insights</span></h1>
+                <p>Discover powerful calculators, insightful blogs, and innovative tools created by Muhammad Subhan, a passionate 14-year-old developer.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('tools')">Explore Tools</button>
+                    <button class="btn btn-outline" onclick="scrollToSection('blog')">Read Blog</button>
+                </div>
+            </div>
+            <div class="hero-image animate-slide-up">
+                <img src="https://iili.io/KqYHfqb.jpg" alt="Muhammad Subhan - 14 year old developer">
+                <div class="hero-info">
+                    <h3>Muhammad Subhan</h3>
+                    <p>Age 14 • Developer & Creator</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Professional Tools</h2>
+                <p>Powerful calculators and utilities to help you make informed decisions</p>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card hover-lift">
+                    <div class="icon primary">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Age Calculator</h3>
+                    <p>Calculate your exact age in years, months, days, hours, minutes, and seconds.</p>
+                    <button class="btn btn-primary" onclick="openCalculator('age')">Open Calculator</button>
+                </div>
+                <div class="tool-card hover-lift">
+                    <div class="icon secondary">
+                        <i class="fas fa-weight"></i>
+                    </div>
+                    <h3>BMI Calculator</h3>
+                    <p>Calculate your Body Mass Index and get your health category classification.</p>
+                    <button class="btn" style="background: #8b5cf6; color: white;" onclick="openCalculator('bmi')">Open Calculator</button>
+                </div>
+                <div class="tool-card hover-lift">
+                    <div class="icon success">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Loan/EMI Calculator</h3>
+                    <p>Calculate your loan EMI with detailed payment breakdown and amortization.</p>
+                    <button class="btn" style="background: #10b981; color: white;" onclick="openCalculator('loan')">Open Calculator</button>
+                </div>
+                <div class="tool-card hover-lift">
+                    <div class="icon info">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3>Username Checker</h3>
+                    <p>Check username availability across Facebook, Instagram, Twitter, and YouTube.</p>
+                    <button class="btn" style="background: #06b6d4; color: white;" onclick="openCalculator('username')">Check Username</button>
+                </div>
+                <div class="tool-card hover-lift">
+                    <div class="icon warning">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>AdSense Calculator</h3>
+                    <p>Estimate your Google AdSense earnings based on traffic and eCPM rates.</p>
+                    <button class="btn" style="background: #f59e0b; color: white;" onclick="openCalculator('adsense')">Calculate Earnings</button>
+                </div>
+                <div class="tool-card hover-lift">
+                    <div class="icon danger">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Reviews & Ratings</h3>
+                    <p>Share your experience and read what others say about our tools.</p>
+                    <button class="btn" style="background: #ef4444; color: white;" onclick="openReviews()">View Reviews</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Blog Posts</h2>
+                <p>Insights on Finance, Health, and Social Media from a young entrepreneur's perspective</p>
+            </div>
+            <div class="blog-grid" id="blogGrid">
+                <!-- Blog posts will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Muhammad Subhan</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://iili.io/KqYHfqb.jpg" alt="Muhammad Subhan">
+                </div>
+                <div class="about-text">
+                    <h3>Hello, I'm Muhammad Subhan!</h3>
+                    <p>At just 14 years old, I'm passionate about creating useful tools and sharing knowledge through technology. I specialize in web development, financial literacy, health awareness, and social media strategies.</p>
+                    <p>This platform represents my journey in combining technical skills with practical problem-solving. Each tool and blog post is crafted with care to provide real value to users.</p>
+                    <div class="tags">
+                        <span class="tag primary">Age 14</span>
+                        <span class="tag secondary">Developer</span>
+                        <span class="tag success">Creator</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Have questions or suggestions? I'd love to hear from you!</p>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm" onsubmit="submitContact(event)">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" id="contactName" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" id="contactEmail" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" id="contactSubject" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea id="contactMessage" rows="5" required></textarea>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <p>You can also contact via Gmail: <a href="mailto:subhanrajput3222@gmail.com">subhanrajput3222@gmail.com</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <div class="support-section">
+        <div class="container">
+            <h3>Need Support?</h3>
+            <p>For technical support or any questions, reach out directly:</p>
+            <a href="mailto:subhanrajput3222@gmail.com">
+                <i class="fas fa-envelope"></i> subhanrajput3222@gmail.com
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="https://iili.io/KqY3EcG.png" alt="Muhammad Subhan Logo">
+                    <span>Muhammad Subhan</span>
+                </div>
+                <p>Age 14 • Passionate Developer & Content Creator building tools that make a difference.</p>
+                <img src="https://iili.io/KqYHfqb.jpg" alt="Muhammad Subhan" class="footer-avatar">
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><button onclick="scrollToSection('tools')">Tools</button></li>
+                    <li><button onclick="scrollToSection('blog')">Blog</button></li>
+                    <li><button onclick="scrollToSection('about')">About</button></li>
+                    <li><button onclick="scrollToSection('contact')">Contact</button></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-envelope"></i> subhanrajput3222@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Muhammad Subhan. All rights reserved. Created with passion at age 14.</p>
+        </div>
+    </footer>
+
+    <!-- Calculator Modal -->
+    <div class="modal" id="calculatorModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="calculatorTitle">Calculator</h3>
+                <button class="modal-close" onclick="closeCalculator()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="calculatorContent">
+                <!-- Calculator content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Modal -->
+    <div class="modal" id="blogModal">
+        <div class="modal-content" style="max-width: 800px;">
+            <div class="modal-header">
+                <h3 id="blogTitle">Blog Post</h3>
+                <button class="modal-close" onclick="closeBlog()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="blogContent">
+                <!-- Blog content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Reviews Modal -->
+    <div class="modal" id="reviewsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Reviews & Ratings</h3>
+                <button class="modal-close" onclick="closeReviews()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="reviewsContent">
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="margin-bottom: 1rem;">Submit a Review</h4>
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" id="reviewName">
+                    </div>
+                    <div class="form-group">
+                        <label>Rating</label>
+                        <div id="starRating" style="display: flex; gap: 0.25rem; margin-bottom: 1rem;">
+                            <span class="star" data-rating="1" onclick="setRating(1)">⭐</span>
+                            <span class="star" data-rating="2" onclick="setRating(2)">⭐</span>
+                            <span class="star" data-rating="3" onclick="setRating(3)">⭐</span>
+                            <span class="star" data-rating="4" onclick="setRating(4)">⭐</span>
+                            <span class="star" data-rating="5" onclick="setRating(5)">⭐</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Review</label>
+                        <textarea id="reviewText" rows="3" placeholder="Share your experience with our tools..."></textarea>
+                    </div>
+                    <button class="btn btn-primary" onclick="submitReview()">Submit Review</button>
+                </div>
+                <div style="border-top: 1px solid #e5e7eb; padding-top: 1.5rem;">
+                    <h4 style="margin-bottom: 1rem;">Customer Reviews</h4>
+                    <div id="reviewsList">
+                        <p style="color: #6b7280;">No reviews yet. Be the first to share your experience!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="chatbot" id="chatbot">
+        <div class="chatbot-header">
+            <div class="chatbot-info">
+                <div class="chatbot-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="chatbot-details">
+                    <h4>Smart AI Assistant</h4>
+                    <p>Built by Muhammad Subhan (Age 14)</p>
+                </div>
+            </div>
+            <button class="chatbot-close" onclick="closeChatbot()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatMessages">
+            <!-- Messages will be added here -->
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatInput" placeholder="Ask me anything..." onkeypress="handleChatKeyPress(event)">
+            <button onclick="sendMessage()">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Blog posts data
+        const blogPosts = [
+            {
+                id: 1,
+                title: "Building Wealth: Investment Strategies for Teenagers",
+                category: "Finance",
+                excerpt: "Learn how to start investing early and build long-term wealth through smart financial decisions.",
+                image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+                metaDescription: "Discover essential investment strategies for teenagers. Learn about compound interest, index funds, and building wealth early with practical tips from a young entrepreneur.",
+                content: `Building wealth as a teenager might seem impossible, but starting early gives you the most powerful tool in investing: time. As a 14-year-old entrepreneur, I've learned that the earlier you start, the more compound interest works in your favor.
+
+The first step is understanding compound interest. When you invest money, you earn returns not just on your initial investment, but also on the returns that investment generates. This creates a snowball effect that becomes more powerful over time.
+
+Start with education. Read books about personal finance and investing. Some great beginner books include "The Richest Man in Babylon" and "Rich Dad Poor Dad." Understanding basic concepts like stocks, bonds, and mutual funds is crucial before investing any money.
+
+Create an emergency fund first. Before investing, save enough money to cover 3-6 months of expenses. This prevents you from having to sell investments during emergencies.
+
+Consider starting with index funds. These funds track the performance of the entire stock market and are perfect for beginners. They require minimal research and have historically provided good returns over the long term.
+
+Use technology to your advantage. Apps like Acorns or Stash allow you to start investing with small amounts of money. They can round up your purchases and invest the spare change automatically.
+
+Take advantage of tax-advantaged accounts. If you have earned income, consider opening a Roth IRA. The money you contribute has already been taxed, so it grows tax-free and can be withdrawn tax-free in retirement.
+
+Stay consistent with your investments. Instead of trying to time the market, invest a fixed amount regularly through dollar-cost averaging. This strategy reduces the impact of market volatility.
+
+Remember, investing always involves risk. Never invest money you can't afford to lose, and always do your research before making investment decisions. Starting your wealth-building journey as a teenager gives you decades to grow your money and achieve financial independence.`
+            },
+            {
+                id: 2,
+                title: "Mental Health and Academic Success: Finding Balance",
+                category: "Health",
+                excerpt: "Discover practical strategies to maintain mental wellness while excelling in academics.",
+                image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+                metaDescription: "Learn how to balance mental health with academic success. Practical tips for stress management, sleep optimization, and maintaining wellness as a student.",
+                content: `Balancing mental health with academic success is one of the biggest challenges students face today. As someone who's experienced the pressure firsthand, I've learned that prioritizing mental wellness actually improves academic performance rather than hindering it.
+
+Sleep is the foundation of both mental health and academic success. Aim for 8-9 hours of quality sleep each night. Your brain consolidates information and processes emotions during sleep, making it essential for learning and emotional regulation.
+
+Develop a consistent routine that includes time for both study and relaxation. Structure provides stability and reduces anxiety. Plan your day to include designated study times, meals, exercise, and leisure activities.
+
+Practice stress management techniques. Deep breathing exercises, meditation, and progressive muscle relaxation can help manage academic stress. Even five minutes of mindfulness practice daily can significantly improve your mental state.
+
+Don't underestimate the power of physical exercise. Regular physical activity releases endorphins, improves mood, and enhances cognitive function. You don't need intense workouts – even a 30-minute walk can make a difference.
+
+Build a support network. Connect with friends, family, teachers, or counselors who can provide emotional support and practical advice. Don't hesitate to seek help when you're struggling.
+
+Set realistic goals and expectations. Perfectionism can be a major source of stress and anxiety. Focus on progress rather than perfection, and celebrate small victories along the way.
+
+Take regular breaks from studying. The Pomodoro Technique – studying for 25 minutes followed by a 5-minute break – can improve focus and prevent burnout. Use breaks to do something enjoyable or relaxing.
+
+Maintain a healthy diet. What you eat affects your mood and energy levels. Include plenty of fruits, vegetables, whole grains, and lean proteins in your diet while limiting processed foods and excessive caffeine.
+
+Remember that academic success isn't worth sacrificing your mental health. If you're consistently feeling overwhelmed, anxious, or depressed, reach out to a mental health professional. Taking care of your mental health is just as important as any academic achievement.`
+            },
+            {
+                id: 3,
+                title: "Social Media Marketing: Growing Your Online Presence",
+                category: "Social Media",
+                excerpt: "Learn proven strategies to build an authentic and engaging social media presence.",
+                image: "https://images.unsplash.com/photo-1611262588024-d12430b98920?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+                metaDescription: "Master social media marketing with proven strategies for organic growth. Learn about content creation, engagement tactics, and building authentic online presence.",
+                content: `Building a strong social media presence requires strategy, consistency, and authenticity. As a young content creator, I've learned that success on social media isn't about follower count – it's about creating genuine connections and providing value to your audience.
+
+Define your niche and target audience. What unique perspective or expertise do you bring? Whether it's technology, fitness, art, or education, focusing on a specific area helps you attract the right followers and establish authority.
+
+Create a content calendar to maintain consistency. Plan your posts in advance and aim to post regularly. Consistency builds trust and keeps your audience engaged. Use tools like Buffer or Hootsuite to schedule posts across multiple platforms.
+
+Focus on providing value in every post. Ask yourself: "What will my audience gain from this content?" Whether it's entertainment, education, or inspiration, every post should serve a purpose for your followers.
+
+Engage authentically with your community. Respond to comments, ask questions, and participate in conversations. Social media is social – building relationships is more important than broadcasting messages.
+
+Use high-quality visuals and compelling captions. Invest time in creating or sourcing good images, videos, and graphics. Write captions that encourage engagement and include clear calls-to-action.
+
+Leverage hashtags strategically. Research relevant hashtags in your niche and use a mix of popular and niche-specific tags. This helps your content reach people interested in your topic.
+
+Collaborate with others in your space. Partner with other creators for content exchanges, takeovers, or joint projects. This exposes you to new audiences and builds valuable relationships within your industry.
+
+Analyze your performance regularly. Use platform analytics to understand what content performs best, when your audience is most active, and which posts drive the most engagement. Use this data to refine your strategy.
+
+Stay authentic to your personality and values. Don't try to copy others or follow every trend. Authenticity builds stronger connections and helps you stand out in a crowded space.
+
+Be patient and persistent. Growing a meaningful social media presence takes time. Focus on steady growth and genuine engagement rather than quick fixes or buying followers. Quality followers who are truly interested in your content are worth far more than large numbers of inactive accounts.`
+            }
+        ];
+
+        // Global variables
+        let currentRating = 0;
+        let chatMessages = [];
+        let userName = '';
+
+        // Navigation functions
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                closeMobileMenu();
+            }
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+
+        function closeMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.remove('active');
+        }
+
+        // Calculator functions
+        function openCalculator(type) {
+            const modal = document.getElementById('calculatorModal');
+            const title = document.getElementById('calculatorTitle');
+            const content = document.getElementById('calculatorContent');
+            
+            modal.classList.add('active');
+            
+            switch(type) {
+                case 'age':
+                    title.textContent = 'Age Calculator';
+                    content.innerHTML = `
+                        <div class="form-group">
+                            <label>Date of Birth</label>
+                            <input type="date" id="dobInput">
+                        </div>
+                        <button class="btn btn-primary" onclick="calculateAge()">Calculate Age</button>
+                        <div id="ageResult"></div>
+                    `;
+                    break;
+                case 'bmi':
+                    title.textContent = 'BMI Calculator';
+                    content.innerHTML = `
+                        <div class="form-group">
+                            <label>Height (cm)</label>
+                            <input type="number" id="heightInput" placeholder="170">
+                        </div>
+                        <div class="form-group">
+                            <label>Weight (kg)</label>
+                            <input type="number" id="weightInput" placeholder="70">
+                        </div>
+                        <button class="btn btn-primary" onclick="calculateBMI()">Calculate BMI</button>
+                        <div id="bmiResult"></div>
+                    `;
+                    break;
+                case 'loan':
+                    title.textContent = 'Loan/EMI Calculator';
+                    content.innerHTML = `
+                        <div class="form-group">
+                            <label>Loan Amount ($)</label>
+                            <input type="number" id="loanAmount" placeholder="10000">
+                        </div>
+                        <div class="form-group">
+                            <label>Interest Rate (%)</label>
+                            <input type="number" id="interestRate" placeholder="5" step="0.1">
+                        </div>
+                        <div class="form-group">
+                            <label>Loan Term (years)</label>
+                            <input type="number" id="loanTerm" placeholder="5">
+                        </div>
+                        <button class="btn btn-primary" onclick="calculateLoan()">Calculate EMI</button>
+                        <div id="loanResult"></div>
+                    `;
+                    break;
+                case 'username':
+                    title.textContent = 'Username Availability Checker';
+                    content.innerHTML = `
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" id="usernameInput" placeholder="johndoe123">
+                        </div>
+                        <button class="btn btn-primary" onclick="checkUsername()">Check Availability</button>
+                        <div id="usernameResult"></div>
+                    `;
+                    break;
+                case 'adsense':
+                    title.textContent = 'AdSense Earnings Calculator';
+                    content.innerHTML = `
+                        <div class="form-group">
+                            <label>Daily Page Views</label>
+                            <input type="number" id="dailyViews" placeholder="1000">
+                        </div>
+                        <div class="form-group">
+                            <label>eCPM ($)</label>
+                            <input type="number" id="ecpm" placeholder="2.50" step="0.01">
+                        </div>
+                        <div class="form-group">
+                            <label>Number of Days</label>
+                            <input type="number" id="days" placeholder="30">
+                        </div>
+                        <button class="btn btn-primary" onclick="calculateAdSense()">Calculate Earnings</button>
+                        <div id="adsenseResult"></div>
+                    `;
+                    break;
+            }
+        }
+
+        function closeCalculator() {
+            document.getElementById('calculatorModal').classList.remove('active');
+        }
+
+        function calculateAge() {
+            const dobInput = document.getElementById('dobInput').value;
+            if (!dobInput) {
+                alert('Please enter your date of birth');
+                return;
+            }
+            
+            const dob = new Date(dobInput);
+            const now = new Date();
+            
+            const diffMs = now.getTime() - dob.getTime();
+            const ageDate = new Date(diffMs);
+            
+            const years = Math.abs(ageDate.getUTCFullYear() - 1970);
+            const months = Math.abs(ageDate.getUTCMonth());
+            const days = Math.abs(ageDate.getUTCDate() - 1);
+            const hours = Math.abs(ageDate.getUTCHours());
+            const minutes = Math.abs(ageDate.getUTCMinutes());
+            const seconds = Math.abs(ageDate.getUTCSeconds());
+            
+            document.getElementById('ageResult').innerHTML = `
+                <div class="result-box">
+                    <h4>Your Age:</h4>
+                    <div class="result-grid">
+                        <div><strong>${years}</strong> years</div>
+                        <div><strong>${months}</strong> months</div>
+                        <div><strong>${days}</strong> days</div>
+                        <div><strong>${hours}</strong> hours</div>
+                        <div><strong>${minutes}</strong> minutes</div>
+                        <div><strong>${seconds}</strong> seconds</div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function calculateBMI() {
+            const height = parseFloat(document.getElementById('heightInput').value);
+            const weight = parseFloat(document.getElementById('weightInput').value);
+            
+            if (!height || !weight) {
+                alert('Please enter both height and weight');
+                return;
+            }
+            
+            const bmi = +(weight / ((height / 100) ** 2)).toFixed(1);
+            let category = '';
+            let color = '';
+            
+            if (bmi < 18.5) {
+                category = 'Underweight';
+                color = 'color: #3b82f6;';
+            } else if (bmi < 25) {
+                category = 'Normal weight';
+                color = 'color: #10b981;';
+            } else if (bmi < 30) {
+                category = 'Overweight';
+                color = 'color: #f59e0b;';
+            } else {
+                category = 'Obese';
+                color = 'color: #ef4444;';
+            }
+            
+            document.getElementById('bmiResult').innerHTML = `
+                <div class="result-box">
+                    <h4>Your BMI Result:</h4>
+                    <div style="font-size: 2rem; font-weight: bold; ${color} margin-bottom: 0.5rem;">${bmi}</div>
+                    <div style="font-size: 1.125rem; ${color}">${category}</div>
+                    <div style="font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">
+                        BMI ranges: Underweight (<18.5), Normal (18.5-24.9), Overweight (25-29.9), Obese (≥30)
+                    </div>
+                </div>
+            `;
+        }
+
+        function calculateLoan() {
+            const loanAmount = parseFloat(document.getElementById('loanAmount').value);
+            const interestRate = parseFloat(document.getElementById('interestRate').value);
+            const loanTerm = parseFloat(document.getElementById('loanTerm').value);
+            
+            if (!loanAmount || !interestRate || !loanTerm) {
+                alert('Please fill in all fields');
+                return;
+            }
+            
+            const monthlyRate = interestRate / 100 / 12;
+            const numPayments = loanTerm * 12;
+            
+            const emi = (loanAmount * monthlyRate * Math.pow(1 + monthlyRate, numPayments)) / 
+                       (Math.pow(1 + monthlyRate, numPayments) - 1);
+            
+            const totalPayment = emi * numPayments;
+            const totalInterest = totalPayment - loanAmount;
+            
+            document.getElementById('loanResult').innerHTML = `
+                <div class="result-box">
+                    <h4>Loan Details:</h4>
+                    <div class="result-item">
+                        <span>Monthly EMI:</span>
+                        <span style="font-weight: 600;">$${emi.toFixed(2)}</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Total Payment:</span>
+                        <span style="font-weight: 600;">$${totalPayment.toFixed(2)}</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Total Interest:</span>
+                        <span style="font-weight: 600;">$${totalInterest.toFixed(2)}</span>
+                    </div>
+                    <div class="result-item border-top">
+                        <span>Loan Amount:</span>
+                        <span style="font-weight: 600;">$${loanAmount.toFixed(2)}</span>
+                    </div>
+                </div>
+            `;
+        }
+
+        function checkUsername() {
+            const username = document.getElementById('usernameInput').value.trim();
+            if (!username) {
+                alert('Please enter a username');
+                return;
+            }
+            
+            // Mock availability check - in real implementation, this would make API calls
+            const platforms = ['Facebook', 'Instagram', 'Twitter', 'YouTube'];
+            let resultsHTML = '<div class="result-box"><h4>Availability Results:</h4>';
+            
+            platforms.forEach(platform => {
+                const isAvailable = Math.random() > 0.5;
+                const icon = isAvailable ? 'fa-check-circle' : 'fa-times-circle';
+                const color = isAvailable ? 'color: #10b981;' : 'color: #ef4444;';
+                const status = isAvailable ? 'Available' : 'Taken';
+                
+                resultsHTML += `
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.5rem; margin-bottom: 0.5rem;">
+                        <span style="font-weight: 500;">${platform}</span>
+                        <span style="${color}">
+                            <i class="fas ${icon}"></i> ${status}
+                        </span>
+                    </div>
+                `;
+            });
+            
+            resultsHTML += '<div style="font-size: 0.75rem; color: #6b7280; margin-top: 0.75rem;">Note: This is a demo checker. Real availability may vary.</div></div>';
+            
+            document.getElementById('usernameResult').innerHTML = resultsHTML;
+        }
+
+        function calculateAdSense() {
+            const dailyViews = parseFloat(document.getElementById('dailyViews').value);
+            const ecpm = parseFloat(document.getElementById('ecpm').value);
+            const days = parseFloat(document.getElementById('days').value);
+            
+            if (!dailyViews || !ecpm || !days) {
+                alert('Please fill in all fields');
+                return;
+            }
+            
+            const dailyEarnings = (dailyViews * ecpm) / 1000;
+            const totalEarnings = dailyEarnings * days;
+            const monthlyEstimate = dailyEarnings * 30;
+            const yearlyEstimate = dailyEarnings * 365;
+            
+            document.getElementById('adsenseResult').innerHTML = `
+                <div class="result-box">
+                    <h4>Earnings Estimate:</h4>
+                    <div class="result-item">
+                        <span>Daily Earnings:</span>
+                        <span style="font-weight: 600;">$${dailyEarnings.toFixed(2)}</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Total for ${days} days:</span>
+                        <span style="font-weight: 600;">$${totalEarnings.toFixed(2)}</span>
+                    </div>
+                    <div class="result-item border-top">
+                        <span>Monthly Estimate:</span>
+                        <span style="font-weight: 600;">$${monthlyEstimate.toFixed(2)}</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Yearly Estimate:</span>
+                        <span style="font-weight: 600;">$${yearlyEstimate.toFixed(2)}</span>
+                    </div>
+                    <div style="font-size: 0.75rem; color: #6b7280; margin-top: 0.75rem;">
+                        *Estimates based on current inputs. Actual earnings may vary due to seasonality, content quality, and market conditions.
+                    </div>
+                </div>
+            `;
+        }
+
+        // Blog functions
+        function loadBlogs() {
+            const blogGrid = document.getElementById('blogGrid');
+            blogGrid.innerHTML = '';
+            
+            blogPosts.slice(0, 6).forEach(post => {
+                const blogCard = document.createElement('div');
+                blogCard.className = 'blog-card hover-lift';
+                blogCard.onclick = () => openBlog(post.id);
+                
+                blogCard.innerHTML = `
+                    <img src="${post.image}" alt="${post.title}">
+                    <div class="blog-card-content">
+                        <div class="blog-category">${post.category}</div>
+                        <h3>${post.title}</h3>
+                        <p>${post.excerpt}</p>
+                        <div class="blog-author">
+                            <img src="https://iili.io/KqYHfqb.jpg" alt="Muhammad Subhan">
+                            <span>Muhammad Subhan • Age 14</span>
+                        </div>
+                    </div>
+                `;
+                
+                blogGrid.appendChild(blogCard);
+            });
+        }
+
+        function openBlog(postId) {
+            const post = blogPosts.find(p => p.id === postId);
+            if (!post) return;
+            
+            const modal = document.getElementById('blogModal');
+            const title = document.getElementById('blogTitle');
+            const content = document.getElementById('blogContent');
+            
+            title.textContent = post.title;
+            
+            content.innerHTML = `
+                <div style="margin-bottom: 1.5rem;">
+                    <img src="${post.image}" alt="${post.title}" style="width: 100%; height: 16rem; object-fit: cover; border-radius: 0.5rem; margin-bottom: 1rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <span class="blog-category">${post.category}</span>
+                        <div class="blog-author">
+                            <img src="https://iili.io/KqYHfqb.jpg" alt="Muhammad Subhan">
+                            <span>Muhammad Subhan • Age 14</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="line-height: 1.7;">
+                    ${post.content.split('\n\n').map(paragraph => `<p style="margin-bottom: 1rem;">${paragraph}</p>`).join('')}
+                </div>
+                <div style="margin-top: 2rem; padding: 1rem; background: #f9fafb; border-radius: 0.5rem;">
+                    <div style="display: flex; align-items: center;">
+                        <img src="https://iili.io/KqYHfqb.jpg" alt="Muhammad Subhan" style="width: 3rem; height: 3rem; border-radius: 50%; object-fit: cover; margin-right: 1rem;">
+                        <div>
+                            <h4 style="font-weight: 600; margin-bottom: 0.25rem;">Muhammad Subhan</h4>
+                            <p style="font-size: 0.875rem; color: #6b7280; margin-bottom: 0.25rem;">Age 14 • Developer & Content Creator</p>
+                            <p style="font-size: 0.875rem; color: #6b7280;">Passionate about creating tools and sharing knowledge to help others succeed.</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            modal.classList.add('active');
+        }
+
+        function closeBlog() {
+            document.getElementById('blogModal').classList.remove('active');
+        }
+
+        // Reviews functions
+        function openReviews() {
+            document.getElementById('reviewsModal').classList.add('active');
+            loadReviews();
+        }
+
+        function closeReviews() {
+            document.getElementById('reviewsModal').classList.remove('active');
+        }
+
+        function setRating(rating) {
+            currentRating = rating;
+            const stars = document.querySelectorAll('.star');
+            stars.forEach((star, index) => {
+                if (index < rating) {
+                    star.style.opacity = '1';
+                } else {
+                    star.style.opacity = '0.3';
+                }
+            });
+        }
+
+        function submitReview() {
+            const name = document.getElementById('reviewName').value.trim();
+            const text = document.getElementById('reviewText').value.trim();
+            
+            if (!name || !currentRating || !text) {
+                alert('Please fill in all fields and select a rating');
+                return;
+            }
+            
+            const review = {
+                name: name,
+                rating: currentRating,
+                text: text,
+                date: new Date().toISOString()
+            };
+            
+            let reviews = JSON.parse(localStorage.getItem('siteReviews') || '[]');
+            reviews.unshift(review);
+            localStorage.setItem('siteReviews', JSON.stringify(reviews));
+            
+            // Clear form
+            document.getElementById('reviewName').value = '';
+            document.getElementById('reviewText').value = '';
+            currentRating = 0;
+            setRating(0);
+            
+            alert('Thank you for your review!');
+            loadReviews();
+        }
+
+        function loadReviews() {
+            const reviews = JSON.parse(localStorage.getItem('siteReviews') || '[]');
+            const reviewsList = document.getElementById('reviewsList');
+            
+            if (reviews.length === 0) {
+                reviewsList.innerHTML = '<p style="color: #6b7280;">No reviews yet. Be the first to share your experience!</p>';
+                return;
+            }
+            
+            reviewsList.innerHTML = reviews.map(review => `
+                <div style="border: 1px solid #e5e7eb; border-radius: 0.5rem; padding: 1rem; margin-bottom: 1rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                        <span style="font-weight: 600;">${review.name}</span>
+                        <div style="color: #fbbf24;">
+                            ${'⭐'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}
+                        </div>
+                    </div>
+                    <p style="color: #6b7280; margin-bottom: 0.5rem;">${review.text}</p>
+                    <p style="font-size: 0.75rem; color: #6b7280;">
+                        ${new Date(review.date).toLocaleDateString()}
+                    </p>
+                </div>
+            `).join('');
+        }
+
+        // Contact form
+        function submitContact(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const subject = document.getElementById('contactSubject').value;
+            const message = document.getElementById('contactMessage').value;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:subhanrajput3222@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+            
+            // Open default email client
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            alert('Thank you for your message! Your default email client should open. If not, please email subhanrajput3222@gmail.com directly.');
+            
+            // Reset form
+            document.getElementById('contactForm').reset();
+        }
+
+        // Chatbot functions
+        function openChatbot() {
+            const chatbot = document.getElementById('chatbot');
+            chatbot.classList.add('active');
+            
+            if (chatMessages.length === 0) {
+                addBotMessage('Hello! I am your Smart AI Assistant built by Muhammad Subhan (Age 14). I can help you with questions about Finance, Health, Social Media, and our calculators. What would you like to know?');
+            }
+        }
+
+        function closeChatbot() {
+            document.getElementById('chatbot').classList.remove('active');
+        }
+
+        function sendMessage() {
+            const input = document.getElementById('chatInput');
+            const message = input.value.trim();
+            
+            if (!message) return;
+            
+            addUserMessage(message);
+            input.value = '';
+            
+            setTimeout(() => {
+                const response = getBotResponse(message);
+                addBotMessage(response);
+            }, 500);
+        }
+
+        function handleChatKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+
+        function addUserMessage(message) {
+            chatMessages.push({ sender: 'user', text: message });
+            updateChatDisplay();
+        }
+
+        function addBotMessage(message) {
+            chatMessages.push({ sender: 'bot', text: message });
+            updateChatDisplay();
+        }
+
+        function updateChatDisplay() {
+            const messagesContainer = document.getElementById('chatMessages');
+            messagesContainer.innerHTML = chatMessages.map(msg => `
+                <div class="message ${msg.sender}">
+                    <p>${msg.text}</p>
+                </div>
+            `).join('');
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+
+        function getBotResponse(message) {
+            const lowerMessage = message.toLowerCase();
+            
+            // Get user name if they haven't provided it
+            if (!userName && (lowerMessage.includes('my name is') || lowerMessage.includes("i'm") || lowerMessage.includes("i am"))) {
+                const nameMatch = message.match(/(?:my name is|i'm|i am)\s+(\w+)/i);
+                if (nameMatch) {
+                    userName = nameMatch[1];
+                    return `Nice to meet you, ${userName}! I'm your Smart AI Assistant built by Muhammad Subhan (Age 14). How can I help you today?`;
+                }
+            }
+            
+            // Responses about the creator
+            if (lowerMessage.includes('muhammad') || lowerMessage.includes('subhan') || lowerMessage.includes('creator') || lowerMessage.includes('who made you')) {
+                return `I was built by Muhammad Subhan, a passionate 14-year-old developer and entrepreneur. He created this platform to help people with useful tools and share knowledge about finance, health, and social media. Muhammad believes in using technology to solve real problems and help others succeed.`;
+            }
+            
+            // Responses about tools/calculators
+            if (lowerMessage.includes('calculator') || lowerMessage.includes('tool')) {
+                return `I can help you with our amazing calculators! We have:\n• Age Calculator - Get your exact age in years, months, days, hours, minutes, and seconds\n• BMI Calculator - Check your body mass index and health category\n• Loan/EMI Calculator - Calculate monthly payments with detailed breakdown\n• Username Checker - Check availability on social platforms\n• AdSense Calculator - Estimate your potential earnings\n\nWhich one interests you most?`;
+            }
+            
+            // Finance advice
+            if (lowerMessage.includes('finance') || lowerMessage.includes('money') || lowerMessage.includes('invest') || lowerMessage.includes('saving')) {
+                return `Great question about finance! As a young entrepreneur, I recommend starting with these basics:\n• Build an emergency fund first (even $500 helps)\n• Learn about compound interest - it's magical when you start young\n• Consider index funds for long-term investing\n• Track your spending to understand money habits\n• Take advantage of student discounts everywhere!\n\nWould you like specific advice on any of these topics?`;
+            }
+            
+            // Health advice
+            if (lowerMessage.includes('health') || lowerMessage.includes('exercise') || lowerMessage.includes('nutrition') || lowerMessage.includes('sleep')) {
+                return `Health is so important for success! Here are my top tips:\n• Aim for 8-9 hours of sleep (your brain needs it!)\n• Eat brain foods like blueberries, nuts, and fish\n• Exercise 30 minutes daily - even walking counts\n• Stay hydrated throughout the day\n• Take breaks from screens to rest your eyes\n• Practice stress management techniques\n\nRemember, good health = better academic and life performance!`;
+            }
+            
+            // Social media advice
+            if (lowerMessage.includes('social media') || lowerMessage.includes('instagram') || lowerMessage.includes('content') || lowerMessage.includes('followers')) {
+                return `Social media growth is all about providing value! Here's what works:\n• Find your niche and stick to it\n• Post consistently but prioritize quality\n• Engage genuinely with your community\n• Use relevant hashtags strategically\n• Share your authentic story and journey\n• Collaborate with others in your space\n\nRemember: 1000 engaged followers > 10,000 passive ones. Focus on building real connections!`;
+            }
+            
+            // Blog content generation
+            if (lowerMessage.includes('blog') || lowerMessage.includes('write') || lowerMessage.includes('content')) {
+                return `I'd love to help you with content creation! I can generate 500-word SEO-friendly blog posts on topics like:\n• Personal finance for students\n• Health and wellness tips\n• Social media marketing strategies\n• Study techniques and productivity\n• Technology and web development\n\nJust tell me what topic you'd like me to write about, and I'll create valuable content for you!`;
+            }
+            
+            // Age/teenager specific
+            if (lowerMessage.includes('age') || lowerMessage.includes('14') || lowerMessage.includes('young') || lowerMessage.includes('teenager')) {
+                return `Being 14 and building all this has been an incredible journey! Starting young gives you amazing advantages:\n• More time to learn and experiment\n• Fresh perspective on problems\n• Natural comfort with technology\n• Energy to try new things\n• Time for compound growth (in learning and investing!)\n\nAge is just a number - focus on providing value and solving real problems. What matters is your dedication and willingness to learn!`;
+            }
+            
+            // General help
+            if (lowerMessage.includes('help') || lowerMessage.includes('what can you do')) {
+                return `I'm here to help with everything on this site! I can:\n• Answer questions about our calculators and tools\n• Provide tips on finance, health, and social media\n• Generate blog content on various topics\n• Share insights about web development and entrepreneurship\n• Help you understand how Muhammad Subhan built this platform\n\nWhat would you like to know more about?`;
+            }
+            
+            // Default responses
+            const defaultResponses = [
+                `That's an interesting question${userName ? `, ${userName}` : ''}! I specialize in finance, health, social media, and our calculator tools. Could you be more specific about what you'd like to know?`,
+                `I'd love to help you with that! As Muhammad Subhan's AI assistant, I'm best at discussing our tools, finance tips, health advice, and social media strategies. What specific area interests you?`,
+                `Thanks for asking! I'm designed to help with topics related to our calculators, financial literacy, health tips, and social media growth. What would you like to explore?`
+            ];
+            
+            return defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
+        }
+
+        // Close modals when clicking outside
+        window.onclick = function(event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target === modal) {
+                    modal.classList.remove('active');
+                }
+            });
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            loadBlogs();
+            setRating(0);
+        });
+    </script>
+</body>
+</html>
