@@ -3,12 +3,10 @@
 <head>
     <meta name="google-adsense-account" content="ca-pub-3150350892607652"/>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3150350892607652"
-     crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
     
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-
     <!-- SEO Meta Tags -->
     <title>Free calculators online - Professional Tools & Blog Hub</title>
     <meta name="description" content="Professional calculators, tools, and insightful blogs on Finance, Health, and Social Media by Muhammad Subhan, a 14-year-old developer and content creator.">
@@ -17,10 +15,10 @@
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="Free calculators online - Professional Tools & Blog Hub">
+    <meta property="og:title" content="Muhammad Subhan - Professional Tools & Blog Hub">
     <meta property="og:description" content="Professional calculators, tools, and insightful blogs on Finance, Health, and Social Media by Muhammad Subhan.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://Muhammadsubhan.com">
+    <meta property="og:url" content="https://muhammadsubhan.com">
     <meta property="og:image" content="https://iili.io/KqY3EcG.png">
     
     <!-- Twitter Card Tags -->
@@ -123,27 +121,26 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-      }
+        }
         
         .logo {
-           display: flex;
-           align-items: center;
-           gap: 0.75rem;
-      }
-
-       .logo img {
-          width: 60px;   /* pehle 32px tha, ab 60px */
-          height: 60px;  /* pehle 32px tha, ab 60px */
-          border-radius: 50%;
-          object-fit: cover;
-      }
-
-       .logo span {
-          font-size: 1.5rem; /* thoda bada text bhi ho sakta hai */
-          font-weight: 700;
-          color: #3b82f6;
-      }
-
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .logo img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .logo span {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #3b82f6;
+        }
         
         .nav-menu {
             display: flex;
@@ -943,17 +940,6 @@
             }
         }
     </style>
-    <!-- Structured Data for Site Logo -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Calquro",
-  "url": "https://www.calquro.com",
-  "logo": "https://www.calquro.com/favicon.ico"
-}
-</script>
-
 </head>
 <body>
     <!-- Navigation -->
@@ -978,8 +964,8 @@
             </button>
             <div class="mobile-menu" id="mobileMenu">
                 <button class="nav-link" onclick="scrollToSection('home')">Home</button>
-                <button class="nav-link" onclick="openTools()">Tools</button>
-                <button class="nav-link" onclick="openBlog()">Blog</button>
+                <button class="nav-link" onclick="scrollToSection('tools')">Tools</button>
+                <button class="nav-link" onclick="scrollToSection('blog')">Blog</button>
                 <button class="nav-link" onclick="scrollToSection('about')">About</button>
                 <button class="nav-link" onclick="scrollToSection('contact')">Contact</button>
                 <button class="nav-link" onclick="openChatbot()">
@@ -1159,8 +1145,8 @@
         <div class="footer-content">
             <div class="footer-section">
                 <div class="footer-logo">
-                    <img src="https://iili.io/KqY3EcG.png" alt="Calquro Logo">
-                    <span>Calquro</span>
+                    <img src="https://iili.io/KqY3EcG.png" alt="Muhammad Subhan Logo">
+                    <span>Muhammad Subhan</span>
                 </div>
                 <p>Age 14 • Passionate Developer & Content Creator building tools that make a difference.</p>
                 <img src="https://iili.io/KqYHfqb.jpg" alt="Muhammad Subhan" class="footer-avatar">
@@ -1168,8 +1154,8 @@
             <div class="footer-section">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><button onclick="openTools()">Tools</button>
-                    <li><button onclick="openBlog()">Blog</button>
+                    <li><button onclick="scrollToSection('tools')">Tools</button></li>
+                    <li><button onclick="scrollToSection('blog')">Blog</button></li>
                     <li><button onclick="scrollToSection('about')">About</button></li>
                     <li><button onclick="scrollToSection('contact')">Contact</button></li>
                 </ul>
@@ -1180,7 +1166,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Muhammad Subhan. All rights reserved. Created with passion at age 14.</p>
+            <p>&copy; 2024 Muhammad Subhan. All rights reserved. Created with passion at age 14.</p>
         </div>
     </footer>
 
@@ -1283,7 +1269,7 @@
         </div>
     </div>
 
-    </script>
+    <script>
         // Blog posts data
         const blogPosts = [
             {
@@ -1366,7 +1352,7 @@ Analyze your performance regularly. Use platform analytics to understand what co
 Stay authentic to your personality and values. Don't try to copy others or follow every trend. Authenticity builds stronger connections and helps you stand out in a crowded space.
 
 Be patient and persistent. Growing a meaningful social media presence takes time. Focus on steady growth and genuine engagement rather than quick fixes or buying followers. Quality followers who are truly interested in your content are worth far more than large numbers of inactive accounts.`
-            },
+            }
             {
                 id: 4,
                 title: "Digital Detox: How Teens Can Improve Focus and Mental Health",
@@ -2180,7 +2166,6 @@ By carefully selecting your domain and hosting provider, you lay a strong founda
     </script>
 </body>
 </html>
-
 
 
 
