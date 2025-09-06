@@ -6,2029 +6,2006 @@
      crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    
-    <!-- SEO Meta Tags -->
-    <title>Free calculators online - Professional Tools & Blog Hub</title>
-    <meta name="description" content="Professional calculators, tools, and insightful blogs on Finance, Health, and Social Media by Muhammad Subhan, a 14-year-old developer and content creator.">
-    <meta name="keywords" content="age calculator, BMI calculator, loan calculator, social media tools, finance blog, health tips, Muhammad Subhan">
+    <title>Calquro.com - Professional Tools & Web Development by Muhammad Subhan</title>
+    <meta name="description" content="Professional web development services and useful online calculators including BMI, EMI, Currency Converter and more by Muhammad Subhan - Web Developer & AI Enthusiast">
+    <meta name="keywords" content="web development, calculators, tools, BMI calculator, currency converter, Muhammad Subhan, AI enthusiast">
     <meta name="author" content="Muhammad Subhan">
-    <meta name="robots" content="index, follow">
     
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Muhammad Subhan - Professional Tools & Blog Hub">
-    <meta property="og:description" content="Professional calculators, tools, and insightful blogs on Finance, Health, and Social Media by Muhammad Subhan.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Calquro.com - Professional Tools & Web Development">
+    <meta property="og:description" content="Professional web development services and useful online calculators by Muhammad Subhan">
+    <meta property="og:image" content="https://iili.io/KnXmbhG.png">
+    <meta property="og:url" content="https://calquro.com">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://muhammadsubhan.com">
-    <meta property="og:image" content="https://iili.io/KqY3EcG.png">
     
-    <!-- Twitter Card Tags -->
+    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Muhammad Subhan - Professional Tools & Blog Hub">
-    <meta name="twitter:description" content="Professional calculators, tools, and insightful blogs by a 14-year-old developer.">
-    <meta name="twitter:image" content="https://iili.io/KqY3EcG.png">
+    <meta name="twitter:title" content="Calquro.com - Professional Tools & Web Development">
+    <meta name="twitter:description" content="Professional web development services and useful online calculators by Muhammad Subhan">
+    <meta name="twitter:image" content="https://iili.io/KnXmbhG.png">
     
-    <!-- Schema.org Structured Data -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Calquro.com",
+      "url": "https://calquro.com",
+      "description": "Professional web development services and useful online calculators",
+      "author": {
         "@type": "Person",
         "name": "Muhammad Subhan",
-        "age": 14,
-        "jobTitle": "Developer & Content Creator",
-        "image": "https://iili.io/KqYHfqb.jpg",
-        "url": "https://muhammadsubhan.com",
-        "sameAs": [],
-        "knowsAbout": ["Web Development", "Finance", "Health", "Social Media"]
+        "jobTitle": "Web Developer & AI Enthusiast",
+        "image": "https://iili.io/KnXb8il.jpg"
+      }
     }
     </script>
     
-    <!-- Google Fonts -->
+    <link rel="icon" type="image/x-icon" href="https://iili.io/KnXmbhG.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <style>
+        /* CSS Variables */
+        :root {
+            --background: hsl(210, 11%, 96%);
+            --foreground: hsl(240, 10%, 3.9%);
+            --card: hsl(0, 0%, 100%);
+            --card-foreground: hsl(240, 10%, 3.9%);
+            --primary: hsl(217, 91%, 60%);
+            --primary-foreground: hsl(0, 0%, 98%);
+            --secondary: hsl(210, 40%, 96%);
+            --secondary-foreground: hsl(222, 47%, 11%);
+            --muted: hsl(214, 32%, 91%);
+            --muted-foreground: hsl(215, 16%, 47%);
+            --accent: hsl(142, 86%, 28%);
+            --accent-foreground: hsl(0, 0%, 98%);
+            --border: hsl(214, 32%, 91%);
+            --input: hsl(0, 0%, 100%);
+            --ring: hsl(217, 91%, 60%);
+            --radius: 0.5rem;
+            --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        /* Base Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: var(--font-sans);
+            background-color: var(--background);
+            color: var(--foreground);
             line-height: 1.6;
-            color: #1f2937;
-            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
-        
-        /* Gradient Background */
-        .gradient-bg {
-            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 1rem;
         }
-        
-        /* Glass Effect */
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.25);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
+
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 2rem; }
+        h3 { font-size: 1.5rem; }
+
+        @media (min-width: 768px) {
+            h1 { font-size: 3.75rem; }
+            h2 { font-size: 2.5rem; }
+            h3 { font-size: 1.875rem; }
         }
-        
-        /* Hover Effects */
-        .hover-lift {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        /* Professional Backgrounds */
+        .hero-bg {
+            background: linear-gradient(135deg, hsl(217, 91%, 97%) 0%, hsl(210, 40%, 98%) 100%);
         }
-        
-        .hover-lift:hover {
+
+        .professional-gradient {
+            background: linear-gradient(135deg, hsl(217, 91%, 60%) 0%, hsl(142, 86%, 28%) 100%);
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }
-        
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+
+        /* Button Styles */
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius);
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
         }
-        
-        @keyframes slideUp {
-            from { transform: translateY(20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--primary-foreground);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
-        
-        .animate-fade-in {
-            animation: fadeIn 0.5s ease-in-out;
+
+        .btn-primary:hover {
+            background-color: hsl(217, 91%, 50%);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transform: translateY(-2px);
         }
-        
-        .animate-slide-up {
-            animation: slideUp 0.3s ease-out;
+
+        .btn-secondary {
+            background-color: var(--secondary);
+            color: var(--secondary-foreground);
+            border: 1px solid var(--border);
         }
-        
+
+        .btn-secondary:hover {
+            background-color: hsl(210, 40%, 90%);
+            transform: translateY(-2px);
+        }
+
+        /* Input Styles */
+        .input {
+            padding: 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            background-color: var(--input);
+            color: var(--foreground);
+            font-size: 1rem;
+            width: 100%;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .input:focus {
+            outline: 2px solid var(--primary);
+            outline-offset: 2px;
+            border-color: var(--primary);
+        }
+
         /* Navigation */
         .navbar {
-            position: fixed;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
             top: 0;
-            width: 100%;
-            z-index: 1000;
-            padding: 1rem 0;
+            z-index: 50;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
-        
+
         .nav-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 1rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            height: 4rem;
         }
-        
-       .logo {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
 
-.logo img {
-    width: 60px;   
-    height: 60px;  
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.logo span {
-    font-size: 1.5rem; 
-    font-weight: 700;
-    color: #3b82f6;
-}
-
-        
-        .nav-menu {
+        .logo {
             display: flex;
             align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: var(--foreground);
+        }
+
+        .logo img {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .logo-text {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: none;
             gap: 2rem;
         }
-        
+
+        @media (min-width: 768px) {
+            .nav-links {
+                display: flex;
+            }
+        }
+
         .nav-link {
-            color: white;
             text-decoration: none;
-            font-weight: 500;
+            color: var(--foreground);
+            transition: color 0.2s ease-in-out;
             padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            transition: color 0.3s ease;
-            cursor: pointer;
-            background: none;
-            border: none;
-            font-family: inherit;
-            font-size: inherit;
+            border-radius: var(--radius);
         }
-        
-        .nav-link:hover {
-            color: #fde047;
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--primary);
+            background-color: hsl(217, 91%, 97%);
         }
-        
-        .chat-btn {
-            background: #3b82f6;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            text-decoration: none;
-            font-weight: 500;
-            transition: opacity 0.3s ease;
-            border: none;
-            cursor: pointer;
-            font-family: inherit;
-        }
-        
-        .chat-btn:hover {
-            opacity: 0.9;
-        }
-        
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-        
+
+        /* Mobile Menu */
         .mobile-menu {
+            display: block;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media (min-width: 768px) {
+            .mobile-menu {
+                display: none;
+            }
+        }
+
+        .mobile-nav {
             display: none;
             position: absolute;
             top: 100%;
             left: 0;
             right: 0;
-            background: rgba(0, 0, 0, 0.9);
+            background: white;
+            border-bottom: 1px solid var(--border);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
             padding: 1rem;
-            flex-direction: column;
-            gap: 0.5rem;
         }
-        
-        .mobile-menu.active {
-            display: flex;
+
+        .mobile-nav.show {
+            display: block;
         }
-        
-        /* Hero Section */
-        .hero {
-            padding: 6rem 2rem 4rem;
-            text-align: center;
-            color: white;
-        }
-        
-        .hero-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-        
-        .hero-content h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-        }
-        
-        .hero-content .highlight {
-            color: #fde047;
-        }
-        
-        .hero-content p {
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-        
-        .hero-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        .btn {
-            padding: 0.75rem 2rem;
-            border-radius: 0.5rem;
-            font-weight: 600;
+
+        .mobile-nav a {
+            display: block;
+            padding: 0.75rem;
             text-decoration: none;
-            border: none;
-            cursor: pointer;
-            font-family: inherit;
-            font-size: 1rem;
-            transition: all 0.3s ease;
+            color: var(--foreground);
+            border-radius: var(--radius);
+            margin-bottom: 0.5rem;
         }
-        
-        .btn-primary {
-            background: white;
-            color: #3b82f6;
+
+        .mobile-nav a:hover, .mobile-nav a.active {
+            background-color: hsl(217, 91%, 97%);
+            color: var(--primary);
         }
-        
-        .btn-primary:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        }
-        
-        .btn-outline {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
-        }
-        
-        .btn-outline:hover {
-            background: white;
-            color: #3b82f6;
-        }
-        
-        .hero-image img {
-            width: 16rem;
-            height: 16rem;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid white;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-        }
-        
-        .hero-info h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-top: 1rem;
-        }
-        
-        .hero-info p {
-            opacity: 0.8;
-            font-size: 1rem;
-        }
-        
-        /* Sections */
-        .section {
-            padding: 4rem 2rem;
-        }
-        
-        .section-alt {
-            background: #f9fafb;
-        }
-        
+
+        /* Layout */
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 1rem;
         }
-        
-        .section-header {
+
+        .section {
+            padding: 5rem 0;
+        }
+
+        .page {
+            display: none;
+            min-height: calc(100vh - 4rem);
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        .grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .grid-2 {
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 1024px) {
+            .grid-2 {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .grid-3 {
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .grid-3 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .grid-3 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Hero Section */
+        .hero {
             text-align: center;
-            margin-bottom: 3rem;
         }
-        
-        .section-header h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: #1f2937;
+
+        @media (min-width: 1024px) {
+            .hero {
+                text-align: left;
+            }
         }
-        
-        .section-header p {
-            font-size: 1.125rem;
-            color: #6b7280;
-            max-width: 600px;
-            margin: 0 auto;
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            position: relative;
         }
-        
+
+        .hero-img {
+            width: 20rem;
+            height: 20rem;
+            object-fit: cover;
+            border-radius: 1rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .hero-badge {
+            position: absolute;
+            bottom: -1rem;
+            right: -1rem;
+            background-color: var(--primary);
+            color: var(--primary-foreground);
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin: 2rem 0;
+        }
+
+        .skill-tag {
+            padding: 0.5rem 0.75rem;
+            background-color: hsl(217, 91%, 97%);
+            color: var(--primary);
+            border-radius: 9999px;
+            font-size: 0.875rem;
+        }
+
+        /* Button Group */
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
         /* Tools Grid */
         .tools-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
         }
-        
+
+        @media (min-width: 768px) {
+            .tools-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .tools-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
         .tool-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 1rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            background-color: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        
-        .tool-card .icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        
-        .tool-card .icon.primary { color: #3b82f6; }
-        .tool-card .icon.secondary { color: #8b5cf6; }
-        .tool-card .icon.success { color: #10b981; }
-        .tool-card .icon.warning { color: #f59e0b; }
-        .tool-card .icon.danger { color: #ef4444; }
-        .tool-card .icon.info { color: #06b6d4; }
-        
-        .tool-card h3 {
-            font-size: 1.25rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: #1f2937;
-        }
-        
-        .tool-card p {
-            color: #6b7280;
-            margin-bottom: 1.5rem;
-        }
-        
-        .tool-card .btn {
-            width: auto;
-            display: inline-block;
-        }
-        
-        /* Blog Grid */
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        
-        .blog-card {
-            background: white;
-            border-radius: 1rem;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-        
-        .blog-card:hover {
+
+        .tool-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             transform: translateY(-2px);
         }
-        
-        .blog-card img {
+
+        .tool-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .tool-icon {
+            width: 2rem;
+            height: 2rem;
+            color: var(--primary);
+        }
+
+        .tool-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .tool-description {
+            color: var(--muted-foreground);
+            margin-bottom: 1rem;
+        }
+
+        .tool-inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .tool-result {
+            padding: 0.75rem;
+            background-color: hsl(142, 86%, 97%);
+            border-radius: var(--radius);
+            margin-top: 1rem;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Blog Styles */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .blog-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .blog-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .blog-card {
+            background-color: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .blog-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .blog-image {
             width: 100%;
             height: 200px;
             object-fit: cover;
         }
-        
-        .blog-card-content {
+
+        .blog-content {
             padding: 1.5rem;
         }
-        
+
         .blog-category {
-            background: #3b82f6;
-            color: white;
+            background-color: hsl(217, 91%, 97%);
+            color: var(--primary);
             padding: 0.25rem 0.75rem;
-            border-radius: 1rem;
-            font-size: 0.875rem;
-            display: inline-block;
-            margin-bottom: 1rem;
-        }
-        
-        .blog-card h3 {
-            font-size: 1.25rem;
-            font-weight: 700;
+            border-radius: 9999px;
+            font-size: 0.75rem;
             margin-bottom: 0.75rem;
-            color: #1f2937;
+            display: inline-block;
         }
-        
-        .blog-card p {
-            color: #6b7280;
-            margin-bottom: 1rem;
-        }
-        
-        .blog-author {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 0.875rem;
-            color: #6b7280;
-        }
-        
-        .blog-author img {
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        
-        /* About Section */
-        .about-content {
-            background: white;
-            border-radius: 1.5rem;
-            padding: 3rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-        
-        .about-image img {
-            width: 12rem;
-            height: 12rem;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-            margin: 0 auto;
-            display: block;
-        }
-        
-        .about-text h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: #1f2937;
-        }
-        
-        .about-text p {
-            color: #6b7280;
-            margin-bottom: 1rem;
-        }
-        
-        .tags {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-        
-        .tag {
-            padding: 0.25rem 0.75rem;
-            border-radius: 1rem;
-            font-size: 0.875rem;
-            font-weight: 500;
-        }
-        
-        .tag.primary { background: #3b82f6; color: white; }
-        .tag.secondary { background: #8b5cf6; color: white; }
-        .tag.success { background: #10b981; color: white; }
-        
-        /* Contact Form */
-        .contact-form {
-            background: white;
-            border-radius: 1.5rem;
-            padding: 3rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .form-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-        
-        .form-group label {
-            display: block;
-            font-weight: 500;
-            margin-bottom: 0.5rem;
-            color: #1f2937;
-        }
-        
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.75rem 1rem;
-            border: 1px solid #d1d5db;
-            border-radius: 0.5rem;
-            font-family: inherit;
-            transition: border-color 0.3s ease;
-        }
-        
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #3b82f6;
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-        }
-        
-        .form-submit {
-            text-align: center;
-        }
-        
-        .form-submit p {
-            font-size: 0.875rem;
-            color: #6b7280;
-            margin-top: 0.5rem;
-        }
-        
-        .form-submit a {
-            color: #3b82f6;
-            text-decoration: none;
-        }
-        
-        .form-submit a:hover {
-            text-decoration: underline;
-        }
-        
-        /* Support Section */
-        .support-section {
-            background: #f9fafb;
-            padding: 3rem 2rem;
-            text-align: center;
-        }
-        
-        .support-section h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: #1f2937;
-        }
-        
-        .support-section p {
-            color: #6b7280;
-            margin-bottom: 1rem;
-        }
-        
-        .support-section a {
-            color: #3b82f6;
-            font-size: 1.125rem;
+
+        .blog-title {
+            font-size: 1.25rem;
             font-weight: 600;
-            text-decoration: none;
+            margin-bottom: 0.5rem;
         }
-        
-        .support-section a:hover {
-            text-decoration: underline;
+
+        .blog-excerpt {
+            color: var(--muted-foreground);
+            margin-bottom: 1rem;
         }
-        
+
+        .blog-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.875rem;
+            color: var(--muted-foreground);
+        }
+
         /* Footer */
         .footer {
-            background: #1f2937;
             color: white;
-            padding: 3rem 2rem;
+            padding: 3rem 0;
         }
-        
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
+
+        .footer-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: 1fr;
             gap: 2rem;
         }
-        
-        .footer-section h4 {
-            font-size: 1.125rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
+
+        @media (min-width: 768px) {
+            .footer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
         }
-        
-        .footer-section p {
-            color: #d1d5db;
-            margin-bottom: 1rem;
-        }
-        
-        .footer-section ul {
-            list-style: none;
-        }
-        
-        .footer-section ul li {
-            margin-bottom: 0.5rem;
-        }
-        
-        .footer-section ul li button {
-            background: none;
-            border: none;
-            color: #d1d5db;
-            cursor: pointer;
-            font-family: inherit;
-            padding: 0;
-            text-align: left;
-        }
-        
-        .footer-section ul li button:hover {
-            color: white;
-        }
-        
-        .footer-logo {
+
+        .footer-brand {
             display: flex;
             align-items: center;
             gap: 0.75rem;
             margin-bottom: 1rem;
         }
-        
-        .footer-logo img {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            object-fit: cover;
+
+        .footer-brand img {
+            width: 2rem;
+            height: 2rem;
+            filter: brightness(0) invert(1);
         }
-        
-        .footer-avatar {
-            width: 4rem;
-            height: 4rem;
-            border-radius: 50%;
-            object-fit: cover;
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
         }
-        
+
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+            cursor: pointer;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
         .footer-bottom {
-            border-top: 1px solid #374151;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
             margin-top: 2rem;
             padding-top: 2rem;
             text-align: center;
-            color: #d1d5db;
+            color: rgba(255, 255, 255, 0.7);
         }
-        
-        /* Modals */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 2000;
-            align-items: center;
-            justify-content: center;
-            padding: 1rem;
+
+        /* Utilities */
+        .text-center { text-align: center; }
+        .text-primary { color: var(--primary); }
+        .text-muted { color: var(--muted-foreground); }
+        .mb-4 { margin-bottom: 1rem; }
+        .mb-8 { margin-bottom: 2rem; }
+        .mb-12 { margin-bottom: 3rem; }
+        .hidden { display: none; }
+
+        /* Animation */
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
         }
-        
-        .modal.active {
-            display: flex;
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-        
-        .modal-content {
-            background: white;
-            border-radius: 1rem;
-            padding: 2rem;
-            max-width: 600px;
-            width: 100%;
-            max-height: 90vh;
-            overflow-y: auto;
+
+        /* Responsive */
+        @media (min-width: 640px) {
+            .container { padding: 0 1.5rem; }
         }
-        
-        .modal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1.5rem;
-        }
-        
-        .modal-header h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #1f2937;
-        }
-        
-        .modal-close {
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: #6b7280;
-            cursor: pointer;
-            padding: 0;
-        }
-        
-        .modal-close:hover {
-            color: #1f2937;
-        }
-        
-        .result-box {
-            background: #f9fafb;
-            padding: 1rem;
-            border-radius: 0.5rem;
-            margin-top: 1rem;
-        }
-        
-        .result-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
-        
-        .result-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 0.5rem 0;
-        }
-        
-        .result-item.border-top {
-            border-top: 1px solid #d1d5db;
-            padding-top: 1rem;
-        }
-        
-        /* Chatbot */
-        .chatbot {
-            position: fixed;
-            bottom: 1rem;
-            right: 1rem;
-            width: 20rem;
-            background: white;
-            border-radius: 1rem;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-            z-index: 2000;
-            display: none;
-        }
-        
-        .chatbot.active {
-            display: block;
-        }
-        
-        .chatbot-header {
-            background: #3b82f6;
-            color: white;
-            padding: 1rem;
-            border-radius: 1rem 1rem 0 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .chatbot-info {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-        
-        .chatbot-avatar {
-            width: 2rem;
-            height: 2rem;
-            background: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #3b82f6;
-        }
-        
-        .chatbot-details h4 {
-            font-weight: 600;
-        }
-        
-        .chatbot-details p {
-            font-size: 0.75rem;
-            opacity: 0.9;
-        }
-        
-        .chatbot-close {
-            background: none;
-            border: none;
-            color: white;
-            cursor: pointer;
-            padding: 0;
-        }
-        
-        .chatbot-messages {
-            height: 16rem;
-            overflow-y: auto;
-            padding: 1rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
-        }
-        
-        .message {
-            padding: 0.75rem;
-            border-radius: 0.5rem;
-            max-width: 80%;
-        }
-        
-        .message.user {
-            background: #3b82f6;
-            color: white;
-            align-self: flex-end;
-        }
-        
-        .message.bot {
-            background: #f3f4f6;
-            color: #1f2937;
-            align-self: flex-start;
-        }
-        
-        .message p {
-            margin: 0;
-            font-size: 0.875rem;
-            white-space: pre-line;
-        }
-        
-        .chatbot-input {
-            padding: 1rem;
-            border-top: 1px solid #e5e7eb;
-            display: flex;
-            gap: 0.5rem;
-        }
-        
-        .chatbot-input input {
-            flex: 1;
-            padding: 0.5rem 0.75rem;
-            border: 1px solid #d1d5db;
-            border-radius: 0.5rem;
-            font-size: 0.875rem;
-        }
-        
-        .chatbot-input button {
-            background: #3b82f6;
-            color: white;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            cursor: pointer;
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none;
-            }
-            
-            .mobile-menu-btn {
-                display: block;
-            }
-            
-            .hero-container {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-            
-            .hero-content h1 {
-                font-size: 2rem;
-            }
-            
-            .hero-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .hero-buttons .btn {
-                width: 100%;
-                max-width: 300px;
-            }
-            
-            .about-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-            
-            .form-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
-            
-            .chatbot {
-                width: calc(100vw - 2rem);
-                left: 1rem;
-                right: 1rem;
-            }
-            
-            .modal-content {
-                margin: 1rem;
-                width: calc(100% - 2rem);
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .hero {
-                padding: 4rem 1rem 2rem;
-            }
-            
-            .section {
-                padding: 3rem 1rem;
-            }
-            
-            .section-header h2 {
-                font-size: 2rem;
-            }
-            
-            .hero-image img {
-                width: 12rem;
-                height: 12rem;
-            }
-            
-            .tools-grid,
-            .blog-grid {
-                grid-template-columns: 1fr;
-            }
+
+        @media (min-width: 1024px) {
+            .container { padding: 0 2rem; }
         }
     </style>
-    <!-- Structured Data for Site Logo -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Calquro",
-  "url": "https://www.calquro.com",
-  "logo": "https://freeimage.host/i/KCSnlTv"
-}
-</script>
-
 </head>
+
 <body>
     <!-- Navigation -->
-    <nav class="navbar glass-effect">
+    <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">
-                <img src="https://iili.io/KqY3EcG.png" alt="Calquro Logo">
-                <span>Calquro</span>
+            <a href="#" class="logo" onclick="showPage('home')">
+                <img src="https://iili.io/KnXmbhG.png" alt="Calquro Logo">
+                <span class="logo-text">Calquro.com</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="#" class="nav-link" data-page="home" onclick="showPage('home')">Home</a>
+                <a href="#" class="nav-link" data-page="tools" onclick="showPage('tools')">Tools</a>
+                <a href="#" class="nav-link" data-page="ai" onclick="showPage('ai')">Smart AI</a>
+                <a href="#" class="nav-link" data-page="blog" onclick="showPage('blog')">Blog</a>
+                <a href="#" class="nav-link" data-page="about" onclick="showPage('about')">About</a>
+                <a href="#" class="nav-link" data-page="contact" onclick="showPage('contact')">Contact</a>
             </div>
-            <div class="nav-menu">
-                <button class="nav-link" onclick="scrollToSection('home')">Home</button>
-                <button class="nav-link" onclick="scrollToSection('tools')">Tools</button>
-                <button class="nav-link" onclick="scrollToSection('blog')">Blog</button>
-                <button class="nav-link" onclick="scrollToSection('about')">About</button>
-                <button class="nav-link" onclick="scrollToSection('contact')">Contact</button>
-                <button class="chat-btn" onclick="openChatbot()">
-                    <i class="fas fa-robot"></i> AI Chat
-                </button>
-            </div>
-            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
-                <i class="fas fa-bars"></i>
+            
+            <button class="mobile-menu" onclick="toggleMobileMenu()">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
             </button>
-            <div class="mobile-menu" id="mobileMenu">
-                <button class="nav-link" onclick="scrollToSection('home')">Home</button>
-                <button class="nav-link" onclick="scrollToSection('tools')">Tools</button>
-                <button class="nav-link" onclick="scrollToSection('blog')">Blog</button>
-                <button class="nav-link" onclick="scrollToSection('about')">About</button>
-                <button class="nav-link" onclick="scrollToSection('contact')">Contact</button>
-                <button class="nav-link" onclick="openChatbot()">
-                    <i class="fas fa-robot"></i> AI Chat
-                </button>
+            
+            <div class="mobile-nav" id="mobileNav">
+                <a href="#" data-page="home" onclick="showPage('home'); toggleMobileMenu()">Home</a>
+                <a href="#" data-page="tools" onclick="showPage('tools'); toggleMobileMenu()">Tools</a>
+                <a href="#" data-page="ai" onclick="showPage('ai'); toggleMobileMenu()">Smart AI</a>
+                <a href="#" data-page="blog" onclick="showPage('blog'); toggleMobileMenu()">Blog</a>
+                <a href="#" data-page="about" onclick="showPage('about'); toggleMobileMenu()">About</a>
+                <a href="#" data-page="contact" onclick="showPage('contact'); toggleMobileMenu()">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero gradient-bg">
-        <div class="hero-container animate-fade-in">
-            <div class="hero-content">
-                <h1>Professional Tools & <span class="highlight">Insights</span></h1>
-                <p>Discover powerful calculators, insightful blogs, and innovative tools created by Muhammad Subhan, a passionate 14-year-old developer.</p>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary" onclick="scrollToSection('tools')">Explore Tools</button>
-                    <button class="btn btn-outline" onclick="scrollToSection('blog')">Read Blog</button>
-                </div>
-            </div>
-            <div class="hero-image animate-slide-up">
-                <img src="https://iili.io/KqYHfqb.jpg" alt="Muhammad Subhan - 14 year old developer">
-                <div class="hero-info">
-                    <h3>Muhammad Subhan</h3>
-                    <p>Age 14 • Developer & Creator</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tools Section -->
-    <section id="tools" class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <h2>Professional Tools</h2>
-                <p>Powerful calculators and utilities to help you make informed decisions</p>
-            </div>
-            <div class="tools-grid">
-                <div class="tool-card hover-lift">
-                    <div class="icon primary">
-                        <i class="fas fa-calendar-alt"></i>
-                    </div>
-                    <h3>Age Calculator</h3>
-                    <p>Calculate your exact age in years, months, days, hours, minutes, and seconds.</p>
-                    <button class="btn btn-primary" onclick="openCalculator('age')">Open Calculator</button>
-                </div>
-                <div class="tool-card hover-lift">
-                    <div class="icon secondary">
-                        <i class="fas fa-weight"></i>
-                    </div>
-                    <h3>BMI Calculator</h3>
-                    <p>Calculate your Body Mass Index and get your health category classification.</p>
-                    <button class="btn" style="background: #8b5cf6; color: white;" onclick="openCalculator('bmi')">Open Calculator</button>
-                </div>
-                <div class="tool-card hover-lift">
-                    <div class="icon success">
-                        <i class="fas fa-calculator"></i>
-                    </div>
-                    <h3>Loan/EMI Calculator</h3>
-                    <p>Calculate your loan EMI with detailed payment breakdown and amortization.</p>
-                    <button class="btn" style="background: #10b981; color: white;" onclick="openCalculator('loan')">Open Calculator</button>
-                </div>
-                <div class="tool-card hover-lift">
-                    <div class="icon info">
-                        <i class="fas fa-user-check"></i>
-                    </div>
-                    <h3>Username Checker</h3>
-                    <p>Check username availability across Facebook, Instagram, Twitter, and YouTube.</p>
-                    <button class="btn" style="background: #06b6d4; color: white;" onclick="openCalculator('username')">Check Username</button>
-                </div>
-                <div class="tool-card hover-lift">
-                    <div class="icon warning">
-                        <i class="fas fa-dollar-sign"></i>
-                    </div>
-                    <h3>AdSense Calculator</h3>
-                    <p>Estimate your Google AdSense earnings based on traffic and eCPM rates.</p>
-                    <button class="btn" style="background: #f59e0b; color: white;" onclick="openCalculator('adsense')">Calculate Earnings</button>
-                </div>
-                <div class="tool-card hover-lift">
-                    <div class="icon danger">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>Reviews & Ratings</h3>
-                    <p>Share your experience and read what others say about our tools.</p>
-                    <button class="btn" style="background: #ef4444; color: white;" onclick="openReviews()">View Reviews</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="blog" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Latest Blog Posts</h2>
-                <p>Insights on Finance, Health, and Social Media from a young entrepreneur's perspective</p>
-            </div>
-            <div class="blog-grid" id="blogGrid">
-                <!-- Blog posts will be loaded here by JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <h2>About Muhammad Subhan</h2>
-            </div>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="https://iili.io/KqYHfqb.jpg" alt="Muhammad Subhan">
-                </div>
-                <div class="about-text">
-                    <h3>Hello, I'm Muhammad Subhan!</h3>
-                    <p>At just 14 years old, I'm passionate about creating useful tools and sharing knowledge through technology. I specialize in web development, financial literacy, health awareness, and social media strategies.</p>
-                    <p>This platform represents my journey in combining technical skills with practical problem-solving. Each tool and blog post is crafted with care to provide real value to users.</p>
-                    <div class="tags">
-                        <span class="tag primary">Age 14</span>
-                        <span class="tag secondary">Developer</span>
-                        <span class="tag success">Creator</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Get In Touch</h2>
-                <p>Have questions or suggestions? I'd love to hear from you!</p>
-            </div>
-            <div class="contact-form">
-                <form id="contactForm" onsubmit="submitContact(event)">
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label>Name</label>
-                            <input type="text" id="contactName" required>
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <section class="section hero-bg">
+            <div class="container">
+                <div class="grid grid-2 fade-in" style="align-items: center;">
+                    <div class="hero">
+                        <h1>Hi, I'm <span class="text-primary">Muhammad Subhan</span></h1>
+                        <h2 class="text-muted">Web Developer & AI Enthusiast</h2>
+                        <p class="text-muted mb-8">
+                            Passionate web developer specializing in HTML, CSS, JavaScript, SEO optimization, and AI integration. 
+                            I create modern, responsive websites and useful online tools to help solve everyday problems.
+                        </p>
+                        <div class="skills">
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">SEO</span>
+                            <span class="skill-tag">AI Integration</span>
+                            <span class="skill-tag">Responsive Design</span>
                         </div>
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" id="contactEmail" required>
+                        <div class="btn-group">
+                            <button class="btn btn-primary" onclick="showPage('tools')">Explore Tools</button>
+                            <button class="btn btn-secondary" onclick="showPage('contact')">Get In Touch</button>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label>Subject</label>
-                        <input type="text" id="contactSubject" required>
+                    <div class="hero-image">
+                        <img src="https://iili.io/KnXb8il.jpg" alt="Muhammad Subhan - Web Developer" class="hero-img">
+                        <div class="hero-badge">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <polyline points="16,18 22,12 16,6"></polyline>
+                                <polyline points="8,6 2,12 8,18"></polyline>
+                            </svg>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label>Message</label>
-                        <textarea id="contactMessage" rows="5" required></textarea>
-                    </div>
-                    <div class="form-submit">
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                        <p>You can also contact via Gmail: <a href="mailto:subhanrajput3222@gmail.com">subhanrajput3222@gmail.com</a></p>
-                    </div>
-                </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Support Section -->
-    <div class="support-section">
-        <div class="container">
-            <h3>Need Support?</h3>
-            <p>For technical support or any questions, reach out directly:</p>
-            <a href="mailto:subhanrajput3222@gmail.com">
-                <i class="fas fa-envelope"></i> subhanrajput3222@gmail.com
-            </a>
-        </div>
+        <!-- Features Section -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center mb-12">
+                    <h2>Why Choose Calquro.com?</h2>
+                    <p class="text-muted">Professional tools and services for modern web needs</p>
+                </div>
+                
+                <div class="grid grid-3">
+                    <div class="card">
+                        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--primary);">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                            <h3>10+ Professional Tools</h3>
+                        </div>
+                        <p class="text-muted">Free online calculators including BMI, EMI, Currency Converter, Password Generator and more.</p>
+                    </div>
+
+                    <div class="card">
+                        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--primary);">
+                                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                            </svg>
+                            <h3>Smart AI Assistant</h3>
+                        </div>
+                        <p class="text-muted">Get instant help and information about website features, tools, and services.</p>
+                    </div>
+
+                    <div class="card">
+                        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--primary);">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            <h3>Professional Blog</h3>
+                        </div>
+                        <p class="text-muted">Informative articles on web development, technology, finance, health, and AI.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Tools Page -->
+    <div id="tools" class="page">
+        <section class="section">
+            <div class="container">
+                <div class="text-center mb-12 fade-in">
+                    <h2>Professional Tools</h2>
+                    <p class="text-muted">Free online calculators and tools for everyday use</p>
+                </div>
+                
+                <div class="tools-grid fade-in">
+                    <!-- Age Calculator -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <svg class="tool-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            <h3 class="tool-title">Age Calculator</h3>
+                        </div>
+                        <p class="tool-description">Calculate your exact age in years, months, and days</p>
+                        <div class="tool-inputs">
+                            <input type="date" class="input" id="birthdate" placeholder="Select your birth date">
+                            <button class="btn btn-primary" onclick="calculateAge()">Calculate Age</button>
+                        </div>
+                        <div id="ageResult" class="tool-result hidden"></div>
+                    </div>
+
+                    <!-- BMI Calculator -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <svg class="tool-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="m22 12-4-4-4 4-4-4-4 4"></path>
+                                <path d="M2 19h20"></path>
+                            </svg>
+                            <h3 class="tool-title">BMI Calculator</h3>
+                        </div>
+                        <p class="tool-description">Calculate your Body Mass Index and health status</p>
+                        <div class="tool-inputs">
+                            <input type="number" class="input" id="height" placeholder="Height (cm)">
+                            <input type="number" class="input" id="weight" placeholder="Weight (kg)">
+                            <button class="btn btn-primary" onclick="calculateBMI()">Calculate BMI</button>
+                        </div>
+                        <div id="bmiResult" class="tool-result hidden"></div>
+                    </div>
+
+                    <!-- Loan Calculator -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <svg class="tool-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                            <h3 class="tool-title">Loan/EMI Calculator</h3>
+                        </div>
+                        <p class="tool-description">Calculate monthly EMI for your loan</p>
+                        <div class="tool-inputs">
+                            <input type="number" class="input" id="loanAmount" placeholder="Loan Amount">
+                            <input type="number" class="input" id="interestRate" placeholder="Interest Rate (%)">
+                            <input type="number" class="input" id="tenure" placeholder="Tenure (months)">
+                            <button class="btn btn-primary" onclick="calculateEMI()">Calculate EMI</button>
+                        </div>
+                        <div id="emiResult" class="tool-result hidden"></div>
+                    </div>
+
+                    <!-- Percentage Calculator -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <svg class="tool-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <line x1="19" y1="5" x2="5" y2="19"></line>
+                                <circle cx="6.5" cy="6.5" r="2.5"></circle>
+                                <circle cx="17.5" cy="17.5" r="2.5"></circle>
+                            </svg>
+                            <h3 class="tool-title">Percentage Calculator</h3>
+                        </div>
+                        <p class="tool-description">Calculate percentage, increase, and decrease</p>
+                        <div class="tool-inputs">
+                            <input type="number" class="input" id="number" placeholder="Number">
+                            <input type="number" class="input" id="percentage" placeholder="Percentage">
+                            <button class="btn btn-primary" onclick="calculatePercentage()">Calculate</button>
+                        </div>
+                        <div id="percentageResult" class="tool-result hidden"></div>
+                    </div>
+
+                    <!-- Currency Converter -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <svg class="tool-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                            <h3 class="tool-title">Currency Converter</h3>
+                        </div>
+                        <p class="tool-description">Convert between different currencies</p>
+                        <div class="tool-inputs">
+                            <input type="number" class="input" id="amount" placeholder="Amount">
+                            <select class="input" id="fromCurrency">
+                                <option value="USD">USD - US Dollar</option>
+                                <option value="EUR">EUR - Euro</option>
+                                <option value="GBP">GBP - British Pound</option>
+                                <option value="PKR">PKR - Pakistani Rupee</option>
+                                <option value="INR">INR - Indian Rupee</option>
+                                <option value="CAD">CAD - Canadian Dollar</option>
+                            </select>
+                            <select class="input" id="toCurrency">
+                                <option value="EUR">EUR - Euro</option>
+                                <option value="USD">USD - US Dollar</option>
+                                <option value="GBP">GBP - British Pound</option>
+                                <option value="PKR">PKR - Pakistani Rupee</option>
+                                <option value="INR">INR - Indian Rupee</option>
+                                <option value="CAD">CAD - Canadian Dollar</option>
+                            </select>
+                            <button class="btn btn-primary" onclick="convertCurrency()">Convert</button>
+                        </div>
+                        <div id="currencyResult" class="tool-result hidden"></div>
+                    </div>
+
+                    <!-- Length Converter -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <svg class="tool-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M21 14H3l4-4-4-4h18l-4 4 4 4z"></path>
+                            </svg>
+                            <h3 class="tool-title">Length Converter</h3>
+                        </div>
+                        <p class="tool-description">Convert between different length units</p>
+                        <div class="tool-inputs">
+                            <input type="number" class="input" id="lengthValue" placeholder="Length value">
+                            <select class="input" id="fromLength">
+                                <option value="meters">Meters</option>
+                                <option value="centimeters">Centimeters</option>
+                                <option value="inches">Inches</option>
+                                <option value="feet">Feet</option>
+                                <option value="yards">Yards</option>
+                                <option value="kilometers">Kilometers</option>
+                                <option value="miles">Miles</option>
+                            </select>
+                            <select class="input" id="toLength">
+                                <option value="feet">Feet</option>
+                                <option value="meters">Meters</option>
+                                <option value="centimeters">Centimeters</option>
+                                <option value="inches">Inches</option>
+                                <option value="yards">Yards</option>
+                                <option value="kilometers">Kilometers</option>
+                                <option value="miles">Miles</option>
+                            </select>
+                            <button class="btn btn-primary" onclick="convertLength()">Convert</button>
+                        </div>
+                        <div id="lengthResult" class="tool-result hidden"></div>
+                    </div>
+
+                    <!-- Area Converter -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <svg class="tool-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            </svg>
+                            <h3 class="tool-title">Area Converter</h3>
+                        </div>
+                        <p class="tool-description">Convert between different area units</p>
+                        <div class="tool-inputs">
+                            <input type="number" class="input" id="areaValue" placeholder="Area value">
+                            <select class="input" id="fromArea">
+                                <option value="sqmeters">Square Meters</option>
+                                <option value="sqfeet">Square Feet</option>
+                                <option value="sqinches">Square Inches</option>
+                                <option value="sqkilometers">Square Kilometers</option>
+                                <option value="acres">Acres</option>
+                                <option value="hectares">Hectares</option>
+                            </select>
+                            <select class="input" id="toArea">
+                                <option value="sqfeet">Square Feet</option>
+                                <option value="sqmeters">Square Meters</option>
+                                <option value="sqinches">Square Inches</option>
+                                <option value="sqkilometers">Square Kilometers</option>
+                                <option value="acres">Acres</option>
+                                <option value="hectares">Hectares</option>
+                            </select>
+                            <button class="btn btn-primary" onclick="convertArea()">Convert</button>
+                        </div>
+                        <div id="areaResult" class="tool-result hidden"></div>
+                    </div>
+
+                    <!-- Speed Calculator -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <svg class="tool-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12,6 12,12 16,14"></polyline>
+                            </svg>
+                            <h3 class="tool-title">Speed Calculator</h3>
+                        </div>
+                        <p class="tool-description">Calculate speed, distance, or time</p>
+                        <div class="tool-inputs">
+                            <input type="number" class="input" id="distance" placeholder="Distance (km)">
+                            <input type="number" class="input" id="time" placeholder="Time (hours)">
+                            <button class="btn btn-primary" onclick="calculateSpeed()">Calculate Speed</button>
+                        </div>
+                        <div id="speedResult" class="tool-result hidden"></div>
+                    </div>
+
+                    <!-- Time Calculator -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <svg class="tool-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12,6 12,12 16,14"></polyline>
+                            </svg>
+                            <h3 class="tool-title">Time Calculator</h3>
+                        </div>
+                        <p class="tool-description">Calculate time differences and add/subtract time</p>
+                        <div class="tool-inputs">
+                            <input type="time" class="input" id="startTime" placeholder="Start time">
+                            <input type="time" class="input" id="endTime" placeholder="End time">
+                            <button class="btn btn-primary" onclick="calculateTimeDiff()">Calculate Difference</button>
+                        </div>
+                        <div id="timeResult" class="tool-result hidden"></div>
+                    </div>
+
+                    <!-- Password Generator -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <svg class="tool-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            <h3 class="tool-title">Password Generator</h3>
+                        </div>
+                        <p class="tool-description">Generate secure passwords</p>
+                        <div class="tool-inputs">
+                            <input type="number" class="input" id="passwordLength" placeholder="Password length" value="12" min="6" max="50">
+                            <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0;">
+                                <label style="display: flex; align-items: center; gap: 0.5rem;">
+                                    <input type="checkbox" id="includeUppercase" checked>
+                                    Uppercase
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 0.5rem;">
+                                    <input type="checkbox" id="includeNumbers" checked>
+                                    Numbers
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 0.5rem;">
+                                    <input type="checkbox" id="includeSymbols" checked>
+                                    Symbols
+                                </label>
+                            </div>
+                            <button class="btn btn-primary" onclick="generatePassword()">Generate Password</button>
+                        </div>
+                        <div id="passwordResult" class="tool-result hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- AI Chat Page -->
+    <div id="ai" class="page">
+        <section class="section hero-bg">
+            <div class="container">
+                <div class="text-center mb-12 fade-in">
+                    <h2>Smart AI Assistant</h2>
+                    <p class="text-muted">Ask me anything about Calquro.com features, tools, or get help</p>
+                </div>
+                
+                <div style="max-width: 800px; margin: 0 auto;" class="fade-in">
+                    <div class="card">
+                        <div id="chatMessages" style="height: 400px; overflow-y: auto; margin-bottom: 1rem; padding: 1rem; border: 1px solid var(--border); border-radius: var(--radius);">
+                            <div style="display: flex; align-items: start; gap: 0.75rem; margin-bottom: 1rem;">
+                                <div style="width: 2rem; height: 2rem; background-color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="16" height="16" fill="white" viewBox="0 0 24 24">
+                                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                                    </svg>
+                                </div>
+                                <div style="background-color: hsl(217, 91%, 97%); padding: 0.75rem; border-radius: 0.5rem; max-width: 70%;">
+                                    <p style="margin: 0;">Hello! I'm your AI assistant for Calquro.com. I can help you with information about our tools, blog articles, contact details, and more. What would you like to know?</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                            <input type="text" class="input" id="chatInput" placeholder="Ask me about Calquro.com features..." style="flex: 1;">
+                            <button class="btn btn-primary" onclick="sendMessage()">Send</button>
+                        </div>
+                        
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                            <button class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem 0.75rem;" onclick="askPreset('What tools are available?')">What tools are available?</button>
+                            <button class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem 0.75rem;" onclick="askPreset('How do I contact the developer?')">How to contact?</button>
+                            <button class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem 0.75rem;" onclick="askPreset('Tell me about the blog section')">About blogs</button>
+                            <button class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem 0.75rem;" onclick="askPreset('What services do you offer?')">Services offered</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Blog Page -->
+    <div id="blog" class="page">
+        <section class="section">
+            <div class="container">
+                <div class="text-center mb-12 fade-in">
+                    <h2>Professional Blog</h2>
+                    <p class="text-muted">Insights on web development, technology, finance, and more</p>
+                </div>
+                
+                <div class="blog-grid fade-in">
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop" alt="Web Development" class="blog-image">
+                        <div class="blog-content">
+                            <span class="blog-category">Web Development</span>
+                            <h3 class="blog-title">Modern Web Development Best Practices 2025</h3>
+                            <p class="blog-excerpt">Explore the latest trends and best practices in web development including performance optimization, accessibility, and modern frameworks.</p>
+                            <div class="blog-meta">
+                                <span>Muhammad Subhan</span>
+                                <span>•</span>
+                                <span>Jan 15, 2025</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=200&fit=crop" alt="AI Technology" class="blog-image">
+                        <div class="blog-content">
+                            <span class="blog-category">AI & Technology</span>
+                            <h3 class="blog-title">How AI is Transforming Web Development</h3>
+                            <p class="blog-excerpt">Discover how artificial intelligence is revolutionizing the way we build websites and web applications in 2025.</p>
+                            <div class="blog-meta">
+                                <span>Muhammad Subhan</span>
+                                <span>•</span>
+                                <span>Jan 12, 2025</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=200&fit=crop" alt="SEO Optimization" class="blog-image">
+                        <div class="blog-content">
+                            <span class="blog-category">SEO</span>
+                            <h3 class="blog-title">Complete Guide to SEO Optimization in 2025</h3>
+                            <p class="blog-excerpt">Learn essential SEO strategies and techniques to improve your website's search engine rankings and organic traffic.</p>
+                            <div class="blog-meta">
+                                <span>Muhammad Subhan</span>
+                                <span>•</span>
+                                <span>Jan 10, 2025</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=200&fit=crop" alt="Financial Calculators" class="blog-image">
+                        <div class="blog-content">
+                            <span class="blog-category">Finance</span>
+                            <h3 class="blog-title">Understanding EMI Calculations and Loan Planning</h3>
+                            <p class="blog-excerpt">Master the art of loan planning with comprehensive guide to EMI calculations, interest rates, and financial decision making.</p>
+                            <div class="blog-meta">
+                                <span>Muhammad Subhan</span>
+                                <span>•</span>
+                                <span>Jan 8, 2025</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=200&fit=crop" alt="Health Technology" class="blog-image">
+                        <div class="blog-content">
+                            <span class="blog-category">Health & Tech</span>
+                            <h3 class="blog-title">BMI Calculator: Understanding Your Health Metrics</h3>
+                            <p class="blog-excerpt">Learn how to interpret BMI results, understand health implications, and make informed decisions about your wellness journey.</p>
+                            <div class="blog-meta">
+                                <span>Muhammad Subhan</span>
+                                <span>•</span>
+                                <span>Jan 5, 2025</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&h=200&fit=crop" alt="Responsive Design" class="blog-image">
+                        <div class="blog-content">
+                            <span class="blog-category">Design</span>
+                            <h3 class="blog-title">Mastering Responsive Web Design Principles</h3>
+                            <p class="blog-excerpt">Create websites that work perfectly on all devices with modern responsive design techniques and mobile-first approaches.</p>
+                            <div class="blog-meta">
+                                <span>Muhammad Subhan</span>
+                                <span>•</span>
+                                <span>Jan 3, 2025</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1633265486064-086b219458ec?w=400&h=200&fit=crop" alt="Security" class="blog-image">
+                        <div class="blog-content">
+                            <span class="blog-category">Security</span>
+                            <h3 class="blog-title">Password Security: Creating Strong, Unbreakable Passwords</h3>
+                            <p class="blog-excerpt">Essential guide to creating secure passwords, understanding encryption, and protecting your digital identity online.</p>
+                            <div class="blog-meta">
+                                <span>Muhammad Subhan</span>
+                                <span>•</span>
+                                <span>Jan 1, 2025</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1640161704729-cbe966a08476?w=400&h=200&fit=crop" alt="Automation" class="blog-image">
+                        <div class="blog-content">
+                            <span class="blog-category">Automation</span>
+                            <h3 class="blog-title">Building Automated Tools for Daily Tasks</h3>
+                            <p class="blog-excerpt">Learn how to create useful online tools and calculators that automate complex calculations and save time.</p>
+                            <div class="blog-meta">
+                                <span>Muhammad Subhan</span>
+                                <span>•</span>
+                                <span>Dec 28, 2024</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=200&fit=crop" alt="JavaScript" class="blog-image">
+                        <div class="blog-content">
+                            <span class="blog-category">Programming</span>
+                            <h3 class="blog-title">Advanced JavaScript Techniques for Modern Development</h3>
+                            <p class="blog-excerpt">Dive deep into advanced JavaScript concepts, ES6+ features, and modern development patterns for building robust applications.</p>
+                            <div class="blog-meta">
+                                <span>Muhammad Subhan</span>
+                                <span>•</span>
+                                <span>Aug 25, 2025</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page">
+        <section class="section">
+            <div class="container">
+                <div class="text-center mb-12 fade-in">
+                    <h2>About Calquro.com</h2>
+                    <p class="text-muted">Learn how to make the most of our platform</p>
+                </div>
+                
+                <div class="grid grid-2 fade-in">
+                    <div class="card">
+                        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--primary);">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                            <h3>Using Tools</h3>
+                        </div>
+                        <p class="text-muted">Our calculator tools are designed for ease of use. Simply input your values, click calculate, and get instant results. All calculations are performed locally in your browser for privacy and speed.</p>
+                    </div>
+
+                    <div class="card">
+                        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--primary);">
+                                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                            </svg>
+                            <h3>Using Smart AI</h3>
+                        </div>
+                        <p class="text-muted">Our AI assistant can answer questions about website features, provide tool explanations, and help you navigate the site. Just type your question and get instant responses.</p>
+                    </div>
+
+                    <div class="card">
+                        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--primary);">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            <h3>Reading Blogs</h3>
+                        </div>
+                        <p class="text-muted">Browse our collection of informative articles covering web development, finance, health, AI, and technology. Each post includes practical insights and actionable tips.</p>
+                    </div>
+
+                    <div class="card">
+                        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--primary);">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <h3>Contacting Developer</h3>
+                        </div>
+                        <p class="text-muted">Need custom development work or have questions? Use the contact form to reach Muhammad Subhan directly. All inquiries are responded to within 24 hours.</p>
+                    </div>
+                </div>
+
+                <!-- Developer Info -->
+                <div class="text-center" style="margin-top: 4rem;">
+                    <div class="card" style="max-width: 600px; margin: 0 auto;">
+                        <div style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
+                            <img src="https://iili.io/KnXb8il.jpg" alt="Muhammad Subhan" style="width: 8rem; height: 8rem; border-radius: 50%; object-fit: cover;">
+                            <div>
+                                <h3>Muhammad Subhan</h3>
+                                <p class="text-primary">Web Developer & AI Enthusiast</p>
+                                <p class="text-muted">Passionate about creating useful web tools and modern websites. With expertise in HTML, CSS, JavaScript, SEO, and AI integration, I help businesses and individuals achieve their digital goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+        <section class="section hero-bg">
+            <div class="container">
+                <div class="text-center mb-12 fade-in">
+                    <h2>Get In Touch</h2>
+                    <p class="text-muted">Have a project in mind? Let's discuss how I can help you</p>
+                </div>
+                
+                <div class="grid grid-2 fade-in">
+                    <div>
+                        <h3 class="mb-4">Contact Information</h3>
+                        <div style="margin-bottom: 2rem;">
+                            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--primary);">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <span class="text-muted">subhanrajput3222@gmail.com</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--primary);">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                </svg>
+                                <span class="text-muted">Calquro.com</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--primary);">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                                <span class="text-muted">Muhammad Subhan - Web Developer & AI Enthusiast</span>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="mb-4">Services Offered</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--accent);">
+                                        <polyline points="20,6 9,17 4,12"></polyline>
+                                    </svg>
+                                    <span class="text-muted">Custom Web Development</span>
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--accent);">
+                                        <polyline points="20,6 9,17 4,12"></polyline>
+                                    </svg>
+                                    <span class="text-muted">SEO Optimization</span>
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--accent);">
+                                        <polyline points="20,6 9,17 4,12"></polyline>
+                                    </svg>
+                                    <span class="text-muted">AI Integration</span>
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--accent);">
+                                        <polyline points="20,6 9,17 4,12"></polyline>
+                                    </svg>
+                                    <span class="text-muted">Responsive Design</span>
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 0.5rem;">
+                                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--accent);">
+                                        <polyline points="20,6 9,17 4,12"></polyline>
+                                    </svg>
+                                    <span class="text-muted">Online Tools Development</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <form id="contactForm">
+                            <div class="tool-inputs">
+                                <div>
+                                    <label style="display: block; margin-bottom: 0.25rem; font-weight: 500;">Name</label>
+                                    <input type="text" class="input" id="contactName" required>
+                                </div>
+                                
+                                <div>
+                                    <label style="display: block; margin-bottom: 0.25rem; font-weight: 500;">Email</label>
+                                    <input type="email" class="input" id="contactEmail" required>
+                                </div>
+                                
+                                <div>
+                                    <label style="display: block; margin-bottom: 0.25rem; font-weight: 500;">Subject</label>
+                                    <select class="input" id="contactSubject">
+                                        <option value="">Select a subject</option>
+                                        <option value="web-development">Web Development Project</option>
+                                        <option value="seo-optimization">SEO Optimization</option>
+                                        <option value="ai-integration">AI Integration</option>
+                                        <option value="tool-development">Custom Tool Development</option>
+                                        <option value="consultation">General Consultation</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div>
+                                    <label style="display: block; margin-bottom: 0.25rem; font-weight: 500;">Message</label>
+                                    <textarea class="input" id="contactMessage" rows="5" required style="resize: vertical;" placeholder="Tell me about your project requirements..."></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <div class="footer-logo">
-                    <img src="https://iili.io/KqY3EcG.png" alt="Muhammad Subhan Logo">
-                    <span>Muhammad Subhan</span>
+    <footer class="footer professional-gradient">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">
+                        <img src="https://iili.io/KnXmbhG.png" alt="Calquro Logo">
+                        <span style="font-size: 1.25rem; font-weight: 700;">Calquro.com</span>
+                    </div>
+                    <p style="color: rgba(255, 255, 255, 0.7);">
+                        Professional web development and useful online tools by Muhammad Subhan.
+                    </p>
                 </div>
-                <p>Age 14 • Passionate Developer & Content Creator building tools that make a difference.</p>
-                <img src="https://iili.io/KqYHfqb.jpg" alt="Muhammad Subhan" class="footer-avatar">
+                
+                <div>
+                    <h4 style="margin-bottom: 1rem;">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a onclick="showPage('home')">Home</a></li>
+                        <li><a onclick="showPage('tools')">Tools</a></li>
+                        <li><a onclick="showPage('ai')">Smart AI</a></li>
+                        <li><a onclick="showPage('blog')">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 style="margin-bottom: 1rem;">Information</h4>
+                    <ul class="footer-links">
+                        <li><a onclick="showPage('about')">About</a></li>
+                        <li><a onclick="showPage('contact')">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 style="margin-bottom: 1rem;">Popular Tools</h4>
+                    <ul class="footer-links">
+                        <li>BMI Calculator</li>
+                        <li>EMI Calculator</li>
+                        <li>Currency Converter</li>
+                        <li>Password Generator</li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><button onclick="scrollToSection('tools')">Tools</button></li>
-                    <li><button onclick="scrollToSection('blog')">Blog</button></li>
-                    <li><button onclick="scrollToSection('about')">About</button></li>
-                    <li><button onclick="scrollToSection('contact')">Contact</button></li>
-                </ul>
+            
+            <div class="footer-bottom">
+                <p>Copyright © 2025 Calquro.com – All Rights Reserved.</p>
             </div>
-            <div class="footer-section">
-                <h4>Contact Info</h4>
-                <p><i class="fas fa-envelope"></i> subhanrajput3222@gmail.com</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Muhammad Subhan. All rights reserved. Created with passion at age 14.</p>
         </div>
     </footer>
 
-    <!-- Calculator Modal -->
-    <div class="modal" id="calculatorModal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 id="calculatorTitle">Calculator</h3>
-                <button class="modal-close" onclick="closeCalculator()">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div id="calculatorContent">
-                <!-- Calculator content will be loaded here -->
-            </div>
-        </div>
-    </div>
-
-    <!-- Blog Modal -->
-    <div class="modal" id="blogModal">
-        <div class="modal-content" style="max-width: 800px;">
-            <div class="modal-header">
-                <h3 id="blogTitle">Blog Post</h3>
-                <button class="modal-close" onclick="closeBlog()">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div id="blogContent">
-                <!-- Blog content will be loaded here -->
-            </div>
-        </div>
-    </div>
-
-    <!-- Reviews Modal -->
-    <div class="modal" id="reviewsModal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Reviews & Ratings</h3>
-                <button class="modal-close" onclick="closeReviews()">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div id="reviewsContent">
-                <div style="margin-bottom: 2rem;">
-                    <h4 style="margin-bottom: 1rem;">Submit a Review</h4>
-                    <div class="form-group">
-                        <label>Your Name</label>
-                        <input type="text" id="reviewName">
-                    </div>
-                    <div class="form-group">
-                        <label>Rating</label>
-                        <div id="starRating" style="display: flex; gap: 0.25rem; margin-bottom: 1rem;">
-                            <span class="star" data-rating="1" onclick="setRating(1)">⭐</span>
-                            <span class="star" data-rating="2" onclick="setRating(2)">⭐</span>
-                            <span class="star" data-rating="3" onclick="setRating(3)">⭐</span>
-                            <span class="star" data-rating="4" onclick="setRating(4)">⭐</span>
-                            <span class="star" data-rating="5" onclick="setRating(5)">⭐</span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Review</label>
-                        <textarea id="reviewText" rows="3" placeholder="Share your experience with our tools..."></textarea>
-                    </div>
-                    <button class="btn btn-primary" onclick="submitReview()">Submit Review</button>
-                </div>
-                <div style="border-top: 1px solid #e5e7eb; padding-top: 1.5rem;">
-                    <h4 style="margin-bottom: 1rem;">Customer Reviews</h4>
-                    <div id="reviewsList">
-                        <p style="color: #6b7280;">No reviews yet. Be the first to share your experience!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Chatbot -->
-    <div class="chatbot" id="chatbot">
-        <div class="chatbot-header">
-            <div class="chatbot-info">
-                <div class="chatbot-avatar">
-                    <i class="fas fa-robot"></i>
-                </div>
-                <div class="chatbot-details">
-                    <h4>Smart AI Assistant</h4>
-                    <p>Built by Muhammad Subhan (Age 14)</p>
-                </div>
-            </div>
-            <button class="chatbot-close" onclick="closeChatbot()">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <div class="chatbot-messages" id="chatMessages">
-            <!-- Messages will be added here -->
-        </div>
-        <div class="chatbot-input">
-            <input type="text" id="chatInput" placeholder="Ask me anything..." onkeypress="handleChatKeyPress(event)">
-            <button onclick="sendMessage()">
-                <i class="fas fa-paper-plane"></i>
-            </button>
-        </div>
-    </div>
-
     <script>
-        // Blog posts data
-        const blogPosts = [
-            {
-                id: 1,
-                title: "Building Wealth: Investment Strategies for Teenagers",
-                category: "Finance",
-                excerpt: "Learn how to start investing early and build long-term wealth through smart financial decisions.",
-                image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-                metaDescription: "Discover essential investment strategies for teenagers. Learn about compound interest, index funds, and building wealth early with practical tips from a young entrepreneur.",
-                content: `Building wealth as a teenager might seem impossible, but starting early gives you the most powerful tool in investing: time. As a 14-year-old entrepreneur, I've learned that the earlier you start, the more compound interest works in your favor.
+        // Global Variables
+        let currentPage = 'home';
 
-The first step is understanding compound interest. When you invest money, you earn returns not just on your initial investment, but also on the returns that investment generates. This creates a snowball effect that becomes more powerful over time.
-
-Start with education. Read books about personal finance and investing. Some great beginner books include "The Richest Man in Babylon" and "Rich Dad Poor Dad." Understanding basic concepts like stocks, bonds, and mutual funds is crucial before investing any money.
-
-Create an emergency fund first. Before investing, save enough money to cover 3-6 months of expenses. This prevents you from having to sell investments during emergencies.
-
-Consider starting with index funds. These funds track the performance of the entire stock market and are perfect for beginners. They require minimal research and have historically provided good returns over the long term.
-
-Use technology to your advantage. Apps like Acorns or Stash allow you to start investing with small amounts of money. They can round up your purchases and invest the spare change automatically.
-
-Take advantage of tax-advantaged accounts. If you have earned income, consider opening a Roth IRA. The money you contribute has already been taxed, so it grows tax-free and can be withdrawn tax-free in retirement.
-
-Stay consistent with your investments. Instead of trying to time the market, invest a fixed amount regularly through dollar-cost averaging. This strategy reduces the impact of market volatility.
-
-Remember, investing always involves risk. Never invest money you can't afford to lose, and always do your research before making investment decisions. Starting your wealth-building journey as a teenager gives you decades to grow your money and achieve financial independence.`
-            },
-            {
-                id: 2,
-                title: "Mental Health and Academic Success: Finding Balance",
-                category: "Health",
-                excerpt: "Discover practical strategies to maintain mental wellness while excelling in academics.",
-                image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-                metaDescription: "Learn how to balance mental health with academic success. Practical tips for stress management, sleep optimization, and maintaining wellness as a student.",
-                content: `Balancing mental health with academic success is one of the biggest challenges students face today. As someone who's experienced the pressure firsthand, I've learned that prioritizing mental wellness actually improves academic performance rather than hindering it.
-
-Sleep is the foundation of both mental health and academic success. Aim for 8-9 hours of quality sleep each night. Your brain consolidates information and processes emotions during sleep, making it essential for learning and emotional regulation.
-
-Develop a consistent routine that includes time for both study and relaxation. Structure provides stability and reduces anxiety. Plan your day to include designated study times, meals, exercise, and leisure activities.
-
-Practice stress management techniques. Deep breathing exercises, meditation, and progressive muscle relaxation can help manage academic stress. Even five minutes of mindfulness practice daily can significantly improve your mental state.
-
-Don't underestimate the power of physical exercise. Regular physical activity releases endorphins, improves mood, and enhances cognitive function. You don't need intense workouts – even a 30-minute walk can make a difference.
-
-Build a support network. Connect with friends, family, teachers, or counselors who can provide emotional support and practical advice. Don't hesitate to seek help when you're struggling.
-
-Set realistic goals and expectations. Perfectionism can be a major source of stress and anxiety. Focus on progress rather than perfection, and celebrate small victories along the way.
-
-Take regular breaks from studying. The Pomodoro Technique – studying for 25 minutes followed by a 5-minute break – can improve focus and prevent burnout. Use breaks to do something enjoyable or relaxing.
-
-Maintain a healthy diet. What you eat affects your mood and energy levels. Include plenty of fruits, vegetables, whole grains, and lean proteins in your diet while limiting processed foods and excessive caffeine.
-
-Remember that academic success isn't worth sacrificing your mental health. If you're consistently feeling overwhelmed, anxious, or depressed, reach out to a mental health professional. Taking care of your mental health is just as important as any academic achievement.`
-            },
-            {
-                id: 3,
-                title: "Social Media Marketing: Growing Your Online Presence",
-                category: "Social Media",
-                excerpt: "Learn proven strategies to build an authentic and engaging social media presence.",
-                image: "https://images.unsplash.com/photo-1611262588024-d12430b98920?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-                metaDescription: "Master social media marketing with proven strategies for organic growth. Learn about content creation, engagement tactics, and building authentic online presence.",
-                content: `Building a strong social media presence requires strategy, consistency, and authenticity. As a young content creator, I've learned that success on social media isn't about follower count – it's about creating genuine connections and providing value to your audience.
-
-Define your niche and target audience. What unique perspective or expertise do you bring? Whether it's technology, fitness, art, or education, focusing on a specific area helps you attract the right followers and establish authority.
-
-Create a content calendar to maintain consistency. Plan your posts in advance and aim to post regularly. Consistency builds trust and keeps your audience engaged. Use tools like Buffer or Hootsuite to schedule posts across multiple platforms.
-
-Focus on providing value in every post. Ask yourself: "What will my audience gain from this content?" Whether it's entertainment, education, or inspiration, every post should serve a purpose for your followers.
-
-Engage authentically with your community. Respond to comments, ask questions, and participate in conversations. Social media is social – building relationships is more important than broadcasting messages.
-
-Use high-quality visuals and compelling captions. Invest time in creating or sourcing good images, videos, and graphics. Write captions that encourage engagement and include clear calls-to-action.
-
-Leverage hashtags strategically. Research relevant hashtags in your niche and use a mix of popular and niche-specific tags. This helps your content reach people interested in your topic.
-
-Collaborate with others in your space. Partner with other creators for content exchanges, takeovers, or joint projects. This exposes you to new audiences and builds valuable relationships within your industry.
-
-Analyze your performance regularly. Use platform analytics to understand what content performs best, when your audience is most active, and which posts drive the most engagement. Use this data to refine your strategy.
-
-Stay authentic to your personality and values. Don't try to copy others or follow every trend. Authenticity builds stronger connections and helps you stand out in a crowded space.
-
-Be patient and persistent. Growing a meaningful social media presence takes time. Focus on steady growth and genuine engagement rather than quick fixes or buying followers. Quality followers who are truly interested in your content are worth far more than large numbers of inactive accounts.`
-            },
-            {
-                id: 4,
-                title: "Smart Saving Habits for Teens: How to Grow Money Wisely",
-                category: "Finance",
-                excerpt: "Master the art of saving early and turning small amounts into a strong financial foundation for your future.",
-                image: "https://images.unsplash.com/photo-1614289388320-5b51b234f9c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-                metaDescription: "Learn practical saving strategies for teenagers to build financial discipline. Discover tips on budgeting, setting goals, and growing your money smartly.",
-                content: `Developing smart saving habits as a teenager can set you up for long-term financial success. Even small amounts saved regularly can grow into significant funds over time.
-
-Start by tracking your expenses. Knowing where your money goes is the first step toward controlling it. Use a simple notebook or a budgeting app to record daily spending.
-
-Set clear financial goals. Whether it's saving for a gadget, a trip, or future education, having a goal helps you stay motivated. Break big goals into smaller milestones to make them achievable.
-
-Automate your savings. Open a separate account for savings and set up automatic transfers from your main account. This ensures consistency and removes the temptation to spend.
-
-Prioritize needs over wants. Before making a purchase, ask yourself if it's essential. This builds discipline and prevents impulsive spending.
-
-Take advantage of interest-bearing accounts. A teen-friendly savings account or a high-yield account can grow your money passively. Compound interest, even on small amounts, works wonders over time.
-
-Learn to compare prices and look for discounts. Smart shopping can free up extra money to put into your savings.
-
-Avoid unnecessary debt. Credit cards and loans can trap you in interest payments. Focus on saving first before making big purchases.
-
-Finally, educate yourself about money management. Read books, watch videos, or follow financial blogs aimed at young adults. Understanding the basics now will make you confident managing larger sums in the future.
-
-By consistently applying these habits, teenagers can build a strong financial foundation, gain independence, and develop the mindset needed for long-term wealth.`
-            },
-           {
-                id: 5,
-                title: "Mindful Eating: How Teens Can Improve Health and Energy",
-                category: "Health",
-                excerpt: "Learn the power of mindful eating to boost energy, improve focus, and develop a healthy relationship with food as a teenager.",
-                image: "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-                metaDescription: "Discover practical tips for mindful eating habits for teenagers. Improve energy levels, focus, and overall health with balanced nutrition and awareness.",
-                content: `Mindful eating is about paying full attention to your food and eating habits. For teenagers, developing this habit can improve energy levels, focus, and overall health.
-
-Start by noticing your hunger cues. Eat when you are hungry, and stop when you are full. Avoid eating out of boredom or stress.
-
-Focus on your meals. Try to eat without distractions such as phones or TV. This allows you to enjoy flavors and helps prevent overeating.
-
-Choose whole, nutritious foods. Include fruits, vegetables, whole grains, and lean proteins in your meals. Proper nutrition supports growth, energy, and brain function.
-
-Stay hydrated. Drinking enough water throughout the day keeps you energized and helps digestion.
-
-Practice portion control. Using smaller plates and serving reasonable portions can help you manage intake without feeling deprived.
-
-Slow down while eating. Chew thoroughly and take breaks during meals. This helps your body register fullness and reduces the risk of overeating.
-
-Reflect on your meals. After eating, think about how the food made you feel. This encourages healthier choices over time.
-
-By practicing mindful eating, teens can develop a balanced relationship with food, enhance focus and performance in school, and maintain long-term health and well-being.`
-          }
-         ];
-
-        // Global variables
-        let currentRating = 0;
-        let chatMessages = [];
-        let userName = '';
-
-        // Navigation functions
-        function scrollToSection(sectionId) {
-            const element = document.getElementById(sectionId);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                closeMobileMenu();
+        // Page Navigation
+        function showPage(pageName) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+            
+            // Show selected page
+            const targetPage = document.getElementById(pageName);
+            if (targetPage) {
+                targetPage.classList.add('active');
+                targetPage.classList.add('fade-in');
+                currentPage = pageName;
+                
+                // Update navigation
+                updateNavigation(pageName);
+                
+                // Scroll to top
+                window.scrollTo(0, 0);
+                
+                // Update document title
+                updatePageTitle(pageName);
             }
+        }
+
+        function updateNavigation(activePage) {
+            // Update desktop navigation
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-page') === activePage) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Update mobile navigation
+            const mobileLinks = document.querySelectorAll('.mobile-nav a');
+            mobileLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-page') === activePage) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        function updatePageTitle(pageName) {
+            const titles = {
+                'home': 'Calquro.com - Professional Tools & Web Development by Muhammad Subhan',
+                'tools': 'Professional Tools - Calquro.com',
+                'ai': 'Smart AI Assistant - Calquro.com',
+                'blog': 'Professional Blog - Calquro.com',
+                'about': 'About - Calquro.com',
+                'contact': 'Contact - Calquro.com'
+            };
+            document.title = titles[pageName] || titles['home'];
         }
 
         function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('active');
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.classList.toggle('show');
         }
 
-        function closeMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.remove('active');
-        }
-
-        // Calculator functions
-        function openCalculator(type) {
-            const modal = document.getElementById('calculatorModal');
-            const title = document.getElementById('calculatorTitle');
-            const content = document.getElementById('calculatorContent');
-            
-            modal.classList.add('active');
-            
-            switch(type) {
-                case 'age':
-                    title.textContent = 'Age Calculator';
-                    content.innerHTML = `
-                        <div class="form-group">
-                            <label>Date of Birth</label>
-                            <input type="date" id="dobInput">
-                        </div>
-                        <button class="btn btn-primary" onclick="calculateAge()">Calculate Age</button>
-                        <div id="ageResult"></div>
-                    `;
-                    break;
-                case 'bmi':
-                    title.textContent = 'BMI Calculator';
-                    content.innerHTML = `
-                        <div class="form-group">
-                            <label>Height (cm)</label>
-                            <input type="number" id="heightInput" placeholder="170">
-                        </div>
-                        <div class="form-group">
-                            <label>Weight (kg)</label>
-                            <input type="number" id="weightInput" placeholder="70">
-                        </div>
-                        <button class="btn btn-primary" onclick="calculateBMI()">Calculate BMI</button>
-                        <div id="bmiResult"></div>
-                    `;
-                    break;
-                case 'loan':
-                    title.textContent = 'Loan/EMI Calculator';
-                    content.innerHTML = `
-                        <div class="form-group">
-                            <label>Loan Amount ($)</label>
-                            <input type="number" id="loanAmount" placeholder="10000">
-                        </div>
-                        <div class="form-group">
-                            <label>Interest Rate (%)</label>
-                            <input type="number" id="interestRate" placeholder="5" step="0.1">
-                        </div>
-                        <div class="form-group">
-                            <label>Loan Term (years)</label>
-                            <input type="number" id="loanTerm" placeholder="5">
-                        </div>
-                        <button class="btn btn-primary" onclick="calculateLoan()">Calculate EMI</button>
-                        <div id="loanResult"></div>
-                    `;
-                    break;
-                case 'username':
-                    title.textContent = 'Username Availability Checker';
-                    content.innerHTML = `
-                        <div class="form-group">
-                            <label>Username</label>
-                            <input type="text" id="usernameInput" placeholder="johndoe123">
-                        </div>
-                        <button class="btn btn-primary" onclick="checkUsername()">Check Availability</button>
-                        <div id="usernameResult"></div>
-                    `;
-                    break;
-                case 'adsense':
-                    title.textContent = 'AdSense Earnings Calculator';
-                    content.innerHTML = `
-                        <div class="form-group">
-                            <label>Daily Page Views</label>
-                            <input type="number" id="dailyViews" placeholder="1000">
-                        </div>
-                        <div class="form-group">
-                            <label>eCPM ($)</label>
-                            <input type="number" id="ecpm" placeholder="2.50" step="0.01">
-                        </div>
-                        <div class="form-group">
-                            <label>Number of Days</label>
-                            <input type="number" id="days" placeholder="30">
-                        </div>
-                        <button class="btn btn-primary" onclick="calculateAdSense()">Calculate Earnings</button>
-                        <div id="adsenseResult"></div>
-                    `;
-                    break;
-            }
-        }
-
-        function closeCalculator() {
-            document.getElementById('calculatorModal').classList.remove('active');
-        }
-
+        // Tool Functions
         function calculateAge() {
-            const dobInput = document.getElementById('dobInput').value;
-            if (!dobInput) {
-                alert('Please enter your date of birth');
+            const birthdate = document.getElementById('birthdate').value;
+            const result = document.getElementById('ageResult');
+            
+            if (!birthdate) {
+                alert('Please select your birth date');
                 return;
             }
             
-            const dob = new Date(dobInput);
-            const now = new Date();
+            const today = new Date();
+            const birthDate = new Date(birthdate);
             
-            const diffMs = now.getTime() - dob.getTime();
-            const ageDate = new Date(diffMs);
+            let years = today.getFullYear() - birthDate.getFullYear();
+            let months = today.getMonth() - birthDate.getMonth();
+            let days = today.getDate() - birthDate.getDate();
             
-            const years = Math.abs(ageDate.getUTCFullYear() - 1970);
-            const months = Math.abs(ageDate.getUTCMonth());
-            const days = Math.abs(ageDate.getUTCDate() - 1);
-            const hours = Math.abs(ageDate.getUTCHours());
-            const minutes = Math.abs(ageDate.getUTCMinutes());
-            const seconds = Math.abs(ageDate.getUTCSeconds());
+            if (days < 0) {
+                months--;
+                days += new Date(today.getFullYear(), today.getMonth(), 0).getDate();
+            }
             
-            document.getElementById('ageResult').innerHTML = `
-                <div class="result-box">
-                    <h4>Your Age:</h4>
-                    <div class="result-grid">
-                        <div><strong>${years}</strong> years</div>
-                        <div><strong>${months}</strong> months</div>
-                        <div><strong>${days}</strong> days</div>
-                        <div><strong>${hours}</strong> hours</div>
-                        <div><strong>${minutes}</strong> minutes</div>
-                        <div><strong>${seconds}</strong> seconds</div>
-                    </div>
-                </div>
-            `;
+            if (months < 0) {
+                years--;
+                months += 12;
+            }
+            
+            result.innerHTML = `<strong>Your Age:</strong> ${years} years, ${months} months, and ${days} days`;
+            result.classList.remove('hidden');
         }
 
         function calculateBMI() {
-            const height = parseFloat(document.getElementById('heightInput').value);
-            const weight = parseFloat(document.getElementById('weightInput').value);
+            const height = parseFloat(document.getElementById('height').value);
+            const weight = parseFloat(document.getElementById('weight').value);
+            const result = document.getElementById('bmiResult');
             
             if (!height || !weight) {
                 alert('Please enter both height and weight');
                 return;
             }
             
-            const bmi = +(weight / ((height / 100) ** 2)).toFixed(1);
+            const bmi = (weight / ((height / 100) ** 2)).toFixed(1);
             let category = '';
-            let color = '';
+            let advice = '';
             
-            if (bmi < 18.5) {
+            if (parseFloat(bmi) < 18.5) {
                 category = 'Underweight';
-                color = 'color: #3b82f6;';
-            } else if (bmi < 25) {
+                advice = 'Consider consulting a healthcare provider for a healthy weight gain plan.';
+            } else if (parseFloat(bmi) < 25) {
                 category = 'Normal weight';
-                color = 'color: #10b981;';
-            } else if (bmi < 30) {
+                advice = 'Great! Maintain your current healthy lifestyle.';
+            } else if (parseFloat(bmi) < 30) {
                 category = 'Overweight';
-                color = 'color: #f59e0b;';
+                advice = 'Consider a balanced diet and regular exercise.';
             } else {
                 category = 'Obese';
-                color = 'color: #ef4444;';
+                advice = 'Consult a healthcare provider for personalized advice.';
             }
             
-            document.getElementById('bmiResult').innerHTML = `
-                <div class="result-box">
-                    <h4>Your BMI Result:</h4>
-                    <div style="font-size: 2rem; font-weight: bold; ${color} margin-bottom: 0.5rem;">${bmi}</div>
-                    <div style="font-size: 1.125rem; ${color}">${category}</div>
-                    <div style="font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">
-                        BMI ranges: Underweight (<18.5), Normal (18.5-24.9), Overweight (25-29.9), Obese (≥30)
-                    </div>
-                </div>
-            `;
+            result.innerHTML = `<strong>BMI:</strong> ${bmi}<br><strong>Category:</strong> ${category}<br><em>${advice}</em>`;
+            result.classList.remove('hidden');
         }
 
-        function calculateLoan() {
-            const loanAmount = parseFloat(document.getElementById('loanAmount').value);
-            const interestRate = parseFloat(document.getElementById('interestRate').value);
-            const loanTerm = parseFloat(document.getElementById('loanTerm').value);
+        function calculateEMI() {
+            const principal = parseFloat(document.getElementById('loanAmount').value);
+            const rate = parseFloat(document.getElementById('interestRate').value);
+            const tenureMonths = parseFloat(document.getElementById('tenure').value);
+            const result = document.getElementById('emiResult');
             
-            if (!loanAmount || !interestRate || !loanTerm) {
-                alert('Please fill in all fields');
+            if (!principal || !rate || !tenureMonths) {
+                alert('Please fill all fields');
                 return;
             }
             
-            const monthlyRate = interestRate / 100 / 12;
-            const numPayments = loanTerm * 12;
+            const monthlyRate = rate / (12 * 100);
+            const emi = (principal * monthlyRate * Math.pow(1 + monthlyRate, tenureMonths)) / 
+                        (Math.pow(1 + monthlyRate, tenureMonths) - 1);
+            const totalAmount = emi * tenureMonths;
+            const totalInterest = totalAmount - principal;
             
-            const emi = (loanAmount * monthlyRate * Math.pow(1 + monthlyRate, numPayments)) / 
-                       (Math.pow(1 + monthlyRate, numPayments) - 1);
-            
-            const totalPayment = emi * numPayments;
-            const totalInterest = totalPayment - loanAmount;
-            
-            document.getElementById('loanResult').innerHTML = `
-                <div class="result-box">
-                    <h4>Loan Details:</h4>
-                    <div class="result-item">
-                        <span>Monthly EMI:</span>
-                        <span style="font-weight: 600;">$${emi.toFixed(2)}</span>
-                    </div>
-                    <div class="result-item">
-                        <span>Total Payment:</span>
-                        <span style="font-weight: 600;">$${totalPayment.toFixed(2)}</span>
-                    </div>
-                    <div class="result-item">
-                        <span>Total Interest:</span>
-                        <span style="font-weight: 600;">$${totalInterest.toFixed(2)}</span>
-                    </div>
-                    <div class="result-item border-top">
-                        <span>Loan Amount:</span>
-                        <span style="font-weight: 600;">$${loanAmount.toFixed(2)}</span>
-                    </div>
-                </div>
+            result.innerHTML = `
+                <strong>Monthly EMI:</strong> ₹${emi.toFixed(2)}<br>
+                <strong>Total Amount:</strong> ₹${totalAmount.toFixed(2)}<br>
+                <strong>Total Interest:</strong> ₹${totalInterest.toFixed(2)}
             `;
+            result.classList.remove('hidden');
         }
 
-        function checkUsername() {
-            const username = document.getElementById('usernameInput').value.trim();
-            if (!username) {
-                alert('Please enter a username');
+        function calculatePercentage() {
+            const number = parseFloat(document.getElementById('number').value);
+            const percentage = parseFloat(document.getElementById('percentage').value);
+            const result = document.getElementById('percentageResult');
+            
+            if (!number || !percentage) {
+                alert('Please enter both values');
                 return;
             }
             
-            // Mock availability check - in real implementation, this would make API calls
-            const platforms = ['Facebook', 'Instagram', 'Twitter', 'YouTube'];
-            let resultsHTML = '<div class="result-box"><h4>Availability Results:</h4>';
+            const calculatedResult = (number * percentage) / 100;
+            const increase = number + calculatedResult;
+            const decrease = number - calculatedResult;
             
-            platforms.forEach(platform => {
-                const isAvailable = Math.random() > 0.5;
-                const icon = isAvailable ? 'fa-check-circle' : 'fa-times-circle';
-                const color = isAvailable ? 'color: #10b981;' : 'color: #ef4444;';
-                const status = isAvailable ? 'Available' : 'Taken';
-                
-                resultsHTML += `
-                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.5rem; margin-bottom: 0.5rem;">
-                        <span style="font-weight: 500;">${platform}</span>
-                        <span style="${color}">
-                            <i class="fas ${icon}"></i> ${status}
-                        </span>
-                    </div>
-                `;
-            });
-            
-            resultsHTML += '<div style="font-size: 0.75rem; color: #6b7280; margin-top: 0.75rem;">Note: This is a demo checker. Real availability may vary.</div></div>';
-            
-            document.getElementById('usernameResult').innerHTML = resultsHTML;
+            result.innerHTML = `
+                <strong>${percentage}% of ${number} is:</strong> ${calculatedResult}<br>
+                <strong>${number} + ${percentage}% =</strong> ${increase}<br>
+                <strong>${number} - ${percentage}% =</strong> ${decrease}
+            `;
+            result.classList.remove('hidden');
         }
 
-        function calculateAdSense() {
-            const dailyViews = parseFloat(document.getElementById('dailyViews').value);
-            const ecpm = parseFloat(document.getElementById('ecpm').value);
-            const days = parseFloat(document.getElementById('days').value);
+        function convertCurrency() {
+            const amount = parseFloat(document.getElementById('amount').value);
+            const fromCurrency = document.getElementById('fromCurrency').value;
+            const toCurrency = document.getElementById('toCurrency').value;
+            const result = document.getElementById('currencyResult');
             
-            if (!dailyViews || !ecpm || !days) {
-                alert('Please fill in all fields');
+            if (!amount) {
+                alert('Please enter an amount');
                 return;
             }
             
-            const dailyEarnings = (dailyViews * ecpm) / 1000;
-            const totalEarnings = dailyEarnings * days;
-            const monthlyEstimate = dailyEarnings * 30;
-            const yearlyEstimate = dailyEarnings * 365;
-            
-            document.getElementById('adsenseResult').innerHTML = `
-                <div class="result-box">
-                    <h4>Earnings Estimate:</h4>
-                    <div class="result-item">
-                        <span>Daily Earnings:</span>
-                        <span style="font-weight: 600;">$${dailyEarnings.toFixed(2)}</span>
-                    </div>
-                    <div class="result-item">
-                        <span>Total for ${days} days:</span>
-                        <span style="font-weight: 600;">$${totalEarnings.toFixed(2)}</span>
-                    </div>
-                    <div class="result-item border-top">
-                        <span>Monthly Estimate:</span>
-                        <span style="font-weight: 600;">$${monthlyEstimate.toFixed(2)}</span>
-                    </div>
-                    <div class="result-item">
-                        <span>Yearly Estimate:</span>
-                        <span style="font-weight: 600;">$${yearlyEstimate.toFixed(2)}</span>
-                    </div>
-                    <div style="font-size: 0.75rem; color: #6b7280; margin-top: 0.75rem;">
-                        *Estimates based on current inputs. Actual earnings may vary due to seasonality, content quality, and market conditions.
-                    </div>
-                </div>
-            `;
-        }
-
-        // Blog functions
-        function loadBlogs() {
-            const blogGrid = document.getElementById('blogGrid');
-            blogGrid.innerHTML = '';
-            
-            blogPosts.slice(0, 6).forEach(post => {
-                const blogCard = document.createElement('div');
-                blogCard.className = 'blog-card hover-lift';
-                blogCard.onclick = () => openBlog(post.id);
-                
-                blogCard.innerHTML = `
-                    <img src="${post.image}" alt="${post.title}">
-                    <div class="blog-card-content">
-                        <div class="blog-category">${post.category}</div>
-                        <h3>${post.title}</h3>
-                        <p>${post.excerpt}</p>
-                        <div class="blog-author">
-                            <img src="https://iili.io/KqYHfqb.jpg" alt="Muhammad Subhan">
-                            <span>Muhammad Subhan • Age 14</span>
-                        </div>
-                    </div>
-                `;
-                
-                blogGrid.appendChild(blogCard);
-            });
-        }
-
-        function openBlog(postId) {
-            const post = blogPosts.find(p => p.id === postId);
-            if (!post) return;
-            
-            const modal = document.getElementById('blogModal');
-            const title = document.getElementById('blogTitle');
-            const content = document.getElementById('blogContent');
-            
-            title.textContent = post.title;
-            
-            content.innerHTML = `
-                <div style="margin-bottom: 1.5rem;">
-                    <img src="${post.image}" alt="${post.title}" style="width: 100%; height: 16rem; object-fit: cover; border-radius: 0.5rem; margin-bottom: 1rem;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                        <span class="blog-category">${post.category}</span>
-                        <div class="blog-author">
-                            <img src="https://iili.io/KqYHfqb.jpg" alt="Muhammad Subhan">
-                            <span>Muhammad Subhan • Age 14</span>
-                        </div>
-                    </div>
-                </div>
-                <div style="line-height: 1.7;">
-                    ${post.content.split('\n\n').map(paragraph => `<p style="margin-bottom: 1rem;">${paragraph}</p>`).join('')}
-                </div>
-                <div style="margin-top: 2rem; padding: 1rem; background: #f9fafb; border-radius: 0.5rem;">
-                    <div style="display: flex; align-items: center;">
-                        <img src="https://iili.io/KqYHfqb.jpg" alt="Muhammad Subhan" style="width: 3rem; height: 3rem; border-radius: 50%; object-fit: cover; margin-right: 1rem;">
-                        <div>
-                            <h4 style="font-weight: 600; margin-bottom: 0.25rem;">Muhammad Subhan</h4>
-                            <p style="font-size: 0.875rem; color: #6b7280; margin-bottom: 0.25rem;">Age 14 • Developer & Content Creator</p>
-                            <p style="font-size: 0.875rem; color: #6b7280;">Passionate about creating tools and sharing knowledge to help others succeed.</p>
-                        </div>
-                    </div>
-                </div>
-            `;
-            
-            modal.classList.add('active');
-        }
-
-        function closeBlog() {
-            document.getElementById('blogModal').classList.remove('active');
-        }
-
-        // Reviews functions
-        function openReviews() {
-            document.getElementById('reviewsModal').classList.add('active');
-            loadReviews();
-        }
-
-        function closeReviews() {
-            document.getElementById('reviewsModal').classList.remove('active');
-        }
-
-        function setRating(rating) {
-            currentRating = rating;
-            const stars = document.querySelectorAll('.star');
-            stars.forEach((star, index) => {
-                if (index < rating) {
-                    star.style.opacity = '1';
-                } else {
-                    star.style.opacity = '0.3';
-                }
-            });
-        }
-
-        function submitReview() {
-            const name = document.getElementById('reviewName').value.trim();
-            const text = document.getElementById('reviewText').value.trim();
-            
-            if (!name || !currentRating || !text) {
-                alert('Please fill in all fields and select a rating');
-                return;
-            }
-            
-            const review = {
-                name: name,
-                rating: currentRating,
-                text: text,
-                date: new Date().toISOString()
+            // Mock exchange rates (in real app, use live API)
+            const rates = {
+                'USD': { 'EUR': 0.85, 'GBP': 0.73, 'PKR': 280, 'INR': 83, 'CAD': 1.25 },
+                'EUR': { 'USD': 1.18, 'GBP': 0.86, 'PKR': 330, 'INR': 98, 'CAD': 1.47 },
+                'GBP': { 'USD': 1.37, 'EUR': 1.16, 'PKR': 385, 'INR': 114, 'CAD': 1.71 },
+                'PKR': { 'USD': 0.0036, 'EUR': 0.003, 'GBP': 0.0026, 'INR': 0.30, 'CAD': 0.0045 },
+                'INR': { 'USD': 0.012, 'EUR': 0.010, 'GBP': 0.0088, 'PKR': 3.37, 'CAD': 0.015 },
+                'CAD': { 'USD': 0.80, 'EUR': 0.68, 'GBP': 0.58, 'PKR': 224, 'INR': 66 }
             };
             
-            let reviews = JSON.parse(localStorage.getItem('siteReviews') || '[]');
-            reviews.unshift(review);
-            localStorage.setItem('siteReviews', JSON.stringify(reviews));
+            let convertedAmount;
+            if (fromCurrency === toCurrency) {
+                convertedAmount = amount;
+            } else {
+                convertedAmount = amount * (rates[fromCurrency]?.[toCurrency] || 1);
+            }
             
-            // Clear form
-            document.getElementById('reviewName').value = '';
-            document.getElementById('reviewText').value = '';
-            currentRating = 0;
-            setRating(0);
-            
-            alert('Thank you for your review!');
-            loadReviews();
+            result.innerHTML = `<strong>${amount} ${fromCurrency} = ${convertedAmount.toFixed(2)} ${toCurrency}</strong>`;
+            result.classList.remove('hidden');
         }
 
-        function loadReviews() {
-            const reviews = JSON.parse(localStorage.getItem('siteReviews') || '[]');
-            const reviewsList = document.getElementById('reviewsList');
+        function convertLength() {
+            const value = parseFloat(document.getElementById('lengthValue').value);
+            const fromUnit = document.getElementById('fromLength').value;
+            const toUnit = document.getElementById('toLength').value;
+            const result = document.getElementById('lengthResult');
             
-            if (reviews.length === 0) {
-                reviewsList.innerHTML = '<p style="color: #6b7280;">No reviews yet. Be the first to share your experience!</p>';
+            if (!value) {
+                alert('Please enter a value');
                 return;
             }
             
-            reviewsList.innerHTML = reviews.map(review => `
-                <div style="border: 1px solid #e5e7eb; border-radius: 0.5rem; padding: 1rem; margin-bottom: 1rem;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                        <span style="font-weight: 600;">${review.name}</span>
-                        <div style="color: #fbbf24;">
-                            ${'⭐'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}
-                        </div>
-                    </div>
-                    <p style="color: #6b7280; margin-bottom: 0.5rem;">${review.text}</p>
-                    <p style="font-size: 0.75rem; color: #6b7280;">
-                        ${new Date(review.date).toLocaleDateString()}
-                    </p>
-                </div>
-            `).join('');
+            // Convert to meters first, then to target unit
+            const toMeters = {
+                'meters': 1,
+                'centimeters': 0.01,
+                'inches': 0.0254,
+                'feet': 0.3048,
+                'yards': 0.9144,
+                'kilometers': 1000,
+                'miles': 1609.34
+            };
+            
+            const fromMeters = {
+                'meters': 1,
+                'centimeters': 100,
+                'inches': 39.3701,
+                'feet': 3.28084,
+                'yards': 1.09361,
+                'kilometers': 0.001,
+                'miles': 0.000621371
+            };
+            
+            const meters = value * toMeters[fromUnit];
+            const convertedValue = meters * fromMeters[toUnit];
+            
+            result.innerHTML = `<strong>${value} ${fromUnit} = ${convertedValue.toFixed(4)} ${toUnit}</strong>`;
+            result.classList.remove('hidden');
         }
 
-        // Contact form
-        function submitContact(event) {
-            event.preventDefault();
+        function convertArea() {
+            const value = parseFloat(document.getElementById('areaValue').value);
+            const fromUnit = document.getElementById('fromArea').value;
+            const toUnit = document.getElementById('toArea').value;
+            const result = document.getElementById('areaResult');
             
-            const name = document.getElementById('contactName').value;
-            const email = document.getElementById('contactEmail').value;
-            const subject = document.getElementById('contactSubject').value;
-            const message = document.getElementById('contactMessage').value;
-            
-            // Create mailto link
-            const mailtoLink = `mailto:subhanrajput3222@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
-            
-            // Open default email client
-            window.location.href = mailtoLink;
-            
-            // Show success message
-            alert('Thank you for your message! Your default email client should open. If not, please email subhanrajput3222@gmail.com directly.');
-            
-            // Reset form
-            document.getElementById('contactForm').reset();
-        }
-
-        // Chatbot functions
-        function openChatbot() {
-            const chatbot = document.getElementById('chatbot');
-            chatbot.classList.add('active');
-            
-            if (chatMessages.length === 0) {
-                addBotMessage('Hello! I am your Smart AI Assistant built by Muhammad Subhan (Age 14). I can help you with questions about Finance, Health, Social Media, and our calculators. What would you like to know?');
+            if (!value) {
+                alert('Please enter a value');
+                return;
             }
+            
+            // Convert to square meters first
+            const toSqMeters = {
+                'sqmeters': 1,
+                'sqfeet': 0.092903,
+                'sqinches': 0.00064516,
+                'sqkilometers': 1000000,
+                'acres': 4046.86,
+                'hectares': 10000
+            };
+            
+            const fromSqMeters = {
+                'sqmeters': 1,
+                'sqfeet': 10.7639,
+                'sqinches': 1550,
+                'sqkilometers': 0.000001,
+                'acres': 0.000247105,
+                'hectares': 0.0001
+            };
+            
+            const sqMeters = value * toSqMeters[fromUnit];
+            const convertedValue = sqMeters * fromSqMeters[toUnit];
+            
+            result.innerHTML = `<strong>${value} ${fromUnit} = ${convertedValue.toFixed(6)} ${toUnit}</strong>`;
+            result.classList.remove('hidden');
         }
 
-        function closeChatbot() {
-            document.getElementById('chatbot').classList.remove('active');
+        function calculateSpeed() {
+            const distance = parseFloat(document.getElementById('distance').value);
+            const time = parseFloat(document.getElementById('time').value);
+            const result = document.getElementById('speedResult');
+            
+            if (!distance || !time) {
+                alert('Please enter both distance and time');
+                return;
+            }
+            
+            const speed = distance / time;
+            const speedMps = speed * 1000 / 3600; // km/h to m/s
+            const speedMph = speed * 0.621371; // km/h to mph
+            
+            result.innerHTML = `
+                <strong>Speed:</strong> ${speed.toFixed(2)} km/h<br>
+                <strong>Speed:</strong> ${speedMps.toFixed(2)} m/s<br>
+                <strong>Speed:</strong> ${speedMph.toFixed(2)} mph
+            `;
+            result.classList.remove('hidden');
         }
 
+        function calculateTimeDiff() {
+            const startTime = document.getElementById('startTime').value;
+            const endTime = document.getElementById('endTime').value;
+            const result = document.getElementById('timeResult');
+            
+            if (!startTime || !endTime) {
+                alert('Please enter both start and end times');
+                return;
+            }
+            
+            const start = new Date(`2000-01-01 ${startTime}`);
+            const end = new Date(`2000-01-01 ${endTime}`);
+            
+            let diff = end - start;
+            if (diff < 0) diff += 24 * 60 * 60 * 1000; // Add 24 hours if end is next day
+            
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            
+            result.innerHTML = `<strong>Time Difference:</strong> ${hours} hours and ${minutes} minutes`;
+            result.classList.remove('hidden');
+        }
+
+        function generatePassword() {
+            const length = parseInt(document.getElementById('passwordLength').value);
+            const includeUppercase = document.getElementById('includeUppercase').checked;
+            const includeNumbers = document.getElementById('includeNumbers').checked;
+            const includeSymbols = document.getElementById('includeSymbols').checked;
+            const result = document.getElementById('passwordResult');
+            
+            if (length < 6 || length > 50) {
+                alert('Password length must be between 6 and 50 characters');
+                return;
+            }
+            
+            let chars = 'abcdefghijklmnopqrstuvwxyz';
+            if (includeUppercase) chars += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            if (includeNumbers) chars += '0123456789';
+            if (includeSymbols) chars += '!@#$%^&*()_+-=[]{}|;:,.<>?';
+            
+            let password = '';
+            for (let i = 0; i < length; i++) {
+                password += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            
+            // Calculate password strength
+            let strength = 'Weak';
+            let score = 0;
+            if (length >= 8) score++;
+            if (includeUppercase) score++;
+            if (includeNumbers) score++;
+            if (includeSymbols) score++;
+            if (length >= 12) score++;
+            
+            if (score >= 4) strength = 'Very Strong';
+            else if (score >= 3) strength = 'Strong';
+            else if (score >= 2) strength = 'Medium';
+            
+            result.innerHTML = `
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+                    <input type="text" value="${password}" readonly class="input" style="flex: 1; font-family: monospace;">
+                    <button class="btn btn-secondary" onclick="copyPassword('${password}')" style="padding: 0.75rem;">Copy</button>
+                </div>
+                <div><strong>Strength:</strong> ${strength}</div>
+            `;
+            result.classList.remove('hidden');
+        }
+
+        function copyPassword(password) {
+            navigator.clipboard.writeText(password).then(() => {
+                alert('Password copied to clipboard!');
+            }).catch(() => {
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = password;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                alert('Password copied to clipboard!');
+            });
+        }
+
+        // AI Chat Functions
         function sendMessage() {
             const input = document.getElementById('chatInput');
             const message = input.value.trim();
             
             if (!message) return;
             
-            addUserMessage(message);
+            addMessage(message, 'user');
             input.value = '';
             
+            // Show typing indicator
+            showTypingIndicator();
+            
+            // Simulate AI response
             setTimeout(() => {
-                const response = getBotResponse(message);
-                addBotMessage(response);
-            }, 500);
+                hideTypingIndicator();
+                const aiResponse = getAIResponse(message);
+                addMessage(aiResponse, 'ai');
+            }, 1000 + Math.random() * 1000);
         }
 
-        function handleChatKeyPress(event) {
-            if (event.key === 'Enter') {
-                sendMessage();
+        function askPreset(question) {
+            document.getElementById('chatInput').value = question;
+            sendMessage();
+        }
+
+        function addMessage(content, sender) {
+            const chatMessages = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.style.cssText = 'display: flex; align-items: start; gap: 0.75rem; margin-bottom: 1rem;';
+            
+            const isAI = sender === 'ai';
+            const avatarColor = isAI ? 'var(--primary)' : 'var(--secondary)';
+            const bgColor = isAI ? 'hsl(217, 91%, 97%)' : 'hsl(210, 40%, 96%)';
+            const alignment = isAI ? 'flex-start' : 'flex-end';
+            
+            if (!isAI) {
+                messageDiv.style.flexDirection = 'row-reverse';
+            }
+            
+            messageDiv.innerHTML = `
+                <div style="width: 2rem; height: 2rem; background-color: ${avatarColor}; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                    ${isAI ? 
+                        '<svg width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>' :
+                        '<svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>'
+                    }
+                </div>
+                <div style="background-color: ${bgColor}; padding: 0.75rem; border-radius: 0.5rem; max-width: 70%; animation: slideIn 0.3s ease-out;">
+                    <p style="margin: 0;">${content}</p>
+                </div>
+            `;
+            
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function showTypingIndicator() {
+            const chatMessages = document.getElementById('chatMessages');
+            const typingDiv = document.createElement('div');
+            typingDiv.id = 'typingIndicator';
+            typingDiv.style.cssText = 'display: flex; align-items: start; gap: 0.75rem; margin-bottom: 1rem;';
+            
+            typingDiv.innerHTML = `
+                <div style="width: 2rem; height: 2rem; background-color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                    <svg width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                </div>
+                <div style="background-color: hsl(217, 91%, 97%); padding: 0.75rem; border-radius: 0.5rem; max-width: 70%;">
+                    <p style="margin: 0;">Typing...</p>
+                </div>
+            `;
+            
+            chatMessages.appendChild(typingDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function hideTypingIndicator() {
+            const typingIndicator = document.getElementById('typingIndicator');
+            if (typingIndicator) {
+                typingIndicator.remove();
             }
         }
 
-        function addUserMessage(message) {
-            chatMessages.push({ sender: 'user', text: message });
-            updateChatDisplay();
-        }
-
-        function addBotMessage(message) {
-            chatMessages.push({ sender: 'bot', text: message });
-            updateChatDisplay();
-        }
-
-        function updateChatDisplay() {
-            const messagesContainer = document.getElementById('chatMessages');
-            messagesContainer.innerHTML = chatMessages.map(msg => `
-                <div class="message ${msg.sender}">
-                    <p>${msg.text}</p>
-                </div>
-            `).join('');
-            messagesContainer.scrollTop = messagesContainer.scrollHeight;
-        }
-
-        function getBotResponse(message) {
+        function getAIResponse(message) {
             const lowerMessage = message.toLowerCase();
             
-            // Get user name if they haven't provided it
-            if (!userName && (lowerMessage.includes('my name is') || lowerMessage.includes("i'm") || lowerMessage.includes("i am"))) {
-                const nameMatch = message.match(/(?:my name is|i'm|i am)\s+(\w+)/i);
-                if (nameMatch) {
-                    userName = nameMatch[1];
-                    return `Nice to meet you, ${userName}! I'm your Smart AI Assistant built by Muhammad Subhan (Age 14). How can I help you today?`;
-                }
+            if (lowerMessage.includes('tool') || lowerMessage.includes('calculator')) {
+                return "Calquro.com offers 10 professional tools including Age Calculator, BMI Calculator, Loan/EMI Calculator, Percentage Calculator, Currency Converter, Length Converter, Area Converter, Speed Calculator, Time Calculator, and Password Generator. All tools are free to use and work offline in your browser for privacy and speed.";
             }
             
-            // Responses about the creator
-            if (lowerMessage.includes('muhammad') || lowerMessage.includes('subhan') || lowerMessage.includes('creator') || lowerMessage.includes('who made you')) {
-                return `I was built by Muhammad Subhan, a passionate 14-year-old developer and entrepreneur. He created this platform to help people with useful tools and share knowledge about finance, health, and social media. Muhammad believes in using technology to solve real problems and help others succeed.`;
+            if (lowerMessage.includes('contact') || lowerMessage.includes('email') || lowerMessage.includes('reach')) {
+                return "You can contact Muhammad Subhan, the developer of Calquro.com, by using the contact form or sending an email directly to subhanrajput3222@gmail.com. He specializes in web development, SEO optimization, and AI integration, and responds to all inquiries within 24 hours.";
             }
             
-            // Responses about tools/calculators
-            if (lowerMessage.includes('calculator') || lowerMessage.includes('tool')) {
-                return `I can help you with our amazing calculators! We have:\n• Age Calculator - Get your exact age in years, months, days, hours, minutes, and seconds\n• BMI Calculator - Check your body mass index and health category\n• Loan/EMI Calculator - Calculate monthly payments with detailed breakdown\n• Username Checker - Check availability on social platforms\n• AdSense Calculator - Estimate your potential earnings\n\nWhich one interests you most?`;
+            if (lowerMessage.includes('blog') || lowerMessage.includes('article') || lowerMessage.includes('content')) {
+                return "The blog section features professional articles on web development, AI technology, SEO, finance, health & technology, security, automation, and programming. Each article is written by Muhammad Subhan and provides practical insights, actionable tips, and industry best practices for readers.";
             }
             
-            // Finance advice
-            if (lowerMessage.includes('finance') || lowerMessage.includes('money') || lowerMessage.includes('invest') || lowerMessage.includes('saving')) {
-                return `Great question about finance! As a young entrepreneur, I recommend starting with these basics:\n• Build an emergency fund first (even $500 helps)\n• Learn about compound interest - it's magical when you start young\n• Consider index funds for long-term investing\n• Track your spending to understand money habits\n• Take advantage of student discounts everywhere!\n\nWould you like specific advice on any of these topics?`;
+            if (lowerMessage.includes('privacy') || lowerMessage.includes('data') || lowerMessage.includes('secure')) {
+                return "Calquro.com prioritizes your privacy and security. All calculator operations are performed locally in your browser - no calculation data is sent to servers. We only collect basic contact information when you submit the contact form, and we never share your data with third parties. Your privacy is our commitment.";
             }
             
-            // Health advice
-            if (lowerMessage.includes('health') || lowerMessage.includes('exercise') || lowerMessage.includes('nutrition') || lowerMessage.includes('sleep')) {
-                return `Health is so important for success! Here are my top tips:\n• Aim for 8-9 hours of sleep (your brain needs it!)\n• Eat brain foods like blueberries, nuts, and fish\n• Exercise 30 minutes daily - even walking counts\n• Stay hydrated throughout the day\n• Take breaks from screens to rest your eyes\n• Practice stress management techniques\n\nRemember, good health = better academic and life performance!`;
+            if (lowerMessage.includes('service') || lowerMessage.includes('development') || lowerMessage.includes('hire')) {
+                return "Muhammad Subhan offers comprehensive web development services including custom website development, responsive design, SEO optimization, AI integration, and online tool development. Whether you need a business website, e-commerce platform, or custom web application, he can help bring your vision to life. Contact through the form for project discussions.";
             }
             
-            // Social media advice
-            if (lowerMessage.includes('social media') || lowerMessage.includes('instagram') || lowerMessage.includes('content') || lowerMessage.includes('followers')) {
-                return `Social media growth is all about providing value! Here's what works:\n• Find your niche and stick to it\n• Post consistently but prioritize quality\n• Engage genuinely with your community\n• Use relevant hashtags strategically\n• Share your authentic story and journey\n• Collaborate with others in your space\n\nRemember: 1000 engaged followers > 10,000 passive ones. Focus on building real connections!`;
+            if (lowerMessage.includes('how') && (lowerMessage.includes('use') || lowerMessage.includes('work'))) {
+                return "Using Calquro.com is simple! Navigate through different pages using the menu: Tools page for calculators, AI Chat for assistance, Blog for articles, About for platform info, and Contact for reaching out. All tools work by entering your values and clicking calculate. Everything runs in your browser for instant results.";
             }
             
-            // Blog content generation
-            if (lowerMessage.includes('blog') || lowerMessage.includes('write') || lowerMessage.includes('content')) {
-                return `I'd love to help you with content creation! I can generate 500-word SEO-friendly blog posts on topics like:\n• Personal finance for students\n• Health and wellness tips\n• Social media marketing strategies\n• Study techniques and productivity\n• Technology and web development\n\nJust tell me what topic you'd like me to write about, and I'll create valuable content for you!`;
+            if (lowerMessage.includes('free') || lowerMessage.includes('cost') || lowerMessage.includes('price')) {
+                return "All tools and calculators on Calquro.com are completely free to use! There are no hidden costs, subscriptions, or premium features. Muhammad Subhan provides these tools as a service to help people with everyday calculations and to showcase his development skills.";
             }
             
-            // Age/teenager specific
-            if (lowerMessage.includes('age') || lowerMessage.includes('14') || lowerMessage.includes('young') || lowerMessage.includes('teenager')) {
-                return `Being 14 and building all this has been an incredible journey! Starting young gives you amazing advantages:\n• More time to learn and experiment\n• Fresh perspective on problems\n• Natural comfort with technology\n• Energy to try new things\n• Time for compound growth (in learning and investing!)\n\nAge is just a number - focus on providing value and solving real problems. What matters is your dedication and willingness to learn!`;
+            if (lowerMessage.includes('mobile') || lowerMessage.includes('phone') || lowerMessage.includes('responsive')) {
+                return "Yes! Calquro.com is fully responsive and works perfectly on all devices including smartphones, tablets, and desktop computers. All tools and features are optimized for mobile use, ensuring a great experience regardless of your device.";
             }
             
-            // General help
-            if (lowerMessage.includes('help') || lowerMessage.includes('what can you do')) {
-                return `I'm here to help with everything on this site! I can:\n• Answer questions about our calculators and tools\n• Provide tips on finance, health, and social media\n• Generate blog content on various topics\n• Share insights about web development and entrepreneurship\n• Help you understand how Muhammad Subhan built this platform\n\nWhat would you like to know more about?`;
-            }
-            
-            // Default responses
-            const defaultResponses = [
-                `That's an interesting question${userName ? `, ${userName}` : ''}! I specialize in finance, health, social media, and our calculator tools. Could you be more specific about what you'd like to know?`,
-                `I'd love to help you with that! As Muhammad Subhan's AI assistant, I'm best at discussing our tools, finance tips, health advice, and social media strategies. What specific area interests you?`,
-                `Thanks for asking! I'm designed to help with topics related to our calculators, financial literacy, health tips, and social media growth. What would you like to explore?`
-            ];
-            
-            return defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
+            return "I can help you with information about Calquro.com's tools, blog articles, contact details, privacy policy, services offered by Muhammad Subhan, and general website navigation. What specific information would you like to know about our platform?";
         }
 
-        // Close modals when clicking outside
-        window.onclick = function(event) {
-            const modals = document.querySelectorAll('.modal');
-            modals.forEach(modal => {
-                if (event.target === modal) {
-                    modal.classList.remove('active');
+        // Contact Form
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const subject = document.getElementById('contactSubject').value;
+            const message = document.getElementById('contactMessage').value;
+            
+            if (!name || !email || !message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            
+            alert('Thank you for your message! Muhammad Subhan will get back to you within 24 hours.');
+            
+            // Reset form
+            document.getElementById('contactName').value = '';
+            document.getElementById('contactEmail').value = '';
+            document.getElementById('contactSubject').value = '';
+            document.getElementById('contactMessage').value = '';
+        });
+
+        // Chat input enter key
+        document.getElementById('chatInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set initial active navigation
+            updateNavigation('home');
+            
+            // Add loading animation to all cards
+            const cards = document.querySelectorAll('.card, .tool-card, .blog-card');
+            cards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.1}s`;
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(e) {
+                const mobileNav = document.getElementById('mobileNav');
+                const mobileButton = document.querySelector('.mobile-menu');
+                
+                if (!mobileNav.contains(e.target) && !mobileButton.contains(e.target)) {
+                    mobileNav.classList.remove('show');
                 }
             });
-        }
+        });
 
-        // Initialize page
-        document.addEventListener('DOMContentLoaded', function() {
-            loadBlogs();
-            setRating(0);
+        // Smooth scrolling and page transitions
+        window.addEventListener('beforeunload', function() {
+            document.body.style.opacity = '0';
         });
     </script>
 </body>
 </html>
+
 
 
 
