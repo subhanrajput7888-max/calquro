@@ -1,2 +1,1 @@
-https://srv.adstxtmanager.com/19390/calquro.com
-
+Redirect 301 /ads.txt https://srv.adstxtmanager.com/19390/calquro.com
