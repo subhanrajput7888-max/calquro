@@ -1,0 +1,52 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://calquro.com/sitemap.xml
+
+# Crawl-delay for better server performance
+Crawl-delay: 1
+
+# Specific directives for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# High priority pages for indexing
+Allow: /blog/finance/
+Allow: /blog/health/
+Allow: /blog/technology/
+Allow: /blog/education/
+Allow: /tools/
+
+# Allow CSS, JS, and image files for proper rendering
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Block any admin areas if they exist
+# Disallow: /admin/
+# Disallow: /private/
+
+# Calquro specific optimization
+# Finance calculator pages
+Allow: /tools/emi-calculator.html
+Allow: /tools/currency-converter.html
+Allow: /tools/percentage-calculator.html
+
+# Health calculator pages  
+Allow: /tools/bmi-calculator.html
+Allow: /tools/age-calculator.html
+
+# Technology and Education tools
+Allow: /tools/student-calculator.html
+Allow: /tools/password-generator.html
+Allow: /ai.html
