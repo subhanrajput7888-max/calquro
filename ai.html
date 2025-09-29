@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart AI Assistant - Calquro | AI-Powered Calculator Help</title>
+    <meta name="description" content="Chat with Calquro's Smart AI Assistant for help with calculators, tools, and mathematical calculations. Get instant answers and guidance.">
+    <meta name="keywords" content="AI assistant, calculator help, smart AI, chatbot, mathematical help, Calquro AI">
+    <meta name="author" content="Calquro">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Smart AI Assistant - Calquro">
+    <meta property="og:description" content="Chat with our AI assistant for help with calculators and mathematical calculations.">
+    <meta property="og:image" content="https://iili.io/KuC0mDQ.png">
+    <meta property="og:url" content="https://calquro.com/ai.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Smart AI Assistant - Calquro">
+    <meta name="twitter:description" content="AI-powered help for all your calculation needs.">
+    <meta name="twitter:image" content="https://iili.io/KuC0mDQ.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://iili.io/KuC0mDQ.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <img src="https://iili.io/KuC0mDQ.png" alt="Calquro Logo">
+                <span>Calquro</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="tools.html" class="nav-link">Tools</a></li>
+                <li><a href="ai.html" class="nav-link">Smart AI</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Smart AI Assistant</h1>
+                <p>Get instant help with calculations, understand our tools, and receive personalized guidance for all your mathematical needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <!-- AI Features -->
+            <div class="grid grid-3" style="margin-bottom: 3rem;">
+                <div class="card text-center animate-on-scroll">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🤖</div>
+                    <h3>Intelligent Assistance</h3>
+                    <p>Get smart answers about calculations, tools, and mathematical concepts from our AI assistant.</p>
+                </div>
+                <div class="card text-center animate-on-scroll">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">⚡</div>
+                    <h3>Instant Responses</h3>
+                    <p>Receive immediate help and guidance without waiting. Our AI is available 24/7 for your convenience.</p>
+                </div>
+                <div class="card text-center animate-on-scroll">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🎯</div>
+                    <h3>Personalized Help</h3>
+                    <p>Get customized advice based on your specific questions and calculation needs.</p>
+                </div>
+            </div>
+
+            <!-- Chatbot Container -->
+            <div class="chatbot-container" id="chatbot-container">
+                <div class="chatbot-header">
+                    <h3>💬 Calquro AI Assistant</h3>
+                    <p style="margin: 0; opacity: 0.9;">Ask me anything about calculators, tools, or mathematics!</p>
+                </div>
+                
+                <div class="chatbot-messages" id="chat-messages">
+                    <!-- Messages will be added here dynamically -->
+                </div>
+                
+                <div class="chatbot-input">
+                    <input type="text" id="chat-input" placeholder="Type your question here..." autocomplete="off">
+                    <button class="btn btn-primary" id="send-button">Send</button>
+                </div>
+            </div>
+
+            <!-- Quick Questions -->
+            <div style="margin-top: 2rem;">
+                <h3 class="text-center">Quick Questions to Get Started</h3>
+                <div class="grid grid-2" style="gap: 1rem; margin-top: 1.5rem;">
+                    <button class="btn btn-secondary" onclick="askQuestion('How do I calculate my BMI?')" style="text-align: left; justify-content: flex-start;">
+                        How do I calculate my BMI?
+                    </button>
+                    <button class="btn btn-secondary" onclick="askQuestion('What calculators do you have?')" style="text-align: left; justify-content: flex-start;">
+                        What calculators do you have?
+                    </button>
+                    <button class="btn btn-secondary" onclick="askQuestion('How does the student calculator work?')" style="text-align: left; justify-content: flex-start;">
+                        How does the student calculator work?
+                    </button>
+                    <button class="btn btn-secondary" onclick="askQuestion('Tell me about currency conversion')" style="text-align: left; justify-content: flex-start;">
+                        Tell me about currency conversion
+                    </button>
+                    <button class="btn btn-secondary" onclick="askQuestion('How to calculate age in days?')" style="text-align: left; justify-content: flex-start;">
+                        How to calculate age in days?
+                    </button>
+                    <button class="btn btn-secondary" onclick="askQuestion('What is a strong password?')" style="text-align: left; justify-content: flex-start;">
+                        What is a strong password?
+                    </button>
+                </div>
+            </div>
+
+            <!-- AI Capabilities -->
+            <div class="card" style="margin-top: 3rem;">
+                <h3>🧠 What Our AI Can Help You With</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 1rem;">
+                    <div>
+                        <h4>Calculator Guidance</h4>
+                        <ul style="color: var(--text-secondary); line-height: 1.8;">
+                            <li>How to use specific calculators</li>
+                            <li>Understanding calculation results</li>
+                            <li>Choosing the right tool for your needs</li>
+                            <li>Step-by-step calculation guides</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Mathematical Help</h4>
+                        <ul style="color: var(--text-secondary); line-height: 1.8;">
+                            <li>Explaining mathematical concepts</li>
+                            <li>Formula explanations</li>
+                            <li>Unit conversions</li>
+                            <li>Problem-solving strategies</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Site Navigation</h4>
+                        <ul style="color: var(--text-secondary); line-height: 1.8;">
+                            <li>Finding specific tools</li>
+                            <li>Understanding site features</li>
+                            <li>Troubleshooting issues</li>
+                            <li>General site information</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Recommendations</h4>
+                        <ul style="color: var(--text-secondary); line-height: 1.8;">
+                            <li>Best practices for calculations</li>
+                            <li>Health and fitness advice</li>
+                            <li>Financial calculation tips</li>
+                            <li>Educational resources</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tips for Better AI Interaction -->
+            <div class="card" style="margin-top: 2rem;">
+                <h3>💡 Tips for Better AI Interaction</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+                    <div>
+                        <h4>Be Specific</h4>
+                        <p style="color: var(--text-secondary);">Instead of "help me," try "How do I calculate my BMI using metric units?" for more targeted assistance.</p>
+                    </div>
+                    <div>
+                        <h4>Ask Follow-up Questions</h4>
+                        <p style="color: var(--text-secondary);">Don't hesitate to ask for clarification or additional information about any topic.</p>
+                    </div>
+                    <div>
+                        <h4>Provide Context</h4>
+                        <p style="color: var(--text-secondary);">Let the AI know what you're trying to accomplish or why you need the information.</p>
+                    </div>
+                    <div>
+                        <h4>Explore Features</h4>
+                        <p style="color: var(--text-secondary);">Ask about different calculators and tools to discover features you might not know about.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Tools -->
+            <div style="margin-top: 4rem; text-align: center;">
+                <h2>Explore Our Calculator Tools</h2>
+                <p>While you're here, check out our comprehensive collection of calculators and tools.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="tools/bmi-calculator.html" class="btn btn-secondary">BMI Calculator</a>
+                    <a href="tools/age-calculator.html" class="btn btn-secondary">Age Calculator</a>
+                    <a href="tools/student-calculator.html" class="btn btn-secondary">Student Calculator</a>
+                    <a href="tools.html" class="btn btn-primary">All Tools</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Calquro</h3>
+                    <p>Professional online calculators and tools for everyone. Fast, accurate, and completely free to use.</p>
+                    <div style="margin-top: 1rem;">
+                        <img src="https://iili.io/KuC0mDQ.png" alt="Calquro Logo" style="height: 40px;">
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tools.html">Tools</a></li>
+                        <li><a href="ai.html">Smart AI</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Popular Tools</h3>
+                    <ul>
+                        <li><a href="tools/bmi-calculator.html">BMI Calculator</a></li>
+                        <li><a href="tools/age-calculator.html">Age Calculator</a></li>
+                        <li><a href="tools/currency-converter.html">Currency Converter</a></li>
+                        <li><a href="tools/percentage-calculator.html">Percentage Calculator</a></li>
+                        <li><a href="tools/student-calculator.html">Student Calculator</a></li>
+                        <li><a href="tools/password-generator.html">Password Generator</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="contact.html">Terms of Service</a></li>
+                        <li><a href="contact.html">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Calquro.com. All rights reserved. Made with ❤️ for everyone who needs reliable calculations.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Additional AI-specific functionality
+        function askQuestion(question) {
+            const chatInput = document.getElementById('chat-input');
+            chatInput.value = question;
+            
+            // Simulate button click
+            const sendButton = document.getElementById('send-button');
+            sendButton.click();
+        }
+
+        // Enhanced AI responses for more detailed interactions
+        function generateAIResponse(userMessage) {
+            const message = userMessage.toLowerCase();
+            
+            // Calculator-specific responses
+            if (message.includes('bmi') || message.includes('body mass')) {
+                return 'Our BMI Calculator helps you determine if your weight is in a healthy range! 📊 Simply enter your height and weight (in metric or imperial units), and it will:\n\n• Calculate your exact BMI\n• Tell you which category you fall into\n• Provide health recommendations\n• Explain what the numbers mean\n\nYou can find it at Tools → BMI Calculator. Would you like me to explain how BMI is calculated or what the different categories mean?';
+            }
+            
+            if (message.includes('age') && (message.includes('calculate') || message.includes('birthday'))) {
+                return 'The Age Calculator is perfect for finding your exact age! 🎂 It can tell you:\n\n• Your age in years, months, and days\n• Total days, hours, and minutes you\'ve lived\n• Fun facts about your age\n• Days until your next birthday\n\nJust enter your birth date and it does the rest! You can even calculate age as of a specific date. Want to try it out?';
+            }
+            
+            if (message.includes('student calculator') || message.includes('scientific')) {
+                return 'Our Student Calculator is a powerful scientific calculator! 🎓 It includes:\n\n• Basic arithmetic (+, -, ×, ÷)\n• Scientific functions (sin, cos, tan, log, ln)\n• Powers and roots (x², x³, √, x^y)\n• Constants (π, e)\n• Memory functions (MS, MR, MC, M+, M-)\n• Factorial and more!\n\nIt\'s perfect for homework, exams, and complex calculations. The interface is designed to be just like a real scientific calculator. Need help with any specific function?';
+            }
+            
+            if (message.includes('currency') || message.includes('exchange')) {
+                return 'Our Currency Converter makes international transactions easy! 💱 Features include:\n\n• Real-time exchange rates\n• Major world currencies\n• Perfect for travel planning\n• Business calculations\n• Simple, fast conversions\n\nJust select your currencies, enter the amount, and get instant results. Great for travelers, online shoppers, and businesses dealing internationally!';
+            }
+            
+            if (message.includes('password') || message.includes('security')) {
+                return 'The Password Generator creates super secure passwords! 🔐 You can customize:\n\n• Password length (4-128 characters)\n• Include/exclude numbers\n• Include/exclude symbols\n• Include/exclude uppercase letters\n• Generate multiple passwords\n• Copy to clipboard instantly\n\nStrong passwords should be at least 12 characters long and include a mix of letters, numbers, and symbols. Want me to explain what makes a password secure?';
+            }
+            
+            if (message.includes('percentage') || message.includes('percent')) {
+                return 'Our Percentage Calculator handles all percentage calculations! 📊 It can:\n\n• Calculate what % one number is of another\n• Find percentage increases and decreases\n• Calculate percentages of numbers\n• Work out tips, discounts, and markups\n• Show step-by-step calculations\n\nGreat for shopping discounts, grade calculations, business analytics, and more. Which type of percentage calculation do you need help with?';
+            }
+            
+            // General help responses
+            if (message.includes('tools') || message.includes('calculators')) {
+                return `Calquro has 11 amazing calculators! 🛠️ Here's the complete list:
+
+• Age Calculator - Exact age calculations
+• BMI Calculator - Health assessments
+• EMI Calculator - Loan calculations
+• Currency Converter - Exchange rates
+• Percentage Calculator - All % calculations
+• Length Converter - Distance units
+• Area Converter - Area measurements
+• Speed Calculator - Velocity calculations
+• Time Calculator - Time operations
+• Password Generator - Secure passwords
+• Student Calculator - Scientific functions
+
+All are free, fast, and work on any device! Which one interests you most?`;
+            }
+            
+            if (message.includes('how') && message.includes('use')) {
+                return 'Great question! All our calculators are designed to be super easy to use:\n\n1. 📝 Enter your values in the input fields\n2. 🖱️ Click the calculate button\n3. 📊 Get instant, accurate results\n4. 💡 Read explanations and tips\n\nMost calculators also show:\n• Step-by-step explanations\n• Additional information\n• Related tools\n• Helpful tips\n\nWhich specific calculator would you like help with?';
+            }
+            
+            if (message.includes('about') || message.includes('who')) {
+                return 'Calquro is created by a passionate developer who wanted to make calculations easier for everyone! 👨‍💻\n\nOur mission:\n• Provide free, professional calculators\n• Make complex calculations simple\n• Help students, professionals, and everyone\n• Ensure accuracy and reliability\n\nEverything is built with modern web technology, optimized for speed, and designed for the best user experience. You can learn more on our About page!';
+            }
+            
+            if (message.includes('contact') || message.includes('support')) {
+                return `Need to get in touch? We'd love to hear from you! 📧
+
+You can reach us through:
+• Contact form on our Contact page
+• Email: subhanrajput3222@gmail.com
+• Feedback and suggestions welcome
+• Bug reports appreciated
+
+We typically respond within 24 hours and love hearing from our users about how we can improve Calquro!`;
+            }
+            
+            if (message.includes('free') || message.includes('cost')) {
+                return 'Yes! Absolutely everything on Calquro is 100% free! 🎉\n\n• No hidden fees\n• No subscriptions\n• No registration required\n• No ads (well, minimal)\n• No limitations on usage\n\nWe believe powerful calculation tools should be accessible to everyone. Our goal is to help people with their calculations without any barriers!';
+            }
+            
+            if (message.includes('mobile') || message.includes('phone')) {
+                return 'All Calquro tools work perfectly on mobile devices! 📱\n\n• Responsive design for all screen sizes\n• Touch-friendly interfaces\n• Fast loading on mobile networks\n• Works on iOS, Android, and all browsers\n• No app download needed\n\nJust visit Calquro.com in your mobile browser and everything works seamlessly!';
+            }
+            
+            // Default responses for unmatched queries
+            const defaultResponses = [
+                `That's an interesting question! I'm here to help with anything related to Calquro's calculators and tools. You can ask me about:
+
+• How to use specific calculators
+• Mathematical concepts and formulas
+• Which tool is best for your needs
+• Site features and navigation
+
+What would you like to know more about?`,
+                
+                `I'm happy to help! 😊 I specialize in:
+
+• Explaining how our calculators work
+• Helping you choose the right tool
+• Mathematical guidance and tips
+• Site navigation and features
+
+Feel free to ask about any of our 11 calculators or mathematical concepts!`,
+                
+                `Great question! I'm here to assist with all things related to calculations and our tools. Whether you need help with:
+
+• Specific calculator functions
+• Understanding results
+• Mathematical concepts
+• Choosing the right tool
+
+Just let me know what you'd like to explore!`
+            ];
+            
+            return defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
+        }
+    </script>
+</body>
+</html>
