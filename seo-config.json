@@ -1,0 +1,99 @@
+{
+  "seo_optimization": {
+    "primary_keywords": [
+      "free calculator",
+      "online calculator",
+      "BMI calculator",
+      "age calculator", 
+      "EMI calculator",
+      "percentage calculator",
+      "currency converter",
+      "length converter",
+      "area converter",
+      "speed calculator",
+      "student calculator",
+      "password generator",
+      "time calculator"
+    ],
+    "secondary_keywords": [
+      "free tools",
+      "calculation tools",
+      "math calculator",
+      "scientific calculator",
+      "financial calculator",
+      "health calculator",
+      "converter tools",
+      "online tools",
+      "calculator website",
+      "calquro"
+    ],
+    "target_locations": [
+      "United States",
+      "Canada", 
+      "United Kingdom",
+      "Australia",
+      "India",
+      "Global"
+    ],
+    "content_categories": [
+      "Finance",
+      "Health",
+      "Technology", 
+      "Education"
+    ],
+    "google_search_goals": [
+      "calculator",
+      "BMI calculator",
+      "age calculator",
+      "EMI calculator", 
+      "percentage calculator",
+      "currency converter",
+      "free calculator tools",
+      "online calculator",
+      "math calculator",
+      "financial calculator"
+    ],
+    "competitor_analysis": {
+      "primary_competitors": [
+        "calculator.net",
+        "rapidtables.com",
+        "mathway.com"
+      ],
+      "competitive_advantages": [
+        "Completely free with no ads",
+        "Mobile-friendly design",
+        "Expert blog content",
+        "AI assistant integration",
+        "Multiple calculator categories",
+        "No registration required"
+      ]
+    },
+    "structured_data_types": [
+      "WebSite",
+      "SoftwareApplication", 
+      "Article",
+      "FAQPage",
+      "BreadcrumbList"
+    ]
+  },
+  "social_media_optimization": {
+    "og_image_sizes": ["1200x630", "600x315"],
+    "twitter_card_type": "summary_large_image",
+    "pinterest_verification": "To be added",
+    "facebook_app_id": "To be added"
+  },
+  "technical_seo": {
+    "mobile_friendly": true,
+    "page_speed_score_target": "90+",
+    "core_web_vitals_optimized": true,
+    "https_enabled": true,
+    "canonical_urls": true,
+    "xml_sitemap": true,
+    "robots_txt": true,
+    "schema_markup": true
+  },
+  "local_seo": {
+    "applicable": false,
+    "reason": "Global online service"
+  }
+}

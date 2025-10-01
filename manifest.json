@@ -1,0 +1,113 @@
+{
+  "name": "Calquro - Free Calculator Tools | BMI, Age, EMI, Percentage, Currency Converter",
+  "short_name": "Calquro",
+  "description": "Free professional online calculators: BMI Calculator, Age Calculator, EMI Calculator, Percentage Calculator, Currency Converter, Length & Area Converters, Speed Calculator, Student Calculator, Password Generator. Instant accurate results on any device.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": ["productivity", "utilities", "education", "finance", "health", "tools", "calculator"],
+  "keywords": ["calculator", "BMI", "age", "EMI", "percentage", "currency", "converter", "tools", "free", "online", "math"],
+  "icons": [
+    {
+      "src": "https://iili.io/KuC0mDQ.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "https://iili.io/KuC0mDQ.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "sizes": "800x600",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Calquro Calculator Tools Overview"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      "sizes": "400x800",
+      "type": "image/png",
+      "platform": "narrow",
+      "label": "Calquro Mobile Calculator"
+    }
+  ],
+  "features": [
+    "BMI Calculator",
+    "Age Calculator", 
+    "EMI Calculator",
+    "Currency Converter",
+    "Percentage Calculator",
+    "Length Converter",
+    "Area Converter", 
+    "Speed Calculator",
+    "Student Calculator",
+    "Password Generator",
+    "Smart AI Assistant",
+    "Expert Knowledge Hub"
+  ],
+  "shortcuts": [
+    {
+      "name": "BMI Calculator",
+      "short_name": "BMI",
+      "description": "Calculate your Body Mass Index",
+      "url": "/tools/bmi-calculator.html",
+      "icons": [
+        {
+          "src": "https://iili.io/KuC0mDQ.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Age Calculator",
+      "short_name": "Age",
+      "description": "Calculate your exact age",
+      "url": "/tools/age-calculator.html",
+      "icons": [
+        {
+          "src": "https://iili.io/KuC0mDQ.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "EMI Calculator",
+      "short_name": "EMI",
+      "description": "Calculate loan EMI",
+      "url": "/tools/emi-calculator.html",
+      "icons": [
+        {
+          "src": "https://iili.io/KuC0mDQ.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Smart AI Assistant",
+      "short_name": "AI",
+      "description": "Get AI assistance",
+      "url": "/ai.html",
+      "icons": [
+        {
+          "src": "https://iili.io/KuC0mDQ.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
+}
