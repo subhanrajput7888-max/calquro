@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length Converter - Convert Units of Length | Calquro</title>
+    <meta name="description" content="Convert between different units of length including meters, feet, inches, kilometers, miles, and more with our free length converter.">
+    <meta name="keywords" content="length converter, unit converter, meters to feet, inches to cm, kilometers to miles, distance converter">
+    <meta name="author" content="Calquro">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Length Converter - Convert Units of Length | Calquro">
+    <meta property="og:description" content="Free length converter for all measurement units.">
+    <meta property="og:image" content="https://iili.io/KuC0mDQ.png">
+    <meta property="og:url" content="https://calquro.com/tools/length-converter.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://iili.io/KuC0mDQ.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="../index.html" class="logo">
+                <img src="https://iili.io/KuC0mDQ.png" alt="Calquro Logo">
+                <span>Calquro</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../tools.html" class="nav-link">Tools</a></li>
+                <li><a href="../ai.html" class="nav-link">Smart AI</a></li>
+                <li><a href="../blog.html" class="nav-link">Blog</a></li>
+                <li><a href="../about.html" class="nav-link">About</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main style="margin-top: 80px;">
+        <section class="section" style="padding: 1rem 0;">
+            <div class="container">
+                <a href="../tools.html" class="btn btn-secondary">← Back to Tools</a>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="container">
+                <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <h1>Length Converter</h1>
+                    <p>Convert between different units of length including meters, feet, inches, kilometers, miles, and more.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top: 0;">
+            <div class="container">
+                <div style="max-width: 600px; margin: 0 auto;">
+                    <div class="card">
+                        <h2>Length Converter</h2>
+                        
+                        <div class="form-group">
+                            <label for="lengthValue" class="form-label">Value</label>
+                            <input type="number" id="lengthValue" class="form-input" placeholder="Enter value" value="1" step="any">
+                        </div>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; align-items: end;">
+                            <div class="form-group">
+                                <label for="fromUnit" class="form-label">From</label>
+                                <select id="fromUnit" class="form-input">
+                                    <option value="m">Meters (m)</option>
+                                    <option value="cm">Centimeters (cm)</option>
+                                    <option value="mm">Millimeters (mm)</option>
+                                    <option value="km">Kilometers (km)</option>
+                                    <option value="in">Inches (in)</option>
+                                    <option value="ft">Feet (ft)</option>
+                                    <option value="yd">Yards (yd)</option>
+                                    <option value="mi">Miles (mi)</option>
+                                </select>
+                            </div>
+                            
+                            <button onclick="swapUnits()" style="background: var(--primary-color); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer;">⇄</button>
+                            
+                            <div class="form-group">
+                                <label for="toUnit" class="form-label">To</label>
+                                <select id="toUnit" class="form-input">
+                                    <option value="m">Meters (m)</option>
+                                    <option value="cm">Centimeters (cm)</option>
+                                    <option value="mm">Millimeters (mm)</option>
+                                    <option value="km">Kilometers (km)</option>
+                                    <option value="in">Inches (in)</option>
+                                    <option value="ft" selected>Feet (ft)</option>
+                                    <option value="yd">Yards (yd)</option>
+                                    <option value="mi">Miles (mi)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <button onclick="convertLength()" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Convert</button>
+                        
+                        <div id="lengthResult" style="margin-top: 2rem; display: none;">
+                            <div style="background: var(--background-alt); padding: 1.5rem; border-radius: var(--border-radius); text-align: center;">
+                                <div style="font-size: 2rem; color: var(--primary-color); font-weight: 700;" id="convertedValue">0</div>
+                                <div style="color: var(--text-secondary);" id="conversionFormula">1 meter = 3.28084 feet</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Calquro</h3>
+                    <p>Professional online calculators and tools for everyone.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/tools/length-converter.js"></script>
+</body>
+</html>

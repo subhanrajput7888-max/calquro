@@ -1,0 +1,88 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://calquro.com/sitemap.xml
+
+# Crawl-delay for better server performance
+Crawl-delay: 1
+
+# Specific directives for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# High priority pages for indexing
+Allow: /blog/finance/
+Allow: /blog/health/
+Allow: /blog/technology/
+Allow: /blog/education/
+Allow: /tools/
+
+# All Calculator Tools - High Priority
+Allow: /tools/age-calculator.html
+Allow: /tools/area-converter.html
+Allow: /tools/bmi-calculator.html
+Allow: /tools/currency-converter.html
+Allow: /tools/emi-calculator.html
+Allow: /tools/length-converter.html
+Allow: /tools/password-generator.html
+Allow: /tools/percentage-calculator.html
+Allow: /tools/speed-calculator.html
+Allow: /tools/student-calculator.html
+Allow: /tools/time-calculator.html
+
+# Finance Blog Articles 2025
+Allow: /blog/finance/personal-finance-mastery-2025.html
+Allow: /blog/finance/budgeting-guide-2025.html
+Allow: /blog/finance/investment-guide-2025.html
+Allow: /blog/finance/personal-loan-guide-2025.html
+
+# Health Blog Articles 2025
+Allow: /blog/health/bmi-health-guide-2025.html
+Allow: /blog/health/nutrition-planning-guide-2025.html
+Allow: /blog/health/wellness-guide-2025.html
+Allow: /blog/health/fitness-planning-guide-2025.html
+
+# Technology Blog Articles 2025
+Allow: /blog/technology/calculator-technology-guide-2025.html
+Allow: /blog/technology/web-development-trends-2025.html
+Allow: /blog/technology/cybersecurity-fundamentals-2025.html
+Allow: /blog/technology/mobile-app-security-2025.html
+Allow: /blog/technology/cloud-storage-safety-2025.html
+Allow: /blog/technology/password-security-guide-2025.html
+
+# Education Blog Articles 2025
+Allow: /blog/education/mathematics-learning-guide-2025.html
+Allow: /blog/education/study-skills-mastery-2025.html
+Allow: /blog/education/online-learning-mastery-2025.html
+Allow: /blog/education/digital-literacy-skills-2025.html
+Allow: /blog/education/study-productivity-techniques-2025.html
+Allow: /blog/education/study-success-strategies-2025.html
+Allow: /blog/education/unit-conversion-mastery-2025.html
+
+# Core Pages
+Allow: /index.html
+Allow: /tools.html
+Allow: /blog.html
+Allow: /ai.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /privacy-policy.html
+
+# Allow CSS, JS, and image files for proper rendering
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Block any admin areas if they exist
+# Disallow: /admin/
+# Disallow: /private/
