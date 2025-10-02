@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter - Real-time Exchange Rates | Calquro</title>
+    <meta name="description" content="Convert between major world currencies with real-time live exchange rates. Free currency converter with Pakistani Rupee (PKR), USD, EUR, INR, and more. Auto-updates every 30 minutes.">
+    <meta name="keywords" content="currency converter, exchange rates, USD to INR, EUR to USD, foreign exchange, currency exchange">
+    <meta name="author" content="Calquro">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Currency Converter - Real-time Exchange Rates | Calquro">
+    <meta property="og:description" content="Free currency converter with real-time exchange rates for major world currencies.">
+    <meta property="og:image" content="https://iili.io/KuC0mDQ.png">
+    <meta property="og:url" content="https://calquro.com/tools/currency-converter.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Currency Converter - Calquro">
+    <meta name="twitter:description" content="Convert currencies with real-time exchange rates.">
+    <meta name="twitter:image" content="https://iili.io/KuC0mDQ.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://iili.io/KuC0mDQ.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="../index.html" class="logo">
+                <img src="https://iili.io/KuC0mDQ.png" alt="Calquro Logo">
+                <span>Calquro</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../tools.html" class="nav-link">Tools</a></li>
+                <li><a href="../ai.html" class="nav-link">Smart AI</a></li>
+                <li><a href="../blog.html" class="nav-link">Blog</a></li>
+                <li><a href="../about.html" class="nav-link">About</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="margin-top: 80px;">
+        <!-- Back to Tools Button -->
+        <section class="section" style="padding: 1rem 0;">
+            <div class="container">
+                <a href="../tools.html" class="btn btn-secondary">← Back to Tools</a>
+            </div>
+        </section>
+        
+        <!-- Hero Section -->
+        <section class="section">
+            <div class="container">
+                <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <h1>Currency Converter</h1>
+                    <p>Convert between major world currencies with up-to-date exchange rates. Perfect for travel, business, and international transactions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculator Section -->
+        <section class="section" style="padding-top: 0;">
+            <div class="container">
+                <div style="max-width: 600px; margin: 0 auto;">
+                    <div class="card">
+                        <h2>Currency Converter</h2>
+                        
+                        <div class="form-group">
+                            <label for="amount" class="form-label">Amount</label>
+                            <input type="number" id="amount" class="form-input" placeholder="Enter amount" value="1" step="0.01">
+                        </div>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; align-items: end;">
+                            <div class="form-group">
+                                <label for="fromCurrency" class="form-label">From</label>
+                                <select id="fromCurrency" class="form-input">
+                                    <option value="USD">USD - US Dollar</option>
+                                    <option value="EUR">EUR - Euro</option>
+                                    <option value="GBP">GBP - British Pound</option>
+                                    <option value="INR">INR - Indian Rupee</option>
+                                    <option value="PKR">PKR - Pakistani Rupee</option>
+                                    <option value="JPY">JPY - Japanese Yen</option>
+                                    <option value="AUD">AUD - Australian Dollar</option>
+                                    <option value="CAD">CAD - Canadian Dollar</option>
+                                    <option value="CHF">CHF - Swiss Franc</option>
+                                    <option value="CNY">CNY - Chinese Yuan</option>
+                                    <option value="SGD">SGD - Singapore Dollar</option>
+                                </select>
+                            </div>
+                            
+                            <button onclick="swapCurrencies()" style="background: var(--primary-color); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; font-size: 1.2rem;">⇄</button>
+                            
+                            <div class="form-group">
+                                <label for="toCurrency" class="form-label">To</label>
+                                <select id="toCurrency" class="form-input">
+                                    <option value="USD">USD - US Dollar</option>
+                                    <option value="EUR">EUR - Euro</option>
+                                    <option value="GBP">GBP - British Pound</option>
+                                    <option value="INR" selected>INR - Indian Rupee</option>
+                                    <option value="PKR">PKR - Pakistani Rupee</option>
+                                    <option value="JPY">JPY - Japanese Yen</option>
+                                    <option value="AUD">AUD - Australian Dollar</option>
+                                    <option value="CAD">CAD - Canadian Dollar</option>
+                                    <option value="CHF">CHF - Swiss Franc</option>
+                                    <option value="CNY">CNY - Chinese Yuan</option>
+                                    <option value="SGD">SGD - Singapore Dollar</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <button onclick="convertCurrency()" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Convert Currency</button>
+                        
+                        <!-- Rate refresh button -->
+                        <button onclick="refreshExchangeRates()" class="btn btn-secondary" style="width: 100%; margin-top: 0.5rem; font-size: 0.9rem;">🔄 Refresh Live Rates</button>
+                        
+                        <!-- Loading indicator -->
+                        <div id="loading-indicator" style="display: none; text-align: center; margin-top: 1rem; color: var(--primary-color); font-weight: 500;">🔄 Updating exchange rates...</div>
+                        
+                        <div id="conversionResult" style="margin-top: 2rem; display: none;">
+                            <div style="background: var(--background-alt); padding: 1.5rem; border-radius: var(--border-radius); text-align: center;">
+                                <div style="font-size: 2rem; color: var(--primary-color); font-weight: 700; margin-bottom: 0.5rem;" id="convertedAmount">0.00</div>
+                                <div style="color: var(--text-secondary); margin-bottom: 1rem;" id="conversionRate">Exchange Rate: 1 USD = 83.00 INR</div>
+                                <div style="font-size: 0.9rem; color: var(--text-secondary);" id="lastUpdated">Last updated: Now</div>
+                                <div style="font-size: 0.8rem; color: var(--success-color); margin-top: 0.5rem;">✅ Using live exchange rates</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Conversions -->
+        <section class="section" style="background: var(--background-alt);">
+            <div class="container">
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <h2>Popular Currency Conversions</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
+                        <div class="card" style="cursor: pointer;" onclick="setConversion('USD', 'PKR')">
+                            <strong>USD to PKR</strong>
+                            <div style="color: var(--primary-color);">1 USD = 278.50 PKR</div>
+                        </div>
+                        <div class="card" style="cursor: pointer;" onclick="setConversion('USD', 'INR')">
+                            <strong>USD to INR</strong>
+                            <div style="color: var(--primary-color);">1 USD = 83.25 INR</div>
+                        </div>
+                        <div class="card" style="cursor: pointer;" onclick="setConversion('EUR', 'USD')">
+                            <strong>EUR to USD</strong>
+                            <div style="color: var(--primary-color);">1 EUR = 1.09 USD</div>
+                        </div>
+                        <div class="card" style="cursor: pointer;" onclick="setConversion('PKR', 'USD')">
+                            <strong>PKR to USD</strong>
+                            <div style="color: var(--primary-color);">100 PKR = 0.36 USD</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Calquro</h3>
+                    <p>Professional online calculators and tools for everyone. Fast, accurate, and completely free to use.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../tools.html">Tools</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/tools/currency-converter.js"></script>
+</body>
+</html>

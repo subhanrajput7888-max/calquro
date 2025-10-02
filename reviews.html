@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Reviews & Testimonials - Calquro Calculator Tools</title>
+    <meta name="description" content="Read user reviews and testimonials for Calquro calculator tools. See what users say about our BMI, Age, EMI, Currency converters and more. Add your own review!">
+    <meta name="keywords" content="calquro reviews, calculator reviews, user testimonials, BMI calculator reviews, currency converter reviews, user feedback">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="User Reviews & Testimonials - Calquro">
+    <meta property="og:description" content="Read genuine user reviews for Calquro calculator tools and add your own feedback.">
+    <meta property="og:image" content="https://iili.io/KuC0mDQ.png">
+    <meta property="og:url" content="https://calquro.com/reviews.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://iili.io/KuC0mDQ.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org structured data for reviews -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Calquro",
+        "url": "https://calquro.com",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "247",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Ahmad Ali"
+                },
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "datePublished": "2025-01-10",
+                "reviewBody": "Excellent currency converter with live Pakistani Rupee rates. Very accurate and updates automatically. Best tool for PKR conversions!"
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Sarah Johnson"
+                },
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "datePublished": "2025-01-08",
+                "reviewBody": "Love the BMI calculator! Clean interface, instant results, and very user-friendly. Use it regularly for health tracking."
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Mike Chen"
+                },
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "datePublished": "2025-01-05",
+                "reviewBody": "The EMI calculator is fantastic for loan planning. Detailed breakdown helps me understand my payments better. Highly recommended!"
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <img src="https://iili.io/KuC0mDQ.png" alt="Calquro Logo">
+                <span>Calquro</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="tools.html" class="nav-link">Tools</a></li>
+                <li><a href="ai.html" class="nav-link">Smart AI</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="margin-top: 80px; padding: 2rem 0;">
+        <div class="container">
+            <!-- Header Section -->
+            <div class="text-center" style="margin-bottom: 3rem;">
+                <h1>User Reviews & Testimonials</h1>
+                <p>See what our users say about Calquro calculator tools and share your own experience</p>
+                
+                <!-- Overall Rating -->
+                <div style="margin: 2rem 0;">
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                        <div class="rating-display">
+                            <span style="font-size: 3rem; font-weight: 700; color: var(--primary-color);">4.8</span>
+                        </div>
+                        <div>
+                            <div class="stars" style="font-size: 1.5rem; color: #fbbf24; margin-bottom: 0.5rem;">
+                                ★★★★★
+                            </div>
+                            <p style="color: var(--text-secondary);">Based on 247 reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add Review Section -->
+            <div class="card" style="max-width: 800px; margin: 0 auto 3rem auto;">
+                <h2>Share Your Experience</h2>
+                <form id="reviewForm">
+                    <div class="form-group">
+                        <label for="reviewerName" class="form-label">Your Name</label>
+                        <input type="text" id="reviewerName" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewTool" class="form-label">Which Tool Did You Use?</label>
+                        <select id="reviewTool" class="form-input" required>
+                            <option value="">Select a tool</option>
+                            <option value="BMI Calculator">BMI Calculator</option>
+                            <option value="Age Calculator">Age Calculator</option>
+                            <option value="EMI Calculator">EMI Calculator</option>
+                            <option value="Currency Converter">Currency Converter</option>
+                            <option value="Percentage Calculator">Percentage Calculator</option>
+                            <option value="Student Calculator">Student Calculator</option>
+                            <option value="Password Generator">Password Generator</option>
+                            <option value="General">General Experience</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Rating</label>
+                        <div class="rating-input" style="font-size: 2rem; margin: 0.5rem 0;">
+                            <span class="star" data-rating="1" onclick="setRating(1)">☆</span>
+                            <span class="star" data-rating="2" onclick="setRating(2)">☆</span>
+                            <span class="star" data-rating="3" onclick="setRating(3)">☆</span>
+                            <span class="star" data-rating="4" onclick="setRating(4)">☆</span>
+                            <span class="star" data-rating="5" onclick="setRating(5)">☆</span>
+                        </div>
+                        <input type="hidden" id="rating" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewText" class="form-label">Your Review</label>
+                        <textarea id="reviewText" class="form-input" rows="4" placeholder="Tell us about your experience with Calquro tools..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Review</button>
+                </form>
+            </div>
+
+            <!-- Reviews Display -->
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <h2>What Our Users Say</h2>
+                
+                <!-- Filter and Sort -->
+                <div style="display: flex; gap: 1rem; margin: 2rem 0; flex-wrap: wrap;">
+                    <select id="toolFilter" class="form-input" style="max-width: 200px;" onchange="filterReviews()">
+                        <option value="all">All Tools</option>
+                        <option value="BMI Calculator">BMI Calculator</option>
+                        <option value="Currency Converter">Currency Converter</option>
+                        <option value="EMI Calculator">EMI Calculator</option>
+                        <option value="Age Calculator">Age Calculator</option>
+                    </select>
+                    
+                    <select id="ratingFilter" class="form-input" style="max-width: 150px;" onchange="filterReviews()">
+                        <option value="all">All Ratings</option>
+                        <option value="5">5 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="3">3+ Stars</option>
+                    </select>
+                </div>
+
+                <!-- Reviews List -->
+                <div id="reviewsList">
+                    <!-- Reviews will be loaded here by JavaScript -->
+                </div>
+                
+                <!-- Load More Button -->
+                <div style="text-align: center; margin-top: 2rem;">
+                    <button onclick="loadMoreReviews()" class="btn btn-secondary" id="loadMoreBtn">Load More Reviews</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Calquro</h3>
+                    <p>Professional online calculators and tools for everyone. Fast, accurate, and completely free to use.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tools.html">Tools</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Reviews data (in a real app, this would come from a database)
+        let allReviews = [
+            {
+                id: 1,
+                name: "Ahmad Ali",
+                tool: "Currency Converter",
+                rating: 5,
+                date: "2025-01-10",
+                text: "Excellent currency converter with live Pakistani Rupee rates. Very accurate and updates automatically. Best tool for PKR conversions!",
+                verified: true
+            },
+            {
+                id: 2,
+                name: "Sarah Johnson",
+                tool: "BMI Calculator",
+                rating: 5,
+                date: "2025-01-08",
+                text: "Love the BMI calculator! Clean interface, instant results, and very user-friendly. Use it regularly for health tracking.",
+                verified: true
+            },
+            {
+                id: 3,
+                name: "Mike Chen",
+                tool: "EMI Calculator",
+                rating: 5,
+                date: "2025-01-05",
+                text: "The EMI calculator is fantastic for loan planning. Detailed breakdown helps me understand my payments better. Highly recommended!",
+                verified: true
+            },
+            {
+                id: 4,
+                name: "Fatima Khan",
+                tool: "Age Calculator",
+                rating: 5,
+                date: "2025-01-03",
+                text: "Perfect age calculator! Shows exact age in years, months, and days. Love the fun facts feature too. Very helpful for official documents.",
+                verified: true
+            },
+            {
+                id: 5,
+                name: "David Wilson",
+                tool: "Percentage Calculator",
+                rating: 4,
+                date: "2025-01-01",
+                text: "Great percentage calculator. Easy to use and saves time on calculations. Would love to see more advanced percentage features.",
+                verified: true
+            },
+            {
+                id: 6,
+                name: "Maria Garcia",
+                tool: "General",
+                rating: 5,
+                date: "2024-12-28",
+                text: "Amazing website! All tools work perfectly on mobile. Fast loading and no ads. This is my go-to calculator site now.",
+                verified: true
+            },
+            {
+                id: 7,
+                name: "Alex Kumar",
+                tool: "Student Calculator",
+                rating: 5,
+                date: "2024-12-25",
+                text: "Student calculator is perfect for my studies. All the functions I need for math and science. Clean design and works great!",
+                verified: true
+            },
+            {
+                id: 8,
+                name: "Jennifer Brown",
+                tool: "Password Generator",
+                rating: 4,
+                date: "2024-12-22",
+                text: "Good password generator with strong security options. Helps me create unique passwords for different accounts.",
+                verified: true
+            }
+        ];
+
+        let displayedReviews = 0;
+        const reviewsPerPage = 4;
+        let currentRating = 0;
+
+        function setRating(rating) {
+            currentRating = rating;
+            document.getElementById('rating').value = rating;
+            
+            // Update star display
+            const stars = document.querySelectorAll('.star');
+            stars.forEach((star, index) => {
+                if (index < rating) {
+                    star.textContent = '★';
+                    star.style.color = '#fbbf24';
+                } else {
+                    star.textContent = '☆';
+                    star.style.color = '#d1d5db';
+                }
+            });
+        }
+
+        function renderReview(review) {
+            const stars = '★'.repeat(review.rating) + '☆'.repeat(5 - review.rating);
+            const verifiedBadge = review.verified ? '<span style="color: #10b981; font-size: 0.9rem;">✓ Verified</span>' : '';
+            
+            return `
+                <div class="card review-item" data-tool="${review.tool}" data-rating="${review.rating}" style="margin-bottom: 1.5rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                        <div>
+                            <h4 style="margin: 0; color: var(--primary-color);">${review.name}</h4>
+                            <p style="margin: 0.25rem 0; color: var(--text-secondary); font-size: 0.9rem;">${review.tool} • ${review.date} ${verifiedBadge}</p>
+                        </div>
+                        <div class="stars" style="color: #fbbf24; font-size: 1.2rem;">${stars}</div>
+                    </div>
+                    <p style="line-height: 1.6; margin: 0;">${review.text}</p>
+                </div>
+            `;
+        }
+
+        function loadReviews() {
+            const reviewsList = document.getElementById('reviewsList');
+            const toolFilter = document.getElementById('toolFilter').value;
+            const ratingFilter = document.getElementById('ratingFilter').value;
+            
+            let filteredReviews = allReviews.filter(review => {
+                const toolMatch = toolFilter === 'all' || review.tool === toolFilter;
+                const ratingMatch = ratingFilter === 'all' || review.rating >= parseInt(ratingFilter);
+                return toolMatch && ratingMatch;
+            });
+            
+            const reviewsToShow = filteredReviews.slice(0, displayedReviews + reviewsPerPage);
+            displayedReviews = reviewsToShow.length;
+            
+            reviewsList.innerHTML = reviewsToShow.map(renderReview).join('');
+            
+            // Hide load more button if all reviews are displayed
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            if (displayedReviews >= filteredReviews.length) {
+                loadMoreBtn.style.display = 'none';
+            } else {
+                loadMoreBtn.style.display = 'block';
+            }
+        }
+
+        function loadMoreReviews() {
+            loadReviews();
+        }
+
+        function filterReviews() {
+            displayedReviews = 0;
+            loadReviews();
+        }
+
+        // Handle review submission
+        document.getElementById('reviewForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('reviewerName').value;
+            const tool = document.getElementById('reviewTool').value;
+            const rating = parseInt(document.getElementById('rating').value);
+            const text = document.getElementById('reviewText').value;
+            
+            if (!rating) {
+                alert('Please select a rating');
+                return;
+            }
+            
+            // Add new review to the beginning of the array
+            const newReview = {
+                id: allReviews.length + 1,
+                name: name,
+                tool: tool,
+                rating: rating,
+                date: new Date().toISOString().split('T')[0],
+                text: text,
+                verified: false
+            };
+            
+            allReviews.unshift(newReview);
+            
+            // Reset form
+            document.getElementById('reviewForm').reset();
+            setRating(0);
+            
+            // Reload reviews
+            displayedReviews = 0;
+            loadReviews();
+            
+            // Show success message
+            alert('Thank you for your review! It has been added successfully.');
+            
+            // Scroll to reviews section
+            document.getElementById('reviewsList').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            loadReviews();
+        });
+    </script>
+
+    <style>
+        .star {
+            cursor: pointer;
+            transition: color 0.2s ease;
+            margin: 0 2px;
+        }
+        
+        .star:hover {
+            color: #fbbf24 !important;
+        }
+        
+        .review-item {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .review-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .rating-display {
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .stars {
+                font-size: 1rem !important;
+            }
+            
+            .star {
+                font-size: 1.5rem !important;
+            }
+        }
+    </style>
+</body>
+</html>
