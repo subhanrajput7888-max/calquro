@@ -1,5 +1,9 @@
 google.com, pub-3150350892607652, DIRECT, f08c47fec0942fa0
-Redirect 301 /ads.txt https://srv.adstxtmanager.com/19390/calquro.com
+<?php
+header('Location: https://srv.adstxtmanager.com/19390/calquro.com');
+exit;
+?>
+
 
 
 
