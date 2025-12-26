@@ -1,9 +1,10 @@
 google.com, pub-3150350892607652, DIRECT, f08c47fec0942fa0
-<?php
-header('Location: https://srv.adstxtmanager.com/19390/calquro.com');
-exit;
-?>
 
+
+#Ads.txt calquro.com
+
+# 11201
+google.com, pub-3150350892607652, DIRECT, f08c47fec0942fa0
 
 
 
